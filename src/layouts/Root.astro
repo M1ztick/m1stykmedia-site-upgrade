@@ -1,0 +1,99 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  section?: 'dispatch' | 'archive' | 'workbench' | 'current';
+}
+
+const { title, description = 'Digital legacy of a polymath truth-seeker', section } = Astro.props;
+
+const sectionColors = {
+  dispatch: 'border-dispatch',
+  archive: 'border-archive',
+  workbench: 'border-workbench',
+  current: 'border-current',
+};
+
+const accentClass = section ? sectionColors[section] : 'border-mistyk-400';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{title} • Mistyk Media</title>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Subtle top accent bar -->
+  <div class={`h-1 w-full ${accentClass} bg-current`}></div>
+  
+  <!-- Navigation - minimal but present -->
+  <nav class="w-full border-b border-mistyk-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-display text-xl tracking-tight text-mistyk-900 hover:text-mistyk-600 transition-colors">
+        Mistyk Media
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="/dispatch" class="text-mistyk-700 hover:text-dispatch transition-colors">Dispatch</a>
+        <a href="/archive" class="text-mistyk-700 hover:text-archive transition-colors">Archive</a>
+        <a href="/workbench" class="text-mistyk-700 hover:text-workbench transition-colors">Workbench</a>
+        <a href="/current" class="text-mistyk-700 hover:text-current transition-colors">Current</a>
+      </div>
+      
+      <!-- Mobile menu toggle - to be implemented -->
+      <button class="md:hidden text-mistyk-700" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="flex-1">
+    <slot />
+  </main>
+
+  <!-- Footer - cross-pollination happens here -->
+  <footer class="border-t border-mistyk-200 mt-16">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-4 gap-8 text-sm">
+        <!-- Latest across sections -->
+        <div>
+          <h4 class="font-display text-mistyk-900 mb-3">From The Dispatch</h4>
+          <ul class="space-y-2 text-mistyk-600">
+            <li><a href="#" class="hover:text-dispatch">Latest political analysis...</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-mistyk-900 mb-3">From The Archive</h4>
+          <ul class="space-y-2 text-mistyk-600">
+            <li><a href="#" class="hover:text-archive">Latest release...</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-mistyk-900 mb-3">From The Workbench</h4>
+          <ul class="space-y-2 text-mistyk-600">
+            <li><a href="#" class="hover:text-workbench">Latest project...</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-mistyk-900 mb-3">Connect</h4>
+          <ul class="space-y-2 text-mistyk-600">
+            <li><a href="/about" class="hover:text-mistyk-900">About</a></li>
+            <li><a href="mailto:..." class="hover:text-mistyk-900">Email</a></li>
+            <li><a href="https://github.com/M1ztick" class="hover:text-mistyk-900">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-mistyk-200 text-center text-xs text-mistyk-500">
+        <p>© {new Date().getFullYear()} Mistyk Media. Living archive in progress.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

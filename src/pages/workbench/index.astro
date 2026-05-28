@@ -1,0 +1,98 @@
+---
+import Root from '../../layouts/Root.astro';
+
+// Placeholder projects
+const projects = [
+  {
+    title: "Rebeldev",
+    description: "AI-powered development assistant and site mascot evolution.",
+    status: "active",
+    tech: ["AI", "JavaScript", "Chat Interface"],
+    version: "2.0",
+  },
+  {
+    title: "Insertabot.io",
+    description: "The platform powering this conversation and many others.",
+    status: "active",
+    tech: ["Platform", "AI", "Full Stack"],
+    version: "Live",
+  },
+  {
+    title: "Mistyk Media Site",
+    description: "This very archive. Built with Astro, designed for longevity.",
+    status: "active",
+    tech: ["Astro", "Tailwind", "Static"],
+    version: "3.0",
+  }
+];
+
+const statusColors = {
+  active: 'bg-green-100 text-green-800',
+  archived: 'bg-mistyk-200 text-mistyk-600',
+  concept: 'bg-yellow-100 text-yellow-800',
+};
+---
+
+<Root 
+  title="The Workbench" 
+  description="Developer projects, tools forged in code, and digital experiments."
+  section="workbench"
+>
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <!-- Section Header -->
+    <header class="mb-16">
+      <p class="text-xs uppercase tracking-widest text-workbench mb-2">Section 03</p>
+      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+        The Workbench
+      </h1>
+      <p class="text-lg text-mistyk-600 max-w-2xl">
+        Tools forged in code. Active projects, experiments, and the digital instruments used to build this archive.
+      </p>
+    </header>
+
+    <!-- Projects List -->
+    <div class="space-y-6">
+      {projects.map((project) => (
+        <div class="crossroads-card p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <div class="flex items-center gap-3 mb-1">
+                <h2 class="font-display text-xl text-mistyk-900">{project.title}</h2>
+                <span class={`text-xs px-2 py-1 rounded ${statusColors[project.status]}`}>
+                  {project.status}
+                </span>
+              </div>
+              <p class="text-sm text-mistyk-500">v{project.version}</p>
+            </div>
+            <a 
+              href="#" 
+              class="text-workbench hover:text-mistyk-900 transition-colors"
+              aria-label={`View ${project.title} repository`}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </div>
+          
+          <p class="text-mistyk-600 mb-4">{project.description}</p>
+          
+          <div class="flex flex-wrap gap-2">
+            {project.tech.map((t) => (
+              <span class="text-xs px-2 py-1 border border-mistyk-300 text-mistyk-600">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- GitHub Link -->
+    <div class="mt-12 p-6 border border-workbench/30 bg-workbench/5 text-center">
+      <p class="text-mistyk-700">
+ Explore more projects on <a href="https://github.com/M1ztick" class="text-workbench font-medium hover:underline">GitHub</a>
+      </p>
+    </div>
+  </div>
+</Root>

@@ -1,0 +1,82 @@
+---
+import Root from '../../layouts/Root.astro';
+
+// Placeholder releases
+const releases = [
+  {
+    title: "At One Time, The Temple Shook",
+    year: "2025",
+    description: "A sonic meditation on disruption and transformation.",
+    genre: ["Experimental", "Electronic"],
+  },
+  {
+    title: "Heaven Sick",
+    year: "2024",
+    description: "Original music exploring the tension between aspiration and grounded reality.",
+    genre: ["Electronic", "Ambient"],
+  }
+];
+---
+
+<Root 
+  title="The Archive" 
+  description="Original music, sound experiments, and sonic documentation."
+  section="archive"
+>
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <!-- Section Header -->
+    <header class="mb-16">
+      <p class="text-xs uppercase tracking-widest text-archive mb-2">Section 02</p>
+      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+        The Archive
+      </h1>
+      <p class="text-lg text-mistyk-600 max-w-2xl">
+        Original frequencies from the edge. A living collection of sonic experiments and genre-blending innovation.
+      </p>
+    </header>
+
+    <!-- Releases Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+      {releases.map((release) => (
+        <div class="crossroads-card p-6 group">
+          <!-- Cover placeholder -->
+          <div class="aspect-square bg-mistyk-200 mb-4 flex items-center justify-center">
+            <span class="text-mistyk-400 text-sm">Cover Art</span>
+          </div>
+          
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="text-xs text-mistyk-400">{release.year}</span>
+            <div class="flex gap-2">
+              {release.genre.map(g => (
+                <span class="text-xs text-archive">{g}</span>
+              ))}
+            </div>
+          </div>
+          
+          <h2 class="font-display text-xl text-mistyk-900 mb-2">
+            {release.title}
+          </h2>
+          <p class="text-sm text-mistyk-600 mb-4">
+            {release.description}
+          </p>
+          
+          <div class="flex items-center gap-4">
+            <button class="text-sm px-4 py-2 bg-archive text-white hover:bg-mistyk-800 transition-colors">
+              Listen
+            </button>
+            <button class="text-sm text-mistyk-600 hover:text-archive transition-colors">
+              Download
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Player placeholder - for later implementation -->
+    <div class="mt-16 p-6 border border-mistyk-200 bg-mistyk-50">
+      <p class="text-sm text-mistyk-500 text-center">
+        Full archive player with waveform visualization coming...
+      </p>
+    </div>
+  </div>
+</Root>

@@ -1,0 +1,47 @@
+/* Global styles - minimal, intentional */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-mistyk-50 text-mistyk-900;
+  }
+
+  /* Subtle texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.015;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    z-index: 50;
+  }
+}
+
+@layer components {
+  /* Crossroads card - consistent across sections */
+  .crossroads-card {
+    @apply relative overflow-hidden transition-all duration-300;
+    @apply border border-mistyk-200 bg-white/50 backdrop-blur-sm;
+  }
+  
+  .crossroads-card:hover {
+    @apply border-mistyk-400 shadow-lg;
+    transform: translateY(-2px);
+  }
+
+  /* Section-specific underline accents */
+  .accent-dispatch { @apply border-b-2 border-dispatch; }
+  .accent-archive { @apply border-b-2 border-archive; }
+  .accent-workbench { @apply border-b-2 border-workbench; }
+  .accent-current { @apply border-b-2 border-current; }
+}

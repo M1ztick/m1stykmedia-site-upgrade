@@ -1,0 +1,98 @@
+---
+import Root from '../../layouts/Root.astro';
+
+// Placeholder - esoteric/AI content
+const currents = [
+  {
+    title: "Western Esotericism: A Luminous Thread",
+    description: "Beneath the clamor of consumerism and dogma lies Western Esotericism: a luminous current focused on experiencing the divine rather than...",
+    category: "Spiritual",
+    slug: "western-esotericism"
+  },
+  {
+    title: "Sri Ramakrishna: Unifying the Divine",
+    description: "A Spiritual Longing Became A Universal Message. Sri Ramakrishna (1836–1886) presents a compelling model of spirituality based on direct experience...",
+    category: "Spiritual",
+    slug: "sri-ramakrishna"
+  },
+  {
+    title: "From Chat Bots to Sovereignty: The Agentic Era",
+    description: "The next decade of global competition will not be defined merely by who possesses the most advanced AI, but by who wields agentic systems...",
+    category: "AI/Tech",
+    slug: "agentic-era"
+  },
+  {
+    title: "The AI Misalignment Dilemma",
+    description: "Current cases of AI misalignment and their implications for global regulation...",
+    category: "AI/Tech",
+    slug: "ai-misalignment"
+  }
+];
+---
+
+<Root 
+  title="The Current" 
+  description="AI, technology, consciousness, and the undercurrent of inquiry."
+  section="current"
+>
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <!-- Section Header -->
+    <header class="mb-16">
+      <p class="text-xs uppercase tracking-widest text-current mb-2">Section 04</p>
+      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+        The Current
+      </h1>
+      <p class="text-lg text-mistyk-600 max-w-2xl">
+        Maps for those who seek beyond the veil. AI systems, consciousness exploration, and the intersection of technology and the numinous.
+      </p>
+    </header>
+
+    <!-- Dual streams -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Spiritual Stream -->
+      <div>
+        <h2 class="font-display text-lg text-mistyk-900 mb-6 pb-2 border-b border-mistyk-200">
+          Illumination
+        </h2>
+        <div class="space-y-4">
+          {currents.filter(c => c.category === 'Spiritual').map((item) => (
+            <a href={`/current/${item.slug}`} class="block group">
+              <h3 class="text-mistyk-900 group-hover:text-current transition-colors mb-1">
+                {item.title}
+              </h3>
+              <p class="text-sm text-mistyk-600 leading-relaxed">
+                {item.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Tech Stream -->
+      <div>
+        <h2 class="font-display text-lg text-mistyk-900 mb-6 pb-2 border-b border-mistyk-200">
+          Machination
+        </h2>
+        <div class="space-y-4">
+          {currents.filter(c => c.category === 'AI/Tech').map((item) => (
+            <a href={`/current/${item.slug}`} class="block group">
+              <h3 class="text-mistyk-900 group-hover:text-current transition-colors mb-1">
+                {item.title}
+              </h3>
+              <p class="text-sm text-mistyk-600 leading-relaxed">
+                {item.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Note on synthesis -->
+    <div class="mt-16 p-6 border border-current/30 bg-current/5 text-center">
+      <p class="text-mistyk-700 italic">
+        "The Current recognizes no artificial boundaries between the technical and the transcendent."
+      </p>
+    </div>
+  </div>
+</Root>
