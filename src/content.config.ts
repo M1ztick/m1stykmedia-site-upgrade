@@ -1,7 +1,8 @@
 import { defineCollection, z } from 'astro:content';
+import { file, glob } from 'astro/loaders';
 
 const dispatchCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/dispatch' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -14,7 +15,7 @@ const dispatchCollection = defineCollection({
 });
 
 const archiveCollection = defineCollection({
-  type: 'data',
+  loader: file('./src/content/archive/releases.json'),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -27,7 +28,7 @@ const archiveCollection = defineCollection({
 });
 
 const workbenchCollection = defineCollection({
-  type: 'data',
+  loader: file('./src/content/workbench/projects.json'),
   schema: z.object({
     title: z.string(),
     description: z.string(),
