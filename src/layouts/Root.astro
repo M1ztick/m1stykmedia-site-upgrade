@@ -16,84 +16,137 @@ const sectionColors = {
   current: 'border-current',
 };
 
-const accentClass = section ? sectionColors[section] : 'border-mistyk-400';
+const sectionGlow = {
+  dispatch: 'shadow-dispatch/20',
+  archive: 'shadow-archive/20',
+  workbench: 'shadow-workbench/20',
+  current: 'shadow-current/20',
+};
+
+const accentClass = section ? sectionColors[section] : 'border-coral';
+const glowClass = section ? sectionGlow[section] : 'shadow-coral/20';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <title>{title} • Mistyk Media</title>
+  <script is:inline>
+    // Prevent flash of wrong theme
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.classList.add(theme);
+  </script>
 </head>
-<body class="min-h-screen flex flex-col">
-  <!-- Subtle top accent bar -->
-  <div class={`h-1 w-full ${accentClass} bg-current`}></div>
+<body class="min-h-screen flex flex-col bg-void text-mist">
+  <!-- Animated top accent bar -->
+  <div class={`h-1 w-full bg-gradient-to-r from-coral to-teal relative overflow-hidden`}>
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
+  </div>
   
-  <!-- Navigation - minimal but present -->
-  <nav class="w-full border-b border-mistyk-200">
+  <!-- Navigation -->
+  <nav class="w-full border-b border-void-50/10 sticky top-0 z-40 bg-void/80 backdrop-blur-md">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="font-display text-xl tracking-tight text-mistyk-900 hover:text-mistyk-600 transition-colors">
-        Mistyk Media
+      <!-- Logo mark -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-coral to-teal flex items-center justify-center font-bold text-white text-lg shadow-lg group-hover:shadow-coral/30 transition-shadow">
+          M
+        </div>
+        <span class="font-display font-semibold text-lg tracking-tight text-mist hidden sm:block">
+          MISTYK<span class="text-mist/60">MEDIA</span>
+        </span>
       </a>
       
-      <div class="hidden md:flex items-center gap-8 text-sm">
-        <a href="/dispatch" class="text-mistyk-700 hover:text-dispatch transition-colors">Dispatch</a>
-        <a href="/archive" class="text-mistyk-700 hover:text-archive transition-colors">Archive</a>
-        <a href="/workbench" class="text-mistyk-700 hover:text-workbench transition-colors">Workbench</a>
-        <a href="/current" class="text-mistyk-700 hover:text-current transition-colors">Current</a>
+      <!-- Section nav -->
+      <div class="hidden md:flex items-center gap-1">
+        <a href="/dispatch" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
+        <a href="/archive" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-archive hover:bg-archive/10 transition-all">Archive</a>
+        <a href="/workbench" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-workbench hover:bg-workbench/10 transition-all">Workbench</a>
+        <a href="/current" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-current hover:bg-current/10 transition-all">Current</a>
       </div>
       
-      <!-- Mobile menu toggle - to be implemented -->
-      <button class="md:hidden text-mistyk-700" aria-label="Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <!-- Mobile menu -->
+      <button class="md:hidden p-2 rounded-md text-mist/70 hover:text-mist hover:bg-void-50/10 transition-colors" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
     </div>
   </nav>
 
   <!-- Main content -->
-  <main class="flex-1">
+  <main class="flex-1 relative">
     <slot />
   </main>
 
-  <!-- Footer - cross-pollination happens here -->
-  <footer class="border-t border-mistyk-200 mt-16">
+  <!-- Footer with cross-pollination -->
+  <footer class="border-t border-void-50/10 mt-16 bg-void-50/5">
+    <!-- Activity stream -->
     <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex items-center gap-2 mb-6">
+        <span class="w-2 h-2 rounded-full bg-coral animate-pulse"></span>
+        <span class="text-xs uppercase tracking-widest text-mist/40">Live Archive</span>
+      </div>
+      
       <div class="grid md:grid-cols-4 gap-8 text-sm">
-        <!-- Latest across sections -->
-        <div>
-          <h4 class="font-display text-mistyk-900 mb-3">From The Dispatch</h4>
-          <ul class="space-y-2 text-mistyk-600">
-            <li><a href="#" class="hover:text-dispatch">Latest political analysis...</a></li>
+        <div class="space-y-3">
+          <h4 class="font-display text-mist/80 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-dispatch"></span>
+            Dispatch
+          </h4>
+          <ul class="space-y-2 text-mist/50">
+            <li><a href="#" class="hover:text-dispatch transition-colors line-clamp-1">Project 2025 analysis...</a></li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-display text-mistyk-900 mb-3">From The Archive</h4>
-          <ul class="space-y-2 text-mistyk-600">
-            <li><a href="#" class="hover:text-archive">Latest release...</a></li>
+        <div class="space-y-3">
+          <h4 class="font-display text-mist/80 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-archive"></span>
+            Archive
+          </h4>
+          <ul class="space-y-2 text-mist/50">
+            <li><a href="#" class="hover:text-archive transition-colors line-clamp-1">Temple Shook release...</a></li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-display text-mistyk-900 mb-3">From The Workbench</h4>
-          <ul class="space-y-2 text-mistyk-600">
-            <li><a href="#" class="hover:text-workbench">Latest project...</a></li>
+        <div class="space-y-3">
+          <h4 class="font-display text-mist/80 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-workbench"></span>
+            Workbench
+          </h4>
+          <ul class="space-y-2 text-mist/50">
+            <li><a href="#" class="hover:text-workbench transition-colors line-clamp-1">Rebeldev v2.0...</a></li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-display text-mistyk-900 mb-3">Connect</h4>
-          <ul class="space-y-2 text-mistyk-600">
-            <li><a href="/about" class="hover:text-mistyk-900">About</a></li>
-            <li><a href="mailto:..." class="hover:text-mistyk-900">Email</a></li>
-            <li><a href="https://github.com/M1ztick" class="hover:text-mistyk-900">GitHub</a></li>
+        <div class="space-y-3">
+          <h4 class="font-display text-mist/80">Connect</h4>
+          <ul class="space-y-2 text-mist/50">
+            <li><a href="/about" class="hover:text-coral transition-colors">About</a></li>
+            <li><a href="https://github.com/M1ztick" class="hover:text-coral transition-colors">GitHub</a></li>
           </ul>
         </div>
       </div>
-      <div class="mt-12 pt-8 border-t border-mistyk-200 text-center text-xs text-mistyk-500">
-        <p>© {new Date().getFullYear()} Mistyk Media. Living archive in progress.</p>
+    </div>
+    
+    <!-- Bottom bar -->
+    <div class="border-t border-void-50/10">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-mist/30">
+        <p>© {new Date().getFullYear()} Mistyk Media</p>
+        <p class="hidden sm:block">Living archive in motion</p>
       </div>
     </div>
   </footer>
+  
+  <style>
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    .animate-shimmer {
+      animation: shimmer 3s infinite;
+    }
+  </style>
 </body>
 </html>

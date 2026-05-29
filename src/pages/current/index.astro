@@ -38,11 +38,11 @@ const currents = [
   <div class="max-w-4xl mx-auto px-6 py-16">
     <!-- Section Header -->
     <header class="mb-16">
-      <p class="text-xs uppercase tracking-widest text-current mb-2">Section 04</p>
-      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+      <p class="text-xs font-mono text-current/60 mb-2">SECTION_04</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
         The Current
       </h1>
-      <p class="text-lg text-mistyk-600 max-w-2xl">
+      <p class="text-lg text-mist/60 max-w-2xl">
         Maps for those who seek beyond the veil. AI systems, consciousness exploration, and the intersection of technology and the numinous.
       </p>
     </header>
@@ -51,16 +51,17 @@ const currents = [
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Spiritual Stream -->
       <div>
-        <h2 class="font-display text-lg text-mistyk-900 mb-6 pb-2 border-b border-mistyk-200">
+        <h2 class="font-display text-lg text-mist/80 mb-6 pb-2 border-b border-void-50/10 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-current/60"></span>
           Illumination
         </h2>
-        <div class="space-y-4">
+        <div class="space-y-6">
           {currents.filter(c => c.category === 'Spiritual').map((item) => (
             <a href={`/current/${item.slug}`} class="block group">
-              <h3 class="text-mistyk-900 group-hover:text-current transition-colors mb-1">
+              <h3 class="text-mist group-hover:text-current transition-colors mb-2 font-medium">
                 {item.title}
               </h3>
-              <p class="text-sm text-mistyk-600 leading-relaxed">
+              <p class="text-sm text-mist/40 leading-relaxed">
                 {item.description}
               </p>
             </a>
@@ -70,16 +71,17 @@ const currents = [
 
       <!-- Tech Stream -->
       <div>
-        <h2 class="font-display text-lg text-mistyk-900 mb-6 pb-2 border-b border-mistyk-200">
+        <h2 class="font-display text-lg text-mist/80 mb-6 pb-2 border-b border-void-50/10 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-teal/60"></span>
           Machination
         </h2>
-        <div class="space-y-4">
+        <div class="space-y-6">
           {currents.filter(c => c.category === 'AI/Tech').map((item) => (
             <a href={`/current/${item.slug}`} class="block group">
-              <h3 class="text-mistyk-900 group-hover:text-current transition-colors mb-1">
+              <h3 class="text-mist group-hover:text-teal transition-colors mb-2 font-medium">
                 {item.title}
               </h3>
-              <p class="text-sm text-mistyk-600 leading-relaxed">
+              <p class="text-sm text-mist/40 leading-relaxed">
                 {item.description}
               </p>
             </a>
@@ -89,8 +91,9 @@ const currents = [
     </div>
 
     <!-- Note on synthesis -->
-    <div class="mt-16 p-6 border border-current/30 bg-current/5 text-center">
-      <p class="text-mistyk-700 italic">
+    <div class="mt-16 p-8 border border-current/20 bg-current/5 text-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-radial from-current/5 to-transparent pointer-events-none"></div>
+      <p class="text-mist/60 italic relative z-10">
         "The Current recognizes no artificial boundaries between the technical and the transcendent."
       </p>
     </div>

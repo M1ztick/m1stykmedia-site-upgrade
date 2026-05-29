@@ -5,7 +5,7 @@ import Root from '../../layouts/Root.astro';
 const recentDispatches = [
   {
     title: "Project 2025: The Conspiracy That Isn't a Theory",
-    description: "The Quiet Takeover & The Political Scarecrow...",
+    description: "The Quiet Takeover & The Political Scarecrow. In the last decade, we have witnessed a strange...",
     date: "2025-01-15",
     category: "investigation",
     slug: "introduction-to-project-2025"
@@ -35,11 +35,11 @@ const recentDispatches = [
   <div class="max-w-4xl mx-auto px-6 py-16">
     <!-- Section Header -->
     <header class="mb-16">
-      <p class="text-xs uppercase tracking-widest text-dispatch mb-2">Section 01</p>
-      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+      <p class="text-xs font-mono text-dispatch/60 mb-2">SECTION_01</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
         The Dispatch
       </h1>
-      <p class="text-lg text-mistyk-600 max-w-2xl">
+      <p class="text-lg text-mist/60 max-w-2xl">
         Where power is named and narratives are dismantled. Investigations, analysis, and essays on systems, structures, and the stories we tell ourselves.
       </p>
     </header>
@@ -50,17 +50,17 @@ const recentDispatches = [
         <article class="group">
           <a href={`/dispatch/${dispatch.slug}`} class="block">
             <div class="flex items-baseline gap-4 mb-2">
-              <span class="text-xs text-mistyk-400">{dispatch.date}</span>
-              <span class="text-xs uppercase tracking-wider text-dispatch">{dispatch.category}</span>
+              <span class="text-xs font-mono text-mist/40">{dispatch.date}</span>
+              <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{dispatch.category}</span>
             </div>
-            <h2 class="font-display text-xl md:text-2xl text-mistyk-900 group-hover:text-dispatch transition-colors mb-2">
+            <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
               {dispatch.title}
             </h2>
-            <p class="text-mistyk-600 leading-relaxed">
+            <p class="text-mist/50 leading-relaxed">
               {dispatch.description}
             </p>
-            <div class="mt-4 flex items-center text-sm text-mistyk-500 group-hover:text-dispatch transition-colors">
-              <span>Read more</span>
+            <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-dispatch transition-colors">
+              <span>Read analysis</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -70,15 +70,15 @@ const recentDispatches = [
         </article>
         
         {index < recentDispatches.length - 1 && (
-          <hr class="border-mistyk-200" />
+          <hr class="border-void-50/10" />
         )}
       ))}
     </div>
 
     <!-- Archive Link -->
-    <div class="mt-16 pt-8 border-t border-mistyk-200">
-      <p class="text-sm text-mistyk-500">
-        Browse the complete dispatch archive → <a href="#" class="text-dispatch hover:underline">All posts</a>
+    <div class="mt-16 pt-8 border-t border-void-50/10">
+      <p class="text-sm text-mist/40">
+        Browse complete archive → <a href="#" class="text-dispatch hover:underline">All dispatches</a>
       </p>
     </div>
   </div>

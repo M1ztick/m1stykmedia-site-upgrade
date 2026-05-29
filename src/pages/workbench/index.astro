@@ -27,9 +27,9 @@ const projects = [
 ];
 
 const statusColors = {
-  active: 'bg-green-100 text-green-800',
-  archived: 'bg-mistyk-200 text-mistyk-600',
-  concept: 'bg-yellow-100 text-yellow-800',
+  active: 'bg-green-500/20 text-green-400 border border-green-500/30',
+  archived: 'bg-void-100 text-mist/40 border border-void-50/20',
+  concept: 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30',
 };
 ---
 
@@ -41,11 +41,11 @@ const statusColors = {
   <div class="max-w-4xl mx-auto px-6 py-16">
     <!-- Section Header -->
     <header class="mb-16">
-      <p class="text-xs uppercase tracking-widest text-workbench mb-2">Section 03</p>
-      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+      <p class="text-xs font-mono text-workbench/60 mb-2">SECTION_03</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
         The Workbench
       </h1>
-      <p class="text-lg text-mistyk-600 max-w-2xl">
+      <p class="text-lg text-mist/60 max-w-2xl">
         Tools forged in code. Active projects, experiments, and the digital instruments used to build this archive.
       </p>
     </header>
@@ -53,20 +53,20 @@ const statusColors = {
     <!-- Projects List -->
     <div class="space-y-6">
       {projects.map((project) => (
-        <div class="crossroads-card p-6">
+        <div class="crossroads-card p-6 group hover:border-workbench/30">
           <div class="flex items-start justify-between mb-4">
             <div>
               <div class="flex items-center gap-3 mb-1">
-                <h2 class="font-display text-xl text-mistyk-900">{project.title}</h2>
+                <h2 class="font-display text-xl text-mist group-hover:text-workbench transition-colors">{project.title}</h2>
                 <span class={`text-xs px-2 py-1 rounded ${statusColors[project.status]}`}>
                   {project.status}
                 </span>
               </div>
-              <p class="text-sm text-mistyk-500">v{project.version}</p>
+              <p class="text-sm font-mono text-mist/30">v{project.version}</p>
             </div>
             <a 
               href="#" 
-              class="text-workbench hover:text-mistyk-900 transition-colors"
+              class="text-mist/30 hover:text-workbench transition-colors"
               aria-label={`View ${project.title} repository`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -75,11 +75,11 @@ const statusColors = {
             </a>
           </div>
           
-          <p class="text-mistyk-600 mb-4">{project.description}</p>
+          <p class="text-mist/50 mb-4">{project.description}</p>
           
           <div class="flex flex-wrap gap-2">
             {project.tech.map((t) => (
-              <span class="text-xs px-2 py-1 border border-mistyk-300 text-mistyk-600">
+              <span class="text-xs px-2 py-1 border border-void-50/20 text-mist/40 font-mono">
                 {t}
               </span>
             ))}
@@ -89,9 +89,9 @@ const statusColors = {
     </div>
 
     <!-- GitHub Link -->
-    <div class="mt-12 p-6 border border-workbench/30 bg-workbench/5 text-center">
-      <p class="text-mistyk-700">
- Explore more projects on <a href="https://github.com/M1ztick" class="text-workbench font-medium hover:underline">GitHub</a>
+    <div class="mt-12 p-6 border border-workbench/20 bg-workbench/5 text-center">
+      <p class="text-mist/60">
+        Explore more on <a href="https://github.com/M1ztick" class="text-workbench hover:text-workbench/80 font-medium transition-colors">GitHub</a>
       </p>
     </div>
   </div>
