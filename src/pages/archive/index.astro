@@ -26,45 +26,49 @@ const releases = [
   <div class="max-w-4xl mx-auto px-6 py-16">
     <!-- Section Header -->
     <header class="mb-16">
-      <p class="text-xs uppercase tracking-widest text-archive mb-2">Section 02</p>
-      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4">
+      <p class="text-xs font-mono text-archive/60 mb-2">SECTION_02</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
         The Archive
       </h1>
-      <p class="text-lg text-mistyk-600 max-w-2xl">
+      <p class="text-lg text-mist/60 max-w-2xl">
         Original frequencies from the edge. A living collection of sonic experiments and genre-blending innovation.
       </p>
     </header>
 
     <!-- Releases Grid -->
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 gap-6">
       {releases.map((release) => (
         <div class="crossroads-card p-6 group">
-          <!-- Cover placeholder -->
-          <div class="aspect-square bg-mistyk-200 mb-4 flex items-center justify-center">
-            <span class="text-mistyk-400 text-sm">Cover Art</span>
-          </div>
-          
-          <div class="flex items-baseline gap-3 mb-2">
-            <span class="text-xs text-mistyk-400">{release.year}</span>
-            <div class="flex gap-2">
-              {release.genre.map(g => (
-                <span class="text-xs text-archive">{g}</span>
+          <!-- Cover placeholder with wave visualization hint -->
+          <div class="aspect-square bg-void-100 mb-4 flex items-center justify-center border border-void-50/10">
+            <div class="flex items-center gap-1">
+              {[...Array(8)].map((_, i) => (
+                <div class="w-1 bg-archive/40 rounded-full" style={`height: ${20 + Math.random() * 40}px`}></div>
               ))}
             </div>
           </div>
           
-          <h2 class="font-display text-xl text-mistyk-900 mb-2">
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="text-xs font-mono text-mist/40">{release.year}</span>
+            <div class="flex gap-2">
+              {release.genre.map(g => (
+                <span class="text-xs text-archive/80">{g}</span>
+              ))}
+            </div>
+          </div>
+          
+          <h2 class="font-display text-xl text-mist mb-2">
             {release.title}
           </h2>
-          <p class="text-sm text-mistyk-600 mb-4">
+          <p class="text-sm text-mist/50 mb-4">
             {release.description}
           </p>
           
           <div class="flex items-center gap-4">
-            <button class="text-sm px-4 py-2 bg-archive text-white hover:bg-mistyk-800 transition-colors">
-              Listen
+            <button class="text-sm px-4 py-2 bg-archive/20 text-archive border border-archive/30 hover:bg-archive/30 transition-colors">
+              ▶ Play
             </button>
-            <button class="text-sm text-mistyk-600 hover:text-archive transition-colors">
+            <button class="text-sm text-mist/40 hover:text-archive transition-colors">
               Download
             </button>
           </div>
@@ -72,10 +76,15 @@ const releases = [
       ))}
     </div>
 
-    <!-- Player placeholder - for later implementation -->
-    <div class="mt-16 p-6 border border-mistyk-200 bg-mistyk-50">
-      <p class="text-sm text-mistyk-500 text-center">
-        Full archive player with waveform visualization coming...
+    <!-- Player placeholder - dark themed -->
+    <div class="mt-16 p-8 border border-void-50/10 bg-void-50/5 text-center">
+      <div class="flex items-center justify-center gap-4 mb-4">
+        <div class="w-64 h-2 bg-void-100 rounded-full overflow-hidden">
+          <div class="w-1/3 h-full bg-gradient-to-r from-coral to-teal"></div>
+        </div>
+      </div>
+      <p class="text-sm text-mist/30 font-mono">
+        FULL_ARCHIVE_PLAYER // COMING_SOON
       </p>
     </div>
   </div>

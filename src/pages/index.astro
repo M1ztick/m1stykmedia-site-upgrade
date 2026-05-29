@@ -43,38 +43,41 @@ const sections = [
 
 <Root title="The Crossroads" description="Digital legacy of a polymath truth-seeker. Dispatches, archives, and works in progress.">
   
-  <!-- Hero // Space for the decision -->
+  <!-- Hero - Dark, dramatic -->
   <section class="relative min-h-[70vh] flex items-center justify-center px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <!-- Logo space - placeholder for your boss logo -->
-      <div class="mb-8 flex justify-center">
-        <div class="w-24 h-24 rounded-full border-2 border-mistyk-300 flex items-center justify-center bg-white/50">
-          <span class="font-display text-3xl text-mistyk-600">M</span>
+    <!-- Radial gradient background -->
+    <div class="absolute inset-0 bg-gradient-radial from-coral/5 via-transparent to-transparent pointer-events-none"></div>
+    
+    <div class="max-w-3xl mx-auto text-center relative z-10">
+      <!-- Logo mark - large, glowing -->
+      <div class="mb-10 flex justify-center">
+        <div class="w-28 h-28 rounded-2xl bg-gradient-to-br from-coral to-teal flex items-center justify-center font-bold text-white text-4xl shadow-2xl shadow-coral/20 glow-coral">
+          M
         </div>
       </div>
       
-      <h1 class="font-display text-4xl md:text-5xl text-mistyk-900 mb-4 tracking-tight">
-        Mistyk Media
+      <h1 class="font-display text-5xl md:text-6xl font-bold text-mist mb-4 tracking-tight">
+        <span class="gradient-text">Mistyk</span> Media
       </h1>
-      <p class="text-lg text-mistyk-600 mb-2 max-w-lg mx-auto">
+      <p class="text-lg md:text-xl text-mist/60 mb-2 max-w-xl mx-auto">
         A living archive of inquiry across the spectrum of human becoming.
       </p>
-      <p class="text-sm text-mistyk-500">
-        Choose your entry point below ↓
+      <p class="text-sm text-mist/40 font-mono">
+        CHOOSE YOUR ENTRY POINT ↓
       </p>
     </div>
   </section>
 
-  <!-- The Crossroads // Four paths -->
+  <!-- The Crossroads - Four paths -->
   <section class="max-w-6xl mx-auto px-6 pb-24">
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid md:grid-cols-2 gap-5">
       {sections.map((section, index) => (
         <a 
           href={section.path}
           class={`group crossroads-card p-8 ${section.hover}`}
         >
           <div class="flex items-start justify-between mb-4">
-            <span class="text-xs uppercase tracking-widest text-mistyk-500">0{index + 1}</span>
+            <span class="text-xs font-mono text-mist/30">0{index + 1}</span>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="20" 
@@ -85,21 +88,21 @@ const sections = [
               stroke-width="1.5" 
               stroke-linecap="round" 
               stroke-linejoin="round"
-              class="text-mistyk-400 group-hover:text-mistyk-600 transition-colors"
+              class="text-mist/30 group-hover:text-mist/60 transition-colors"
             >
               <path d={section.icon} />
             </svg>
           </div>
           
-          <h2 class={`font-display text-2xl mb-2 text-mistyk-900 ${section.accent} inline-block pb-1`}>
+          <h2 class={`font-display text-2xl font-semibold mb-2 text-mist ${section.accent} pl-3`}>
             {section.title}
           </h2>
           
-          <p class="text-mistyk-600 leading-relaxed">
+          <p class="text-mist/50 leading-relaxed">
             {section.subtitle}
           </p>
           
-          <div class="mt-6 flex items-center text-sm text-mistyk-500 group-hover:text-mistyk-700 transition-colors">
+          <div class="mt-6 flex items-center text-sm text-mist/40 group-hover:text-coral transition-colors">
             <span>Enter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 transform group-hover:translate-x-1 transition-transform">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -111,33 +114,32 @@ const sections = [
     </div>
   </section>
 
-  <!-- Latest Activity Strip // The living pulse -->
-  <section class="border-t border-mistyk-200 py-16">
+  <!-- Latest Activity Strip - Tech dashboard feel -->
+  <section class="border-t border-void-50/10 py-16 bg-void-50/5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center justify-between mb-8">
-        <h3 class="font-display text-xl text-mistyk-900">Recent Activity</h3>
-        <span class="text-xs text-mistyk-500 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          Archive in motion
+        <h3 class="font-display text-xl text-mist/80">Recent Activity</h3>
+        <span class="text-xs font-mono text-mist/40 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-coral animate-pulse"></span>
+          ARCHIVE_ACTIVE
         </span>
       </div>
       
-      <div class="space-y-4">
-        <!-- These will be dynamic later -->
-        <div class="flex items-center gap-4 p-4 border border-mistyk-200 bg-white/30">
-          <span class="text-xs text-dispatch uppercase tracking-wider w-20">Dispatch</span>
-          <span class="text-mistyk-900">Project 2025: The Conspiracy That Isn't a Theory</span>
-          <span class="ml-auto text-xs text-mistyk-500">Dec 2025</span>
+      <div class="space-y-3">
+        <div class="flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 hover:border-dispatch/30 transition-colors group cursor-pointer">
+          <span class="text-xs font-mono text-dispatch uppercase tracking-wider w-24">DISPATCH</span>
+          <span class="text-mist group-hover:text-mist/80">Project 2025: The Conspiracy That Isn't a Theory</span>
+          <span class="ml-auto text-xs font-mono text-mist/30">2025-01-15</span>
         </div>
-        <div class="flex items-center gap-4 p-4 border border-mistyk-200 bg-white/30">
-          <span class="text-xs text-archive uppercase tracking-wider w-20">Archive</span>
-          <span class="text-mistyk-900">At One Time, The Temple Shook</span>
-          <span class="ml-auto text-xs text-mistyk-500">2025</span>
+        <div class="flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 hover:border-archive/30 transition-colors group cursor-pointer">
+          <span class="text-xs font-mono text-archive uppercase tracking-wider w-24">ARCHIVE</span>
+          <span class="text-mist group-hover:text-mist/80">At One Time, The Temple Shook</span>
+          <span class="ml-auto text-xs font-mono text-mist/30">2025-01-10</span>
         </div>
-        <div class="flex items-center gap-4 p-4 border border-mistyk-200 bg-white/30">
-          <span class="text-xs text-workbench uppercase tracking-wider w-20">Workbench</span>
-          <span class="text-mistyk-900">Rebeldev v2.0 Site Integration</span>
-          <span class="ml-auto text-xs text-mistyk-500">In Progress</span>
+        <div class="flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 hover:border-workbench/30 transition-colors group cursor-pointer">
+          <span class="text-xs font-mono text-workbench uppercase tracking-wider w-24">WORKBENCH</span>
+          <span class="text-mist group-hover:text-mist/80">Rebeldev v2.0 Site Integration</span>
+          <span class="ml-auto text-xs font-mono text-mist/30">IN_PROGRESS</span>
         </div>
       </div>
     </div>
