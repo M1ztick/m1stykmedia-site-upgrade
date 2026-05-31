@@ -10,7 +10,6 @@ export async function getStaticPaths() {
 }
 
 import Root from '../../../layouts/Root.astro';
-import { format } from 'date-fns';
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
@@ -23,7 +22,9 @@ const { Content } = await entry.render();
       <div class="flex items-center gap-4 mb-4">
         <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{entry.data.category}</span>
         <span class="text-mist/30">•</span>
-        <time class="text-xs font-mono text-mist/40">{format(new Date(entry.data.pubDate), 'MMMM d, yyyy')}</time>
+        <time class="text-xs font-mono text-mist/40">
+          {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
       </div>
       <h1 class="font-display text-3xl md:text-4xl font-bold text-mist mb-4">{entry.data.title}</h1>
       <p class="text-lg text-mist/60">{entry.data.description}</p>
@@ -37,7 +38,6 @@ const { Content } = await entry.render();
         ))}
       </div>
     )}
-
     <!-- Content -->
     <div class="prose prose-invert prose-mist max-w-none">
       <Content />
