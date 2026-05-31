@@ -12,5 +12,9 @@ export default defineConfig({
   },
 
   site: 'https://mistykmedia.com',
+  
+  // Disable sessions to prevent auto-provisioning of KV namespace
+  session: false,
+  
   adapter: cloudflare()
 });
