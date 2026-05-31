@@ -72,6 +72,47 @@
   .glow-teal {
     box-shadow: 0 0 20px rgba(46, 196, 182, 0.15);
   }
+
+  /* Prose styles for markdown content */
+  .prose-mist {
+    @apply text-mist/80 leading-relaxed;
+  }
+  
+  .prose-mist h2 {
+    @apply text-2xl font-bold text-mist mt-12 mb-6 pb-2 border-b border-void-50/10;
+  }
+  
+  .prose-mist h3 {
+    @apply text-xl font-semibold text-mist mt-8 mb-4;
+  }
+  
+  .prose-mist p {
+    @apply mb-6;
+  }
+  
+  .prose-mist ul {
+    @apply list-disc list-inside mb-6 space-y-2;
+  }
+  
+  .prose-mist li {
+    @apply text-mist/70;
+  }
+  
+  .prose-mist strong {
+    @apply text-mist font-semibold;
+  }
+  
+  .prose-mist a {
+    @apply text-coral hover:underline;
+  }
+  
+  .prose-mist blockquote {
+    @apply border-l-2 border-dispatch/50 pl-4 italic text-mist/60 my-8;
+  }
+  
+  .prose-mist em {
+    @apply italic;
+  }
 }
 
 @layer utilities {
