@@ -47,31 +47,33 @@ const recentDispatches = [
     <!-- Dispatch List -->
     <div class="space-y-8">
       {recentDispatches.map((dispatch, index) => (
-        <article class="group">
-          <a href={`/dispatch/${dispatch.slug}`} class="block">
-            <div class="flex items-baseline gap-4 mb-2">
-              <span class="text-xs font-mono text-mist/40">{dispatch.date}</span>
-              <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{dispatch.category}</span>
-            </div>
-            <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
-              {dispatch.title}
-            </h2>
-            <p class="text-mist/50 leading-relaxed">
-              {dispatch.description}
-            </p>
-            <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-dispatch transition-colors">
-              <span>Read analysis</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-          </a>
-        </article>
-        
-        {index < recentDispatches.length - 1 && (
-          <hr class="border-void-50/10" />
-        )}
+        <>
+          <article class="group">
+            <a href={`/dispatch/${dispatch.slug}`} class="block">
+              <div class="flex items-baseline gap-4 mb-2">
+                <span class="text-xs font-mono text-mist/40">{dispatch.date}</span>
+                <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{dispatch.category}</span>
+              </div>
+              <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
+                {dispatch.title}
+              </h2>
+              <p class="text-mist/50 leading-relaxed">
+                {dispatch.description}
+              </p>
+              <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-dispatch transition-colors">
+                <span>Read analysis</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          </article>
+
+          {index < recentDispatches.length - 1 && (
+            <hr class="border-void-50/10" />
+          )}
+        </>
       ))}
     </div>
 
