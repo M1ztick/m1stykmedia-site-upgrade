@@ -12,15 +12,5 @@
   "assets": {
     "binding": "ASSETS",
     "directory": "dist/client"
-  },
-  "kv_namespaces": [
-    {
-      "binding": "SESSION",
-      "id": "b0ebac054b684ae8b3ac702c15a53845",
-      "title": "m1stykmedia-site-upgrade-session"
-    }
-  ],
-  "images": {
-    "binding": "IMAGES"
   }
 }
