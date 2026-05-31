@@ -1,18 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
+import Root from '../../layouts/Root.astro';
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const dispatchEntries = await getCollection('dispatch');
   return dispatchEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
-import Root from '../../../layouts/Root.astro';
-
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <Root title={entry.data.title} description={entry.data.description} section="dispatch">
