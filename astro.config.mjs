@@ -13,8 +13,13 @@ export default defineConfig({
 
   site: 'https://mistykmedia.com',
   
-  // Disable sessions to prevent auto-provisioning of KV namespace
-  session: false,
+  // Explicitly disable sessions
+  session: {
+    driver: 'memory',
+  },
   
-  adapter: cloudflare()
+  adapter: cloudflare({
+    // Disable auto-provisioning of session KV binding
+    sessionKVBindingName: false,
+  })
 });
