@@ -1,30 +1,11 @@
 ---
+import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 
-// Placeholder - will pull from content collection
-const recentDispatches = [
-  {
-    title: "Project 2025: The Conspiracy That Isn't a Theory",
-    description: "The Quiet Takeover & The Political Scarecrow. In the last decade, we have witnessed a strange...",
-    date: "2025-01-15",
-    category: "investigation",
-    slug: "introduction-to-project-2025"
-  },
-  {
-    title: "Billionaire Buy In: American Electoral Mythos",
-    description: "The notion that anyone can become President is a compelling American myth...",
-    date: "2025-01-10",
-    category: "analysis",
-    slug: "billionaire-buy-in"
-  },
-  {
-    title: "The Justice Department's Selective Incompetence",
-    description: "Recent failure to redact the names of Jeffrey Epstein's victims is not a routine clerical lapse...",
-    date: "2024-12-28",
-    category: "investigation",
-    slug: "justice-department-incompetence"
-  }
-];
+const allDispatches = await getCollection('dispatch');
+const dispatches = allDispatches.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
 ---
 
 <Root 
@@ -46,22 +27,26 @@ const recentDispatches = [
 
     <!-- Dispatch List -->
     <div class="space-y-8">
-      {recentDispatches.map((dispatch, index) => (
+      {dispatches.map((entry, index) => (
         <>
           <article class="group">
-            <a href={`/dispatch/${dispatch.slug}`} class="block">
+            <a href={`/dispatch/${entry.id}`} class="block">
               <div class="flex items-baseline gap-4 mb-2">
-                <span class="text-xs font-mono text-mist/40">{dispatch.date}</span>
-                <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{dispatch.category}</span>
+                <span class="text-xs font-mono text-mist/40">
+                  {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+                {entry.data.category && (
+                  <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{entry.data.category}</span>
+                )}
               </div>
               <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
-                {dispatch.title}
+                {entry.data.title}
               </h2>
               <p class="text-mist/50 leading-relaxed">
-                {dispatch.description}
+                {entry.data.description}
               </p>
               <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-dispatch transition-colors">
-                <span>Read analysis</span>
+                <span>Read</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
@@ -70,18 +55,11 @@ const recentDispatches = [
             </a>
           </article>
 
-          {index < recentDispatches.length - 1 && (
+          {index < dispatches.length - 1 && (
             <hr class="border-void-50/10" />
           )}
         </>
       ))}
-    </div>
-
-    <!-- Archive Link -->
-    <div class="mt-16 pt-8 border-t border-void-50/10">
-      <p class="text-sm text-mist/40">
-        Browse complete archive → <a href="#" class="text-dispatch hover:underline">All dispatches</a>
-      </p>
     </div>
   </div>
 </Root>

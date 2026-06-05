@@ -72,6 +72,8 @@ const CATEGORY_MAP = {
 
 function stripCDATA(str) {
   if (!str) return '';
+  if (typeof str === 'object' && str.__cdata !== undefined) return String(str.__cdata);
+  if (typeof str !== 'string') return String(str);
   return str
     .replace(/<!\[CDATA\[/g, '')
     .replace(/\]\]>/g, '');
