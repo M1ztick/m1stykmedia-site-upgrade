@@ -55,7 +55,7 @@
 
   /* Section-specific glow accents */
   .accent-dispatch { @apply border-l-2 border-dispatch; }
-  .accent-archive { @apply border-l-2 border-archive; }
+  .accent-frequency { @apply border-l-2 border-frequency; }
   .accent-workbench { @apply border-l-2 border-workbench; }
   .accent-current { @apply border-l-2 border-current; }
 
