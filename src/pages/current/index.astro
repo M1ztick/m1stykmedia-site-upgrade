@@ -1,33 +1,42 @@
 ---
+import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 
-// Placeholder - esoteric/AI content
-const currents = [
-  {
-    title: "Western Esotericism: A Luminous Thread",
-    description: "Beneath the clamor of consumerism and dogma lies Western Esotericism: a luminous current focused on experiencing the divine rather than...",
-    category: "Spiritual",
-    slug: "western-esotericism"
-  },
-  {
-    title: "Sri Ramakrishna: Unifying the Divine",
-    description: "A Spiritual Longing Became A Universal Message. Sri Ramakrishna (1836–1886) presents a compelling model of spirituality based on direct experience...",
-    category: "Spiritual",
-    slug: "sri-ramakrishna"
-  },
-  {
-    title: "From Chat Bots to Sovereignty: The Agentic Era",
-    description: "The next decade of global competition will not be defined merely by who possesses the most advanced AI, but by who wields agentic systems...",
-    category: "AI/Tech",
-    slug: "agentic-era"
-  },
-  {
-    title: "The AI Misalignment Dilemma",
-    description: "Current cases of AI misalignment and their implications for global regulation...",
-    category: "AI/Tech",
-    slug: "ai-misalignment"
-  }
-];
+const allCurrent = await getCollection('current');
+const currents = allCurrent.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+
+function getStreamTags(tags: string[] | undefined): string[] {
+  if (!tags) return [];
+  const spiritualTerms = ['esotericism', 'mysticism', 'spirituality', 'hinduism', 'spirituality-religion'];
+  const techTerms = ['artificial-intelligence', 'ai', 'chat-gpt', 'chatgpt', 'claude', 'anthropic', 'deep-mind', 'gen-ai', 'technology', 'chatbot', 'chatbots', 'cloudflare'];
+  return tags.filter(tag =>
+    spiritualTerms.includes(tag.toLowerCase()) || techTerms.includes(tag.toLowerCase())
+  );
+}
+
+function isSpiritual(entry: (typeof currents)[number]): boolean {
+  const spiritualTerms = ['esotericism', 'mysticism', 'spirituality', 'hinduism', 'spirituality-religion'];
+  if (entry.data.category === 'spiritual') return true;
+  return entry.data.tags?.some(tag =>
+    spiritualTerms.includes(tag.toLowerCase())
+  ) ?? false;
+}
+
+function isTech(entry: (typeof currents)[number]): boolean {
+  const techTerms = ['artificial-intelligence', 'ai', 'chat-gpt', 'chatgpt', 'claude', 'anthropic', 'deep-mind', 'gen-ai', 'technology', 'chatbot', 'chatbots', 'cloudflare'];
+  if (entry.data.category === 'tech') return true;
+  return entry.data.tags?.some(tag =>
+    techTerms.includes(tag.toLowerCase())
+  ) ?? false;
+}
+
+const illumination = currents.filter(isSpiritual);
+const machination = currents.filter(isTech);
+// Entries that match neither stream still appear in both columns for discoverability,
+// or could be shown in a separate "Unclassified" section. For now, include in both.
+const unclassified = currents.filter(c => !isSpiritual(c) && !isTech(c));
 ---
 
 <Root 
@@ -56,13 +65,41 @@ const currents = [
           Illumination
         </h2>
         <div class="space-y-6">
-          {currents.filter(c => c.category === 'Spiritual').map((item) => (
-            <a href={`/current/${item.slug}`} class="block group">
+          {illumination.length === 0 && unclassified.length === 0 && (
+            <p class="text-sm text-mist/30 italic">No entries yet.</p>
+          )}
+          {illumination.map((entry) => (
+            <a href={`/current/${entry.id}`} class="block group">
+              <div class="flex items-baseline gap-3 mb-1">
+                <span class="text-xs font-mono text-mist/40">
+                  {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+              </div>
               <h3 class="text-mist group-hover:text-current transition-colors mb-2 font-medium">
-                {item.title}
+                {entry.data.title}
               </h3>
               <p class="text-sm text-mist/40 leading-relaxed">
-                {item.description}
+                {entry.data.description}
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                {getStreamTags(entry.data.tags).map((tag) => (
+                  <span class="text-xs px-2 py-0.5 bg-void-50/30 text-mist/30 rounded">{tag}</span>
+                ))}
+              </div>
+            </a>
+          ))}
+          {unclassified.map((entry) => (
+            <a href={`/current/${entry.id}`} class="block group">
+              <div class="flex items-baseline gap-3 mb-1">
+                <span class="text-xs font-mono text-mist/40">
+                  {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+              </div>
+              <h3 class="text-mist group-hover:text-current transition-colors mb-2 font-medium">
+                {entry.data.title}
+              </h3>
+              <p class="text-sm text-mist/40 leading-relaxed">
+                {entry.data.description}
               </p>
             </a>
           ))}
@@ -76,13 +113,41 @@ const currents = [
           Machination
         </h2>
         <div class="space-y-6">
-          {currents.filter(c => c.category === 'AI/Tech').map((item) => (
-            <a href={`/current/${item.slug}`} class="block group">
+          {machination.length === 0 && unclassified.length === 0 && (
+            <p class="text-sm text-mist/30 italic">No entries yet.</p>
+          )}
+          {machination.map((entry) => (
+            <a href={`/current/${entry.id}`} class="block group">
+              <div class="flex items-baseline gap-3 mb-1">
+                <span class="text-xs font-mono text-mist/40">
+                  {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+              </div>
               <h3 class="text-mist group-hover:text-teal transition-colors mb-2 font-medium">
-                {item.title}
+                {entry.data.title}
               </h3>
               <p class="text-sm text-mist/40 leading-relaxed">
-                {item.description}
+                {entry.data.description}
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                {getStreamTags(entry.data.tags).map((tag) => (
+                  <span class="text-xs px-2 py-0.5 bg-void-50/30 text-mist/30 rounded">{tag}</span>
+                ))}
+              </div>
+            </a>
+          ))}
+          {unclassified.map((entry) => (
+            <a href={`/current/${entry.id}`} class="block group">
+              <div class="flex items-baseline gap-3 mb-1">
+                <span class="text-xs font-mono text-mist/40">
+                  {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+              </div>
+              <h3 class="text-mist group-hover:text-teal transition-colors mb-2 font-medium">
+                {entry.data.title}
+              </h3>
+              <p class="text-sm text-mist/40 leading-relaxed">
+                {entry.data.description}
               </p>
             </a>
           ))}
