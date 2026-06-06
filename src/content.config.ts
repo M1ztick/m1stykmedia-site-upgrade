@@ -14,6 +14,19 @@ const dispatchCollection = defineCollection({
   }),
 });
 
+const currentCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/current' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.date(),
+    updatedDate: z.date().optional(),
+    tags: z.array(z.string()).optional(),
+    category: z.enum(['essay', 'analysis', 'tech', 'spiritual']).optional(),
+    featured: z.boolean().default(false),
+  }),
+});
+
 const archiveCollection = defineCollection({
   loader: file('./src/content/archive/releases.json'),
   schema: z.object({
@@ -44,6 +57,7 @@ const workbenchCollection = defineCollection({
 
 export const collections = {
   'dispatch': dispatchCollection,
+  'current': currentCollection,
   'archive': archiveCollection,
   'workbench': workbenchCollection,
 };
