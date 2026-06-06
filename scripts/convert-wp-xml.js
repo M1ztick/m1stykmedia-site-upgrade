@@ -30,17 +30,17 @@ const CATEGORY_MAP = {
   'government-overreach': 'dispatch',
   'bureaucratic-corruption': 'dispatch',
   
-  // The Archive (music)
-  'original-music': 'archive',
-  'covers': 'archive',
-  'new-music': 'archive',
-  'new-hip-hop': 'archive',
-  'underground-hip-hop': 'archive',
-  'hip-hop': 'archive',
-  'grunge': 'archive',
-  'karaoke': 'archive',
-  'leonard-cohen': 'archive',
-  'multi-genre': 'archive',
+  // The Frequency (music)
+  'original-music': 'frequency',
+  'covers': 'frequency',
+  'new-music': 'frequency',
+  'new-hip-hop': 'frequency',
+  'underground-hip-hop': 'frequency',
+  'hip-hop': 'frequency',
+  'grunge': 'frequency',
+  'karaoke': 'frequency',
+  'leonard-cohen': 'frequency',
+  'multi-genre': 'frequency',
   
   // The Current (AI/tech, consciousness, esoteric)
   'artificial-intelligence': 'current',
@@ -166,7 +166,7 @@ async function convertXML() {
   console.log(`Posts: ${posts.length}, Pages: ${pages.length}`);
   
   let dispatchCount = 0;
-  let archiveCount = 0;
+  let frequencyCount = 0;
   let currentCount = 0;
   let workbenchCount = 0;
   
@@ -249,7 +249,7 @@ async function convertXML() {
     
     switch (section) {
       case 'dispatch': dispatchCount++; break;
-      case 'archive': archiveCount++; break;
+      case 'frequency': frequencyCount++; break;
       case 'current': currentCount++; break;
       case 'workbench': workbenchCount++; break;
     }
@@ -259,10 +259,10 @@ async function convertXML() {
   
   console.log('\n--- Conversion Complete ---');
   console.log(`Dispatch (politics/writing): ${dispatchCount}`);
-  console.log(`Archive (music): ${archiveCount}`);
+  console.log(`Frequency (music): ${frequencyCount}`);
   console.log(`Current (AI/tech/esoteric): ${currentCount}`);
   console.log(`Workbench (projects): ${workbenchCount}`);
-  console.log(`\nTotal: ${dispatchCount + archiveCount + currentCount + workbenchCount} posts converted`);
+  console.log(`\nTotal: ${dispatchCount + frequencyCount + currentCount + workbenchCount} posts converted`);
 }
 
 convertXML().catch(err => {

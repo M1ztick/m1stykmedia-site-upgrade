@@ -16,8 +16,8 @@ const dispatchCollection = defineCollection({
   schema: articleSchema,
 });
 
-const archiveCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/archive' }),
+const frequencyCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/frequency' }),
   schema: articleSchema,
 });
 
@@ -43,7 +43,7 @@ const workbenchCollection = defineCollection({
 
 export const collections = {
   'dispatch': dispatchCollection,
-  'archive': archiveCollection,
+  'frequency': frequencyCollection,
   'current': currentCollection,
   'workbench': workbenchCollection,
 };

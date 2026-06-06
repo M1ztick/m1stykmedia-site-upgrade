@@ -64,7 +64,7 @@ export default {
         },
         // Section accents - derived from logo gradient
         'dispatch': '#E85A5A',    // Coral urgency
-        'archive': '#2EC4B6',     // Teal creativity
+        'frequency': '#2EC4B6',   // Teal creativity  
         'workbench': '#8899AD',   // Steel/muted for tools
         'current': '#C75A9E',     // Purple blend between coral+teal
       },

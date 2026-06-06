@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import Root from '../../layouts/Root.astro';
+
+const allFrequency = await getCollection('frequency');
+const releases = allFrequency.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+---
+
+<Root
+  title="The Frequency"
+  description="Original music, sound experiments, and sonic documentation."
+  section="frequency"
+>
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <p class="text-xs font-mono text-frequency/60 mb-2">SECTION_02</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
+        The Frequency
+      </h1>
+      <p class="text-lg text-mist/60 max-w-2xl">
+        Original frequencies from the edge. A living collection of sonic experiments and genre-blending innovation.
+      </p>
+    </header>
+
+    {releases.length > 0 ? (
+      <div class="space-y-8">
+        {releases.map((entry, index) => (
+          <>
+            <article class="group">
+              <a href={`/frequency/${entry.id}`} class="block">
+                <!-- Waveform accent -->
+                <div class="flex items-center gap-1 mb-4">
+                  {[...Array(12)].map((_, i) => (
+                    <div
+                      class="w-1 bg-frequency/30 group-hover:bg-frequency/60 rounded-full transition-colors"
+                      style={`height: ${8 + ((i * 7 + 3) % 24)}px`}
+                    ></div>
+                  ))}
+                </div>
+
+                <div class="flex items-baseline gap-4 mb-2">
+                  <span class="text-xs font-mono text-mist/40">
+                    {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </span>
+                  {entry.data.tags && entry.data.tags.slice(0, 2).map(tag => (
+                    <span class="text-xs font-mono text-frequency/70 uppercase tracking-wider">{tag}</span>
+                  ))}
+                </div>
+
+                <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-frequency transition-colors mb-3">
+                  {entry.data.title}
+                </h2>
+                <p class="text-mist/50 leading-relaxed line-clamp-2">
+                  {entry.data.description}
+                </p>
+
+                <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-frequency transition-colors">
+                  <span>Read more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </a>
+            </article>
+
+            {index < releases.length - 1 && (
+              <hr class="border-void-50/10" />
+            )}
+          </>
+        ))}
+      </div>
+    ) : (
+      <p class="text-mist/40 text-center py-16">No releases yet.</p>
+    )}
+
+    <div class="mt-16 p-8 border border-void-50/10 bg-void-50/5 text-center">
+      <p class="text-sm text-mist/30 font-mono">
+        FULL_PLAYER // COMING_SOON
+      </p>
+    </div>
+  </div>
+</Root>

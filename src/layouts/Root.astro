@@ -5,14 +5,14 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
-  section?: 'dispatch' | 'archive' | 'workbench' | 'current';
+  section?: 'dispatch' | 'frequency' | 'workbench' | 'current';
 }
 
 const { title, description = 'Digital legacy of a polymath truth-seeker', section } = Astro.props;
 
 const sectionColors = {
   dispatch: 'border-dispatch',
-  archive: 'border-archive',
+  frequency: 'border-frequency',
   workbench: 'border-workbench',
   current: 'border-current',
 };
@@ -20,16 +20,16 @@ const sectionColors = {
 const accentClass = section ? sectionColors[section] : 'border-coral';
 
 // Fetch recent items for footer
-const [dispatches, archives, currents] = await Promise.all([
+const [dispatches, frequencies, currents] = await Promise.all([
   getCollection('dispatch'),
-  getCollection('archive'),
+  getCollection('frequency'),
   getCollection('current'),
 ]);
 
 const latestDispatch = dispatches
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 2);
-const latestArchive = archives
+const latestFrequency = frequencies
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 2);
 const latestCurrent = currents
@@ -74,7 +74,7 @@ const latestCurrent = currents
       <!-- Desktop nav -->
       <div class="hidden md:flex items-center gap-1">
         <a href="/dispatch" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
-        <a href="/archive" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-archive hover:bg-archive/10 transition-all">Archive</a>
+        <a href="/frequency" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-frequency hover:bg-frequency/10 transition-all">Frequency</a>
         <a href="/workbench" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-workbench hover:bg-workbench/10 transition-all">Workbench</a>
         <a href="/current" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-current hover:bg-current/10 transition-all">Current</a>
       </div>
@@ -102,7 +102,7 @@ const latestCurrent = currents
     <div id="mobile-menu" class="hidden md:hidden border-t border-void-50/10 bg-void/95 backdrop-blur-md">
       <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
         <a href="/dispatch" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
-        <a href="/archive" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-archive hover:bg-archive/10 transition-all">Archive</a>
+        <a href="/frequency" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-frequency hover:bg-frequency/10 transition-all">Frequency</a>
         <a href="/workbench" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-workbench hover:bg-workbench/10 transition-all">Workbench</a>
         <a href="/current" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-current hover:bg-current/10 transition-all">Current</a>
         <a href="/about" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-coral hover:bg-coral/10 transition-all">About</a>
@@ -142,13 +142,13 @@ const latestCurrent = currents
 
         <div class="space-y-3">
           <h4 class="font-display text-mist/80 flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-archive"></span>
-            Archive
+            <span class="w-1.5 h-1.5 rounded-full bg-frequency"></span>
+            Frequency
           </h4>
           <ul class="space-y-2 text-mist/50">
-            {latestArchive.map(e => (
+            {latestFrequency.map(e => (
               <li>
-                <a href={`/archive/${e.id}`} class="hover:text-archive transition-colors line-clamp-1">
+                <a href={`/frequency/${e.id}`} class="hover:text-frequency transition-colors line-clamp-1">
                   {e.data.title}
                 </a>
               </li>
