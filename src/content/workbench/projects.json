@@ -1,32 +1,28 @@
 [
   {
-    "id": "rebeldev",
-    "title": "Rebeldev",
-    "description": "AI-powered development assistant and site mascot. A custom chatbot persona built on top of Claude, designed to assist developers with coding tasks while maintaining a rebellious, opinionated personality.",
+    "title": "Insertabot",
+    "slug": "insertabot",
+    "description": "AI-powered chatbot widget SaaS for websites. Embeddable widget with RAG, web search, multi-tenant auth, 2FA, Stripe billing, and real-time analytics.",
     "status": "active",
-    "tech": ["AI", "Claude", "JavaScript", "Chat Interface"],
-    "repository": "https://github.com/M1ztick",
-    "startedDate": "2025-01-01",
-    "lastUpdated": "2026-01-22"
-  },
-  {
-    "id": "insertabot",
-    "title": "Insertabot.io",
-    "description": "A platform for deploying and managing custom AI chatbots. Enables businesses and creators to embed intelligent, context-aware chatbots into their own products without writing complex backend code.",
-    "status": "active",
-    "tech": ["Platform", "AI", "Full Stack", "JavaScript"],
+    "tech": ["TypeScript", "Cloudflare Workers", "D1", "KV", "Vectorize", "Workers AI", "Stripe", "Tavily"],
+    "repository": "https://github.com/M1ztick/insertabot-v1.0",
     "demo": "https://insertabot.io",
-    "startedDate": "2024-06-01",
-    "lastUpdated": "2026-03-01"
+    "thumbnail": "/images/insertabot-thumb.png",
+    "startedDate": "2024-01-15",
+    "lastUpdated": "2025-06-01",
+    "featured": true
   },
   {
-    "id": "mistykmedia-site",
-    "title": "Mistyk Media Site",
-    "description": "This archive. Built with Astro and Tailwind CSS, deployed on Cloudflare Workers. Migrated from WordPress to a fully static architecture for speed, longevity, and creative control.",
+    "title": "SAIGE",
+    "slug": "saige",
+    "description": "Systems-Aware Independently-Governing Ethics. An AI alignment framework that teaches ethical reasoning through experiential learning and Buddhist wisdom principles rather than rule-based programming.",
     "status": "active",
-    "tech": ["Astro", "Tailwind CSS", "Cloudflare Workers", "TypeScript"],
-    "repository": "https://github.com/M1ztick",
-    "startedDate": "2026-01-01",
-    "lastUpdated": "2026-06-06"
+    "tech": ["TypeScript", "Cloudflare Workers", "D1", "SQLite", "Python", "PyTorch", "HuggingFace", "Ollama", "TinyLlama"],
+    "repository": "https://github.com/M1ztick/SAIGE",
+    "demo": "https://buddhist-ai-worker.mistykmedia.workers.dev",
+    "thumbnail": "/images/saige-thumb.png",
+    "startedDate": "2024-06-01",
+    "lastUpdated": "2025-05-20",
+    "featured": true
   }
 ]
