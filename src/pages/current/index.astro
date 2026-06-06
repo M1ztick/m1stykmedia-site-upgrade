@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 
 const allCurrent = await getCollection('current');
@@ -43,6 +44,7 @@ const tech = entries.filter(e =>
             <a href={`/current/${entry.id}`} class="block group">
               <h3 class="text-mist group-hover:text-current transition-colors mb-2 font-medium">
                 {entry.data.title}
+                {entry.data.title}
               </h3>
               <p class="text-sm text-mist/40 leading-relaxed line-clamp-3">
                 {entry.data.description}
@@ -67,6 +69,7 @@ const tech = entries.filter(e =>
           {tech.length > 0 ? tech.map((entry) => (
             <a href={`/current/${entry.id}`} class="block group">
               <h3 class="text-mist group-hover:text-teal transition-colors mb-2 font-medium">
+                {entry.data.title}
                 {entry.data.title}
               </h3>
               <p class="text-sm text-mist/40 leading-relaxed line-clamp-3">
@@ -114,3 +117,4 @@ const tech = entries.filter(e =>
     </div>
   </div>
 </Root>
+
