@@ -1,42 +1,26 @@
 ---
+import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 
-// Placeholder - esoteric/AI content
-const currents = [
-  {
-    title: "Western Esotericism: A Luminous Thread",
-    description: "Beneath the clamor of consumerism and dogma lies Western Esotericism: a luminous current focused on experiencing the divine rather than...",
-    category: "Spiritual",
-    slug: "western-esotericism"
-  },
-  {
-    title: "Sri Ramakrishna: Unifying the Divine",
-    description: "A Spiritual Longing Became A Universal Message. Sri Ramakrishna (1836–1886) presents a compelling model of spirituality based on direct experience...",
-    category: "Spiritual",
-    slug: "sri-ramakrishna"
-  },
-  {
-    title: "From Chat Bots to Sovereignty: The Agentic Era",
-    description: "The next decade of global competition will not be defined merely by who possesses the most advanced AI, but by who wields agentic systems...",
-    category: "AI/Tech",
-    slug: "agentic-era"
-  },
-  {
-    title: "The AI Misalignment Dilemma",
-    description: "Current cases of AI misalignment and their implications for global regulation...",
-    category: "AI/Tech",
-    slug: "ai-misalignment"
-  }
-];
+const allCurrent = await getCollection('current');
+const entries = allCurrent.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+
+const spiritual = entries.filter(e =>
+  e.data.tags?.some(t => ['mysticism', 'spirituality', 'esotericism', 'hinduism', 'religion', 'spirituality-religion'].includes(t))
+);
+const tech = entries.filter(e =>
+  e.data.tags?.some(t => ['artificial-intelligence', 'technology', 'chat-gpt', 'gen-ai', 'chatbots', 'claude', 'anthropic', 'openai'].includes(t))
+);
 ---
 
-<Root 
-  title="The Current" 
+<Root
+  title="The Current"
   description="AI, technology, consciousness, and the undercurrent of inquiry."
   section="current"
 >
   <div class="max-w-4xl mx-auto px-6 py-16">
-    <!-- Section Header -->
     <header class="mb-16">
       <p class="text-xs font-mono text-current/60 mb-2">SECTION_04</p>
       <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
@@ -47,7 +31,6 @@ const currents = [
       </p>
     </header>
 
-    <!-- Dual streams -->
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Spiritual Stream -->
       <div>
@@ -56,16 +39,21 @@ const currents = [
           Illumination
         </h2>
         <div class="space-y-6">
-          {currents.filter(c => c.category === 'Spiritual').map((item) => (
-            <a href={`/current/${item.slug}`} class="block group">
+          {spiritual.length > 0 ? spiritual.map((entry) => (
+            <a href={`/current/${entry.id}`} class="block group">
               <h3 class="text-mist group-hover:text-current transition-colors mb-2 font-medium">
-                {item.title}
+                {entry.data.title}
               </h3>
-              <p class="text-sm text-mist/40 leading-relaxed">
-                {item.description}
+              <p class="text-sm text-mist/40 leading-relaxed line-clamp-3">
+                {entry.data.description}
               </p>
+              <time class="text-xs font-mono text-mist/30 mt-1 block">
+                {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </time>
             </a>
-          ))}
+          )) : (
+            <p class="text-sm text-mist/30 italic">No entries yet.</p>
+          )}
         </div>
       </div>
 
@@ -76,21 +64,48 @@ const currents = [
           Machination
         </h2>
         <div class="space-y-6">
-          {currents.filter(c => c.category === 'AI/Tech').map((item) => (
-            <a href={`/current/${item.slug}`} class="block group">
+          {tech.length > 0 ? tech.map((entry) => (
+            <a href={`/current/${entry.id}`} class="block group">
               <h3 class="text-mist group-hover:text-teal transition-colors mb-2 font-medium">
-                {item.title}
+                {entry.data.title}
               </h3>
-              <p class="text-sm text-mist/40 leading-relaxed">
-                {item.description}
+              <p class="text-sm text-mist/40 leading-relaxed line-clamp-3">
+                {entry.data.description}
               </p>
+              <time class="text-xs font-mono text-mist/30 mt-1 block">
+                {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </time>
             </a>
-          ))}
+          )) : (
+            <p class="text-sm text-mist/30 italic">No entries yet.</p>
+          )}
         </div>
       </div>
     </div>
 
-    <!-- Note on synthesis -->
+    <!-- Uncategorized entries that fit neither stream -->
+    {(() => {
+      const spiritualIds = new Set(spiritual.map(e => e.id));
+      const techIds = new Set(tech.map(e => e.id));
+      const other = entries.filter(e => !spiritualIds.has(e.id) && !techIds.has(e.id));
+      return other.length > 0 ? (
+        <div class="mt-12">
+          <h2 class="font-display text-lg text-mist/80 mb-6 pb-2 border-b border-void-50/10 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-mist/40"></span>
+            Other
+          </h2>
+          <div class="space-y-4">
+            {other.map((entry) => (
+              <a href={`/current/${entry.id}`} class="block group">
+                <h3 class="text-mist group-hover:text-current transition-colors font-medium">{entry.data.title}</h3>
+                <p class="text-sm text-mist/40 line-clamp-2">{entry.data.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : null;
+    })()}
+
     <div class="mt-16 p-8 border border-current/20 bg-current/5 text-center relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-radial from-current/5 to-transparent pointer-events-none"></div>
       <p class="text-mist/60 italic relative z-10">

@@ -1,30 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 
-// Placeholder projects
-const projects = [
-  {
-    title: "Rebeldev",
-    description: "AI-powered development assistant and site mascot evolution.",
-    status: "active",
-    tech: ["AI", "JavaScript", "Chat Interface"],
-    version: "2.0",
-  },
-  {
-    title: "Insertabot.io",
-    description: "The platform powering this conversation and many others.",
-    status: "active",
-    tech: ["Platform", "AI", "Full Stack"],
-    version: "Live",
-  },
-  {
-    title: "Mistyk Media Site",
-    description: "This very archive. Built with Astro, designed for longevity.",
-    status: "active",
-    tech: ["Astro", "Tailwind", "Static"],
-    version: "3.0",
-  }
-];
+const allProjects = await getCollection('workbench');
+const projects = allProjects.sort((a, b) =>
+  new Date(b.data.lastUpdated ?? b.data.startedDate).getTime() -
+  new Date(a.data.lastUpdated ?? a.data.startedDate).getTime()
+);
 
 const statusColors = {
   active: 'bg-green-500/20 text-green-400 border border-green-500/30',
@@ -33,13 +15,12 @@ const statusColors = {
 };
 ---
 
-<Root 
-  title="The Workbench" 
+<Root
+  title="The Workbench"
   description="Developer projects, tools forged in code, and digital experiments."
   section="workbench"
 >
   <div class="max-w-4xl mx-auto px-6 py-16">
-    <!-- Section Header -->
     <header class="mb-16">
       <p class="text-xs font-mono text-workbench/60 mb-2">SECTION_03</p>
       <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
@@ -50,48 +31,68 @@ const statusColors = {
       </p>
     </header>
 
-    <!-- Projects List -->
     <div class="space-y-6">
       {projects.map((project) => (
         <div class="crossroads-card p-6 group hover:border-workbench/30">
           <div class="flex items-start justify-between mb-4">
             <div>
               <div class="flex items-center gap-3 mb-1">
-                <h2 class="font-display text-xl text-mist group-hover:text-workbench transition-colors">{project.title}</h2>
-                <span class={`text-xs px-2 py-1 rounded ${statusColors[project.status]}`}>
-                  {project.status}
+                <h2 class="font-display text-xl text-mist group-hover:text-workbench transition-colors">
+                  {project.data.title}
+                </h2>
+                <span class={`text-xs px-2 py-1 rounded ${statusColors[project.data.status]}`}>
+                  {project.data.status}
                 </span>
               </div>
-              <p class="text-sm font-mono text-mist/30">v{project.version}</p>
+              {project.data.lastUpdated && (
+                <p class="text-xs font-mono text-mist/30">
+                  Updated {new Date(project.data.lastUpdated).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+                </p>
+              )}
             </div>
-            <a 
-              href="#" 
-              class="text-mist/30 hover:text-workbench transition-colors"
-              aria-label={`View ${project.title} repository`}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
+
+            <div class="flex items-center gap-3">
+              {project.data.demo && (
+                <a
+                  href={project.data.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs font-mono text-mist/40 hover:text-workbench transition-colors border border-void-50/20 hover:border-workbench/30 px-2 py-1"
+                  aria-label={`Live demo of ${project.data.title}`}
+                >
+                  DEMO ↗
+                </a>
+              )}
+              {project.data.repository && (
+                <a
+                  href={project.data.repository}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-mist/30 hover:text-workbench transition-colors"
+                  aria-label={`View ${project.data.title} on GitHub`}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+              )}
+            </div>
           </div>
-          
-          <p class="text-mist/50 mb-4">{project.description}</p>
-          
+
+          <p class="text-mist/50 mb-4">{project.data.description}</p>
+
           <div class="flex flex-wrap gap-2">
-            {project.tech.map((t) => (
-              <span class="text-xs px-2 py-1 border border-void-50/20 text-mist/40 font-mono">
-                {t}
-              </span>
+            {project.data.tech.map((t) => (
+              <span class="text-xs px-2 py-1 border border-void-50/20 text-mist/40 font-mono">{t}</span>
             ))}
           </div>
         </div>
       ))}
     </div>
 
-    <!-- GitHub Link -->
     <div class="mt-12 p-6 border border-workbench/20 bg-workbench/5 text-center">
       <p class="text-mist/60">
-        Explore more on <a href="https://github.com/M1ztick" class="text-workbench hover:text-workbench/80 font-medium transition-colors">GitHub</a>
+        Explore more on <a href="https://github.com/M1ztick" target="_blank" rel="noopener noreferrer" class="text-workbench hover:text-workbench/80 font-medium transition-colors">GitHub</a>
       </p>
     </div>
   </div>

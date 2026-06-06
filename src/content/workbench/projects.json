@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "rebeldev",
+    "title": "Rebeldev",
+    "description": "AI-powered development assistant and site mascot. A custom chatbot persona built on top of Claude, designed to assist developers with coding tasks while maintaining a rebellious, opinionated personality.",
+    "status": "active",
+    "tech": ["AI", "Claude", "JavaScript", "Chat Interface"],
+    "repository": "https://github.com/M1ztick",
+    "startedDate": "2025-01-01",
+    "lastUpdated": "2026-01-22"
+  },
+  {
+    "id": "insertabot",
+    "title": "Insertabot.io",
+    "description": "A platform for deploying and managing custom AI chatbots. Enables businesses and creators to embed intelligent, context-aware chatbots into their own products without writing complex backend code.",
+    "status": "active",
+    "tech": ["Platform", "AI", "Full Stack", "JavaScript"],
+    "demo": "https://insertabot.io",
+    "startedDate": "2024-06-01",
+    "lastUpdated": "2026-03-01"
+  },
+  {
+    "id": "mistykmedia-site",
+    "title": "Mistyk Media Site",
+    "description": "This archive. Built with Astro and Tailwind CSS, deployed on Cloudflare Workers. Migrated from WordPress to a fully static architecture for speed, longevity, and creative control.",
+    "status": "active",
+    "tech": ["Astro", "Tailwind CSS", "Cloudflare Workers", "TypeScript"],
+    "repository": "https://github.com/M1ztick",
+    "startedDate": "2026-01-01",
+    "lastUpdated": "2026-06-06"
+  }
+]

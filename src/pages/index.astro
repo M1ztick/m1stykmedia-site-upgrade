@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Root from '../layouts/Root.astro';
 
 const sections = [
@@ -39,25 +40,47 @@ const sections = [
     icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
   },
 ];
+
+// Fetch recent content from each section
+const [dispatches, archives, currents] = await Promise.all([
+  getCollection('dispatch'),
+  getCollection('archive'),
+  getCollection('current'),
+]);
+
+const recentDispatch = dispatches
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 2);
+const recentArchive = archives
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 1);
+const recentCurrent = currents
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 1);
+
+const activity = [
+  ...recentDispatch.map(e => ({ section: 'DISPATCH', color: 'text-dispatch', hoverBorder: 'hover:border-dispatch/30', title: e.data.title, date: e.data.pubDate, href: `/dispatch/${e.id}` })),
+  ...recentArchive.map(e => ({ section: 'ARCHIVE', color: 'text-archive', hoverBorder: 'hover:border-archive/30', title: e.data.title, date: e.data.pubDate, href: `/archive/${e.id}` })),
+  ...recentCurrent.map(e => ({ section: 'CURRENT', color: 'text-current', hoverBorder: 'hover:border-current/30', title: e.data.title, date: e.data.pubDate, href: `/current/${e.id}` })),
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4);
 ---
 
 <Root title="The Crossroads" description="Digital legacy of a polymath truth-seeker. Dispatches, archives, and works in progress.">
-  
-  <!-- Hero - Dark, dramatic -->
+
+  <!-- Hero -->
   <section class="relative min-h-[70vh] flex items-center justify-center px-6">
-    <!-- Radial gradient background -->
     <div class="absolute inset-0 bg-gradient-radial from-coral/5 via-transparent to-transparent pointer-events-none"></div>
-    
+
     <div class="max-w-3xl mx-auto text-center relative z-10">
-      <!-- Official Logo -->
       <div class="mb-10 flex justify-center">
-        <img 
-          src="/images/official-mistykmedia-logo.png" 
-          alt="Mistyk Media" 
+        <img
+          src="/images/official-mistykmedia-logo.png"
+          alt="Mistyk Media"
           class="w-40 h-40 object-contain drop-shadow-2xl"
+          onerror="this.style.display='none'"
         />
       </div>
-      
+
       <h1 class="font-display text-5xl md:text-6xl font-bold text-mist mb-4 tracking-tight">
         <span class="gradient-text">Mistyk</span> Media
       </h1>
@@ -74,36 +97,36 @@ const sections = [
   <section class="max-w-6xl mx-auto px-6 pb-24">
     <div class="grid md:grid-cols-2 gap-5">
       {sections.map((section, index) => (
-        <a 
+        <a
           href={section.path}
           class={`group crossroads-card p-8 ${section.hover}`}
         >
           <div class="flex items-start justify-between mb-4">
             <span class="text-xs font-mono text-mist/30">0{index + 1}</span>
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="20" 
-              height="20" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              stroke-width="1.5" 
-              stroke-linecap="round" 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
               stroke-linejoin="round"
               class="text-mist/30 group-hover:text-mist/60 transition-colors"
             >
               <path d={section.icon} />
             </svg>
           </div>
-          
+
           <h2 class={`font-display text-2xl font-semibold mb-2 text-mist ${section.accent} pl-3`}>
             {section.title}
           </h2>
-          
+
           <p class="text-mist/50 leading-relaxed">
             {section.subtitle}
           </p>
-          
+
           <div class="mt-6 flex items-center text-sm text-mist/40 group-hover:text-coral transition-colors">
             <span>Enter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 transform group-hover:translate-x-1 transition-transform">
@@ -116,7 +139,7 @@ const sections = [
     </div>
   </section>
 
-  <!-- Latest Activity Strip - Tech dashboard feel -->
+  <!-- Recent Activity Strip -->
   <section class="border-t border-void-50/10 py-16 bg-void-50/5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center justify-between mb-8">
@@ -126,23 +149,22 @@ const sections = [
           ARCHIVE_ACTIVE
         </span>
       </div>
-      
+
       <div class="space-y-3">
-        <div class="flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 hover:border-dispatch/30 transition-colors group cursor-pointer">
-          <span class="text-xs font-mono text-dispatch uppercase tracking-wider w-24">DISPATCH</span>
-          <span class="text-mist group-hover:text-mist/80">Project 2025: The Conspiracy That Isn't a Theory</span>
-          <span class="ml-auto text-xs font-mono text-mist/30">2025-01-15</span>
-        </div>
-        <div class="flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 hover:border-archive/30 transition-colors group cursor-pointer">
-          <span class="text-xs font-mono text-archive uppercase tracking-wider w-24">ARCHIVE</span>
-          <span class="text-mist group-hover:text-mist/80">At One Time, The Temple Shook</span>
-          <span class="ml-auto text-xs font-mono text-mist/30">2025-01-10</span>
-        </div>
-        <div class="flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 hover:border-workbench/30 transition-colors group cursor-pointer">
-          <span class="text-xs font-mono text-workbench uppercase tracking-wider w-24">WORKBENCH</span>
-          <span class="text-mist group-hover:text-mist/80">Rebeldev v2.0 Site Integration</span>
-          <span class="ml-auto text-xs font-mono text-mist/30">IN_PROGRESS</span>
-        </div>
+        {activity.map((item) => (
+          <a
+            href={item.href}
+            class={`flex items-center gap-4 p-4 border border-void-50/10 bg-void/50 ${item.hoverBorder} transition-colors group`}
+          >
+            <span class={`text-xs font-mono ${item.color} uppercase tracking-wider w-24 shrink-0`}>
+              {item.section}
+            </span>
+            <span class="text-mist group-hover:text-mist/80 line-clamp-1 flex-1">{item.title}</span>
+            <span class="ml-auto text-xs font-mono text-mist/30 shrink-0">
+              {new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' })}
+            </span>
+          </a>
+        ))}
       </div>
     </div>
   </section>

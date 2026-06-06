@@ -12,14 +12,6 @@ export default defineConfig({
   },
 
   site: 'https://mistykmedia.com',
-  
-  // Explicitly disable sessions
-  session: {
-    driver: 'memory',
-  },
-  
-  adapter: cloudflare({
-    // Disable auto-provisioning of session KV binding
-    sessionKVBindingName: false,
-  })
+
+  adapter: cloudflare(),
 });
