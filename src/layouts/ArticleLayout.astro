@@ -71,7 +71,6 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
         <h3 class="text-sm font-mono uppercase tracking-widest text-mist/40 mb-4">Continue the Thread</h3>
         <p class="text-sm text-mist/50 mb-4">Log in with GitHub to respond. No data collected by Mistyk Media.</p>
         <div class="giscus-wrapper rounded-lg border border-void-50/10 p-4">
-          <!-- Giscus script will be injected here -->
           <script src="https://giscus.app/client.js"
             data-repo="M1ztick/m1stykmedia-site-upgrade"
             data-repo-id="R_kgDONl1N7g"
@@ -104,12 +103,12 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
       if (!slug) return;
 
       // Check if already liked (session only, no cookies)
-      const likedKey = `liked_${slug}`;
+      const likedKey = 'liked_' + slug;
       const hasLiked = sessionStorage.getItem(likedKey);
 
       try {
         // Fetch current count from Cloudflare Worker
-        const res = await fetch(`https://likes.mistykmedia.workers.dev/?slug=${slug}`);
+        const res = await fetch('https://likes.mistykmedia.workers.dev/?slug=' + slug);
         const data = await res.json();
         count.textContent = data.count || 0;
         
