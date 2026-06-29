@@ -2,8 +2,11 @@
 ---
 
 title: "The Architecture of Global Finance: Who Holds the Levers" 
+
 description: Take a closer look at what they don't tell you about the global financial architecture.
+
 pubDate: 2026-06-26
+
 tags:
   - history
   - politics
@@ -14,7 +17,9 @@ tags:
   - government-overreach
   - us-economics
   - global-economics
+
 category: essay
+
 featured: false
 
 ---
