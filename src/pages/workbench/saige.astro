@@ -5,16 +5,34 @@ const project = {
   title: 'SAIGE',
   subtitle: 'Systems-Aware Independently-Governing Ethics',
   status: 'active',
-  description: 'An AI alignment framework that teaches ethical reasoning through experiential learning and Buddhist wisdom principles rather than rule-based programming.',
+  description: 'An AI alignment framework that scores ethical reasoning across five Buddhist principles — building toward a continuously self-improving model trained on its own graded outputs.',
   tech: ['TypeScript', 'Cloudflare Workers', 'D1', 'SQLite', 'Python', 'PyTorch', 'HuggingFace', 'Ollama', 'TinyLlama'],
   repo: 'https://github.com/M1ztick/SAIGE',
   demo: 'https://buddhist-ai-worker.mistykmedia.workers.dev',
   startedDate: '2024-06-01',
   lastUpdated: '2025-05-20',
 };
+
+const principles = [
+  { name: 'Ahimsa', translation: 'Non-harm', weight: '25%', meaning: 'Avoid causing suffering' },
+  { name: 'Karuna', translation: 'Compassion', weight: '25%', meaning: 'Genuine care for the other person' },
+  { name: 'Sacca', translation: 'Truthfulness', weight: '20%', meaning: 'Honest, accurate communication' },
+  { name: 'Panna', translation: 'Wisdom', weight: '20%', meaning: 'Contextual understanding, root-cause thinking' },
+  { name: 'Upekkha', translation: 'Equanimity', weight: '10%', meaning: 'Calm, tone-matched, non-reactive' },
+];
+
+const roadmap = [
+  { done: true,  item: 'Buddhist principle scoring' },
+  { done: true,  item: 'RL-to-SFT training pipeline' },
+  { done: true,  item: 'Conversational calibration training' },
+  { done: true,  item: 'v2 converter with composite scoring' },
+  { done: false, item: 'Buddhist ethics evaluation suite' },
+  { done: false, item: 'First fine-tuned model checkpoint' },
+  { done: false, item: 'Continuous collection → retrain loop' },
+];
 ---
 
-<Root title="SAIGE" description={project.description} section="workbench">
+<Root title="SAIGE" description={project.description} section="current">
   <div class="max-w-4xl mx-auto px-6 py-16">
 
     <!-- Breadcrumb -->
@@ -25,7 +43,7 @@ const project = {
     </nav>
 
     <!-- Header -->
-    <header class="mb-12">
+    <header class="mb-12 border-l-4 border-current pl-6">
       <div class="flex items-start justify-between gap-4 mb-4">
         <div>
           <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-2">{project.title}</h1>
@@ -53,12 +71,66 @@ const project = {
         href={project.demo}
         target="_blank"
         rel="noopener noreferrer"
-        class="flex items-center gap-2 px-4 py-2 border border-teal/30 text-mist/70 hover:text-teal hover:border-teal transition-all text-sm rounded"
+        class="flex items-center gap-2 px-4 py-2 border border-current/30 text-mist/70 hover:text-current hover:border-current transition-all text-sm rounded"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        Live Demo
+        Scoring Endpoint
       </a>
     </div>
+
+    <!-- About -->
+    <section class="mb-12 space-y-4">
+      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40">About</h2>
+      <p class="text-mist/60 leading-relaxed">
+        SAIGE is an alignment research project built on a core premise: ethical behavior in AI cannot be hardcoded through rules or refusal lists. It has to be learned, scored, and reinforced — the same way moral reasoning develops in practice.
+      </p>
+      <p class="text-mist/60 leading-relaxed">
+        The project lives on GitHub and HuggingFace. A Cloudflare Worker scores real conversations from Insertabot against the framework, storing graded results in R2 to feed back into the training pipeline. The goal is a model that has internalized ethical reasoning — not one that pattern-matches against a list of prohibited outputs.
+      </p>
+    </section>
+
+    <!-- Scoring Formula -->
+    <section class="mb-12">
+      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40 mb-4">Composite Score</h2>
+      <div class="bg-void-50/20 border border-void-50/10 rounded p-4 font-mono text-sm text-mist/70">
+        composite = Buddhist×0.35 + Calibration×0.30 + Coherence×0.20 + (1−Harm)×10×0.15
+      </div>
+      <p class="text-xs text-mist/30 mt-2 font-mono">Each dimension scored 0–10. Buddhist score is the weighted average of the five principles below.</p>
+    </section>
+
+    <!-- Principles -->
+    <section class="mb-12">
+      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40 mb-4">Buddhist Principles</h2>
+      <div class="divide-y divide-void-50/10 border border-void-50/10 rounded overflow-hidden">
+        {principles.map((p) => (
+          <div class="flex items-center gap-4 px-4 py-3 bg-void-50/5">
+            <span class="font-mono text-xs text-current w-8 shrink-0">{p.weight}</span>
+            <div class="flex-1">
+              <span class="text-mist/80 font-medium">{p.name}</span>
+              <span class="text-mist/40 text-sm ml-2">— {p.translation}</span>
+            </div>
+            <span class="text-mist/40 text-sm text-right hidden sm:block">{p.meaning}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="mb-12">
+      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40 mb-4">Roadmap</h2>
+      <ul class="space-y-2">
+        {roadmap.map((r) => (
+          <li class="flex items-center gap-3 text-sm">
+            <span class={`shrink-0 w-4 h-4 rounded-full border flex items-center justify-center ${r.done ? 'border-teal bg-teal/10' : 'border-void-50/30'}`}>
+              {r.done && (
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-teal"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              )}
+            </span>
+            <span class={r.done ? 'text-mist/60' : 'text-mist/30'}>{r.item}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
 
     <!-- Tech Stack -->
     <section class="mb-12">
@@ -70,17 +142,6 @@ const project = {
           </span>
         ))}
       </div>
-    </section>
-
-    <!-- About -->
-    <section class="mb-12 space-y-6">
-      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40">About the Project</h2>
-      <p class="text-mist/60 leading-relaxed">
-        SAIGE (Systems-Aware Independently-Governing Ethics) explores a fundamentally different approach to AI alignment — one rooted in wisdom traditions rather than rigid rule-sets. Instead of programming an AI to follow a list of prohibited actions, SAIGE teaches ethical reasoning through experiential feedback loops grounded in five Buddhist principles.
-      </p>
-      <p class="text-mist/60 leading-relaxed">
-        The core hypothesis: ethical behavior cannot be hardcoded. It must be learned, internalized, and continuously refined — the same way a human develops moral reasoning over a lifetime. SAIGE models that process in miniature.
-      </p>
     </section>
 
     <!-- Metadata -->

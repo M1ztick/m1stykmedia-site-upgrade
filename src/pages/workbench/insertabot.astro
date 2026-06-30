@@ -5,13 +5,23 @@ const project = {
   title: 'Insertabot',
   subtitle: 'AI-powered chatbot widget SaaS',
   status: 'active',
-  description: 'Embeddable AI chatbot widget for websites with RAG, web search, multi-tenant auth, 2FA, Stripe billing, and real-time analytics.',
+  description: 'A fully live SaaS platform that puts an AI chatbot on any website in minutes — embeddable widget, multi-tenant backend, Stripe billing, and a published WordPress plugin.',
   tech: ['TypeScript', 'Cloudflare Workers', 'D1', 'KV', 'Vectorize', 'Workers AI', 'Stripe', 'Tavily'],
   repo: 'https://github.com/M1ztick/insertabot-v1.0',
   demo: 'https://insertabot.io',
+  wordpress: 'https://wordpress.org/plugins/insertabot-ai-chatbot-solution',
   startedDate: '2024-01-15',
   lastUpdated: '2025-06-01',
 };
+
+const features = [
+  { label: 'RAG knowledge base', detail: 'Per-tenant vector search via Cloudflare Vectorize' },
+  { label: 'Live web search', detail: 'Optional Tavily integration for real-time answers' },
+  { label: 'Multi-tenant auth', detail: '2FA, isolated tenant data, role management' },
+  { label: 'Stripe billing', detail: 'Usage-based metering, subscription management' },
+  { label: 'Real-time analytics', detail: 'Per-tenant dashboard with conversation insights' },
+  { label: 'WordPress plugin', detail: 'Published on the official WordPress plugin directory' },
+];
 ---
 
 <Root title="Insertabot" description={project.description} section="workbench">
@@ -25,7 +35,7 @@ const project = {
     </nav>
 
     <!-- Header -->
-    <header class="mb-12">
+    <header class="mb-12 border-l-4 border-workbench pl-6">
       <div class="flex items-start justify-between gap-4 mb-4">
         <div>
           <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-2">{project.title}</h1>
@@ -56,9 +66,42 @@ const project = {
         class="flex items-center gap-2 px-4 py-2 border border-teal/30 text-mist/70 hover:text-teal hover:border-teal transition-all text-sm rounded"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        Live Demo
+        insertabot.io
+      </a>
+      <a
+        href={project.wordpress}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 px-4 py-2 border border-mist/10 text-mist/70 hover:text-mist hover:border-mist/30 transition-all text-sm rounded"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        WordPress Plugin
       </a>
     </div>
+
+    <!-- About -->
+    <section class="mb-12 space-y-4">
+      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40">About</h2>
+      <p class="text-mist/60 leading-relaxed">
+        Insertabot is a live, production SaaS that lets any website owner embed an AI chatbot in minutes. The entire backend runs on Cloudflare's edge — Workers, D1, KV, Vectorize, and Workers AI — with no servers to manage and global distribution built in.
+      </p>
+      <p class="text-mist/60 leading-relaxed">
+        Each tenant gets their own isolated knowledge base, a dashboard to manage conversations and analytics, and a simple embed snippet. For WordPress users, it's available as a published plugin on the official directory — install, connect, done.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section class="mb-12">
+      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40 mb-4">Features</h2>
+      <div class="divide-y divide-void-50/10 border border-void-50/10 rounded overflow-hidden">
+        {features.map((f) => (
+          <div class="flex items-center gap-4 px-4 py-3 bg-void-50/5">
+            <span class="text-mist/80 font-medium w-48 shrink-0 text-sm">{f.label}</span>
+            <span class="text-mist/40 text-sm">{f.detail}</span>
+          </div>
+        ))}
+      </div>
+    </section>
 
     <!-- Tech Stack -->
     <section class="mb-12">
@@ -70,17 +113,6 @@ const project = {
           </span>
         ))}
       </div>
-    </section>
-
-    <!-- About -->
-    <section class="mb-12 space-y-6">
-      <h2 class="font-display text-sm uppercase tracking-widest text-mist/40">About the Project</h2>
-      <p class="text-mist/60 leading-relaxed">
-        Insertabot is a production-grade SaaS that lets any website owner embed an AI chatbot in minutes. The widget connects to a multi-tenant backend running entirely on Cloudflare's edge infrastructure — Workers, D1, KV, Vectorize, and Workers AI — meaning zero cold starts and global latency under 50ms.
-      </p>
-      <p class="text-mist/60 leading-relaxed">
-        Each tenant gets an isolated knowledge base powered by RAG, optional live web search via Tavily, and a full dashboard with real-time analytics. Auth is hardened with 2FA, and billing runs through Stripe with usage-based metering.
-      </p>
     </section>
 
     <!-- Metadata -->
