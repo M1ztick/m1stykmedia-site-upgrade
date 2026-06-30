@@ -1,3 +1,28 @@
+---
+
+title: "Iran_War_Windfall"
+
+description: This is a more extensive look at the wartime profit mechanisms
+enjoyed by the Military Industrial Complex and a select few other organizations.
+
+pubDate: 2026-06-16
+
+tags:
+  - 2026 Iran War
+  - geo-politics
+  - blog
+  - macro-economics
+  - corruption
+  - us-economics
+  - military-industrial-complex
+  - black-rock
+
+category: essay
+
+featured: false
+
+---
+
 # **DISPATCH**
 
 ## **The Iran War Windfall: Who's Cashing In on the 2026 Conflict**
