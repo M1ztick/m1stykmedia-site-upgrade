@@ -2,7 +2,7 @@
 
 A living archive rebuild. Four quadrants, one consciousness.
 
-## Architecture
+## Build
 
 The site follows a **Crossroads** paradigm — home is a decision point, not a feed.
 
