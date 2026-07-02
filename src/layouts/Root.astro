@@ -194,5 +194,16 @@ const latestJourney = journeys
       btn.setAttribute('aria-expanded', String(!isOpen));
     });
   </script>
+
+  <!--
+    Insertabot chat widget — loaded site-wide as a live showcase of Mistyk
+    Media's own chatbot-provisioning product. The real API key never touches
+    the browser: this script performs a two-step ephemeral-token handshake
+    against /api/insertabot-token (this site) and insertabot.io's own
+    token-exchange endpoint before the widget script itself loads. See
+    public/insertabot-bridge.js and src/pages/api/insertabot-token.ts for
+    the full security architecture.
+  -->
+  <script src="/insertabot-bridge.js" defer></script>
 </body>
 </html>
