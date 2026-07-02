@@ -103,96 +103,60 @@ const otherDispatches = latestDispatches.slice(1);
     </div>
   </section>
 
-  <!-- External Links: More from Mistyk -->
+  <!-- Crossroads: Inner Journey + Links -->
   <section class="border-t border-void-50/10 py-16 bg-void-50/5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center gap-2 mb-8">
         <span class="w-2 h-2 rounded-full bg-coral"></span>
-        <h2 class="font-display text-lg text-mist/80">More from Mistyk</h2>
+        <h2 class="font-display text-lg text-mist/80">Beyond the Dispatch</h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-5">
-        <!-- Music -->
-        <div class="p-6 border border-void-50/10 bg-void/30">
+        <!-- The Inner Journey -->
+        <a
+          href="/journey"
+          class="group p-6 border border-void-50/10 bg-void/30 hover:border-journey/30 transition-all"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded bg-frequency/20 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-frequency">
-                <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+            <div class="w-8 h-8 rounded bg-journey/20 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-journey">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             </div>
-            <h3 class="font-display text-mist/80">Original Music</h3>
+            <h3 class="font-display text-mist/80 group-hover:text-journey transition-colors">The Inner Journey</h3>
           </div>
-          
-          <p class="text-sm text-mist/50 mb-4">Hip-hop, punk rock crossovers, and genre-bending experiments.</p>
-          
-          <div class="flex flex-wrap gap-2">
-            <a 
-              href="https://soundcloud.com/m1styk" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="px-3 py-1.5 text-xs border border-void-50/20 text-mist/60 hover:text-frequency hover:border-frequency/30 transition-all rounded"
-            >
-              SoundCloud ↗
-            </a>
-            <a 
-              href="https://open.spotify.com/artist/m1styk" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="px-3 py-1.5 text-xs border border-void-50/20 text-mist/60 hover:text-frequency hover:border-frequency/30 transition-all rounded"
-            >
-              Spotify ↗
-            </a>
-            <a 
-              href="https://www.bandlab.com/m1styk" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="px-3 py-1.5 text-xs border border-void-50/20 text-mist/60 hover:text-frequency hover:border-frequency/30 transition-all rounded"
-            >
-              BandLab ↗
-            </a>
-          </div>
-        </div>
 
-        <!-- Development -->
-        <div class="p-6 border border-void-50/10 bg-void/30">
+          <p class="text-sm text-mist/50 mb-4">Mysticism, esotericism, and the search for consciousness beyond dogma.</p>
+
+          <span class="inline-flex items-center gap-2 text-xs text-mist/40 group-hover:text-journey transition-colors">
+            Explore
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </a>
+
+        <!-- Links -->
+        <a
+          href="/links"
+          class="group p-6 border border-void-50/10 bg-void/30 hover:border-teal/30 transition-all"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded bg-workbench/20 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-workbench">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            <div class="w-8 h-8 rounded bg-teal/20 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
               </svg>
             </div>
-            <h3 class="font-display text-mist/80">Development & Open Source</h3>
+            <h3 class="font-display text-mist/80 group-hover:text-teal transition-colors">Music & Code</h3>
           </div>
-          
-          <p class="text-sm text-mist/50 mb-4">AI ethics frameworks, web applications, and experimental tooling.</p>
-          
-          <div class="flex flex-wrap gap-2">
-            <a 
-              href="https://github.com/M1ztick" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="px-3 py-1.5 text-xs border border-void-50/20 text-mist/60 hover:text-workbench hover:border-workbench/30 transition-all rounded"
-            >
-              GitHub ↗
-            </a>
-            <a 
-              href="https://github.com/M1ztick/SAIGE" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="px-3 py-1.5 text-xs border border-void-50/20 text-mist/60 hover:text-workbench hover:border-workbench/30 transition-all rounded"
-            >
-              SAIGE Project ↗
-            </a>
-            <a 
-              href="https://insertabot.io" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="px-3 py-1.5 text-xs border border-void-50/20 text-mist/60 hover:text-workbench hover:border-workbench/30 transition-all rounded"
-            >
-              Insertabot ↗
-            </a>
-          </div>
-        </div>
+
+          <p class="text-sm text-mist/50 mb-4">Original music as Mistyk, plus AI tools and open-source projects.</p>
+
+          <span class="inline-flex items-center gap-2 text-xs text-mist/40 group-hover:text-teal transition-colors">
+            View Links
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </a>
       </div>
     </div>
   </section>

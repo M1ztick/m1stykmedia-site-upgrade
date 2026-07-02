@@ -55,9 +55,7 @@
 
   /* Section-specific glow accents */
   .accent-dispatch { @apply border-l-2 border-dispatch; }
-  .accent-frequency { @apply border-l-2 border-frequency; }
-  .accent-workbench { @apply border-l-2 border-workbench; }
-  .accent-current { @apply border-l-2 border-current; }
+  .accent-journey { @apply border-l-2 border-journey; }
 
   /* Logo gradient text */
   .gradient-text {

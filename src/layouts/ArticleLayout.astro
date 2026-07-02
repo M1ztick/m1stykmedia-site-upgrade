@@ -4,7 +4,7 @@ import Root from './Root.astro';
 interface Props {
   title: string;
   description?: string;
-  section?: 'dispatch' | 'frequency' | 'workbench' | 'current';
+  section?: 'dispatch' | 'journey';
   slug: string;
 }
 
@@ -46,8 +46,8 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
 
       <!-- Subscribe form -->
       <div class="mb-12 p-6 rounded-lg border border-void-50/10 bg-void-50/5">
-        <h3 class="font-display text-lg mb-2">Stay in the Current</h3>
-        <p class="text-sm text-mist/50 mb-4">New Dispatches and Currents delivered when they surface. No schedule, no spam, no surveillance.</p>
+        <h3 class="font-display text-lg mb-2">Stay in the Loop</h3>
+        <p class="text-sm text-mist/50 mb-4">New Dispatches delivered when they surface. No schedule, no spam, no surveillance.</p>
         <form id="subscribe-form" class="flex gap-3">
           <input 
             type="email" 
@@ -157,7 +157,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
           });
           
           if (res.ok) {
-            status.textContent = 'Subscribed. Welcome to the Current.';
+            status.textContent = 'Subscribed. Welcome to the Dispatch.';
             status.className = 'mt-3 text-sm text-teal';
             form.reset();
           } else {
