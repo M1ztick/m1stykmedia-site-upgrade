@@ -5,36 +5,30 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
-  section?: 'dispatch' | 'frequency' | 'workbench' | 'current';
+  section?: 'dispatch' | 'journey';
 }
 
-const { title, description = 'Digital legacy of a polymath truth-seeker', section } = Astro.props;
+const { title, description = 'Investigative dispatches, power analysis, and documented truth from Mistyk Media.', section } = Astro.props;
 
 const sectionColors = {
   dispatch: 'border-dispatch',
-  frequency: 'border-frequency',
-  workbench: 'border-workbench',
-  current: 'border-current',
+  journey: 'border-journey',
 };
 
 const accentClass = section ? sectionColors[section] : 'border-coral';
 
 // Fetch recent items for footer
-const [dispatches, frequencies, currents] = await Promise.all([
+const [dispatches, journeys] = await Promise.all([
   getCollection('dispatch'),
-  getCollection('frequency'),
-  getCollection('current'),
+  getCollection('journey'),
 ]);
 
 const latestDispatch = dispatches
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
-  .slice(0, 2);
-const latestFrequency = frequencies
+  .slice(0, 3);
+const latestJourney = journeys
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
-  .slice(0, 2);
-const latestCurrent = currents
-  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
-  .slice(0, 2);
+  .slice(0, 3);
 ---
 
 <!DOCTYPE html>
@@ -74,9 +68,9 @@ const latestCurrent = currents
       <!-- Desktop nav -->
       <div class="hidden md:flex items-center gap-1">
         <a href="/dispatch" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
-        <a href="/frequency" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-frequency hover:bg-frequency/10 transition-all">Frequency</a>
-        <a href="/workbench" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-workbench hover:bg-workbench/10 transition-all">Workbench</a>
-        <a href="/current" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-current hover:bg-current/10 transition-all">Current</a>
+        <a href="/journey" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-journey hover:bg-journey/10 transition-all">The Inner Journey</a>
+        <a href="/links" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-teal hover:bg-teal/10 transition-all">Links</a>
+        <a href="/about" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-coral hover:bg-coral/10 transition-all">About</a>
       </div>
 
       <!-- Mobile menu button -->
@@ -102,9 +96,8 @@ const latestCurrent = currents
     <div id="mobile-menu" class="hidden md:hidden border-t border-void-50/10 bg-void/95 backdrop-blur-md">
       <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
         <a href="/dispatch" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
-        <a href="/frequency" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-frequency hover:bg-frequency/10 transition-all">Frequency</a>
-        <a href="/workbench" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-workbench hover:bg-workbench/10 transition-all">Workbench</a>
-        <a href="/current" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-current hover:bg-current/10 transition-all">Current</a>
+        <a href="/journey" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-journey hover:bg-journey/10 transition-all">The Inner Journey</a>
+        <a href="/links" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-teal hover:bg-teal/10 transition-all">Links</a>
         <a href="/about" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-coral hover:bg-coral/10 transition-all">About</a>
       </div>
     </div>
@@ -123,7 +116,7 @@ const latestCurrent = currents
         <span class="text-xs uppercase tracking-widest text-mist/40">Live Archive</span>
       </div>
 
-      <div class="grid md:grid-cols-4 gap-8 text-sm">
+      <div class="grid md:grid-cols-3 gap-8 text-sm">
         <div class="space-y-3">
           <h4 class="font-display text-mist/80 flex items-center gap-2">
             <span class="w-1.5 h-1.5 rounded-full bg-dispatch"></span>
@@ -142,42 +135,28 @@ const latestCurrent = currents
 
         <div class="space-y-3">
           <h4 class="font-display text-mist/80 flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-frequency"></span>
-            Frequency
+            <span class="w-1.5 h-1.5 rounded-full bg-journey"></span>
+            The Inner Journey
           </h4>
           <ul class="space-y-2 text-mist/50">
-            {latestFrequency.map(e => (
+            {latestJourney.length > 0 ? latestJourney.map(e => (
               <li>
-                <a href={`/frequency/${e.id}`} class="hover:text-frequency transition-colors line-clamp-1">
+                <a href={`/journey/${e.id}`} class="hover:text-journey transition-colors line-clamp-1">
                   {e.data.title}
                 </a>
               </li>
-            ))}
-          </ul>
-        </div>
-
-        <div class="space-y-3">
-          <h4 class="font-display text-mist/80 flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-current"></span>
-            Current
-          </h4>
-          <ul class="space-y-2 text-mist/50">
-            {latestCurrent.map(e => (
-              <li>
-                <a href={`/current/${e.id}`} class="hover:text-current transition-colors line-clamp-1">
-                  {e.data.title}
-                </a>
-              </li>
-            ))}
+            )) : (
+              <li class="text-mist/30 italic">More reflections coming soon.</li>
+            )}
           </ul>
         </div>
 
         <div class="space-y-3">
           <h4 class="font-display text-mist/80">Connect</h4>
           <ul class="space-y-2 text-mist/50">
+            <li><a href="/links" class="hover:text-coral transition-colors">Links</a></li>
             <li><a href="/about" class="hover:text-coral transition-colors">About</a></li>
             <li><a href="https://github.com/M1ztick" target="_blank" rel="noopener noreferrer" class="hover:text-coral transition-colors">GitHub</a></li>
-            <li><a href="/workbench" class="hover:text-coral transition-colors">Workbench</a></li>
           </ul>
         </div>
       </div>
@@ -187,7 +166,6 @@ const latestCurrent = currents
       <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-mist/30">
         <p>© {new Date().getFullYear()} Mistyk Media</p>
         <p class="hidden sm:block">Living archive in motion</p>
-<script src="https://insertabot.io/widget.js" data-api-key="YOUR_API_KEY_GOES_HERE"></script>
       </div>
     </div>
   </footer>
@@ -216,5 +194,16 @@ const latestCurrent = currents
       btn.setAttribute('aria-expanded', String(!isOpen));
     });
   </script>
+
+  <!--
+    Insertabot chat widget — loaded site-wide as a live showcase of Mistyk
+    Media's own chatbot-provisioning product. The real API key never touches
+    the browser: this script performs a two-step ephemeral-token handshake
+    against /api/insertabot-token (this site) and insertabot.io's own
+    token-exchange endpoint before the widget script itself loads. See
+    public/insertabot-bridge.js and src/pages/api/insertabot-token.ts for
+    the full security architecture.
+  -->
+  <script src="/insertabot-bridge.js" defer></script>
 </body>
 </html>

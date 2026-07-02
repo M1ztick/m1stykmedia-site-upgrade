@@ -30,45 +30,40 @@ const CATEGORY_MAP = {
   'government-overreach': 'dispatch',
   'bureaucratic-corruption': 'dispatch',
   
-  // The Frequency (music)
-  'original-music': 'frequency',
-  'covers': 'frequency',
-  'new-music': 'frequency',
-  'new-hip-hop': 'frequency',
-  'underground-hip-hop': 'frequency',
-  'hip-hop': 'frequency',
-  'grunge': 'frequency',
-  'karaoke': 'frequency',
-  'leonard-cohen': 'frequency',
-  'multi-genre': 'frequency',
-  
-  // The Current (AI/tech, consciousness, esoteric)
-  'artificial-intelligence': 'current',
-  'ai': 'current',
-  'chat-gpt': 'current',
-  'chatgpt': 'current',
-  'claude': 'current',
-  'anthropic': 'current',
-  'deep-mind': 'current',
-  'gen-ai': 'current',
-  'technology': 'current',
-  'chatbot': 'current',
-  'chatbots': 'current',
-  'cloudflare': 'current',
-  'esotericism': 'current',
-  'mysticism': 'current',
-  'spirituality': 'current',
-  'spirituality-religion': 'current',
-  'hinduism': 'current',
-  
-  // The Workbench (projects, code, tools)
-  'insertabot': 'workbench',
-  'custom-chatbots': 'workbench',
-  'developers': 'workbench',
-  'innovation': 'workbench',
-  'online-services': 'workbench',
-  'online-advertising': 'workbench',
+  // AI/tech posts also live in Dispatch now
+  'artificial-intelligence': 'dispatch',
+  'ai': 'dispatch',
+  'chat-gpt': 'dispatch',
+  'chatgpt': 'dispatch',
+  'claude': 'dispatch',
+  'anthropic': 'dispatch',
+  'deep-mind': 'dispatch',
+  'gen-ai': 'dispatch',
+  'technology': 'dispatch',
+  'chatbot': 'dispatch',
+  'chatbots': 'dispatch',
+  'cloudflare': 'dispatch',
+  'insertabot': 'dispatch',
+  'custom-chatbots': 'dispatch',
+  'developers': 'dispatch',
+  'innovation': 'dispatch',
+  'online-services': 'dispatch',
+  'online-advertising': 'dispatch',
+
+  // The Inner Journey (consciousness, esotericism, spirituality)
+  'esotericism': 'journey',
+  'mysticism': 'journey',
+  'spirituality': 'journey',
+  'spirituality-religion': 'journey',
+  'hinduism': 'journey',
+  'religion': 'journey',
 };
+
+// Note: music-related posts (original-music, hip-hop, etc.) are no longer
+// imported into a dedicated section. If re-running this script against new
+// WordPress content that includes music posts, either skip those items or
+// route them to 'dispatch'/'journey' manually — there is no music collection
+// in the current site structure. See /links for music/dev outbound links.
 
 function stripCDATA(str) {
   if (!str) return '';
@@ -166,9 +161,7 @@ async function convertXML() {
   console.log(`Posts: ${posts.length}, Pages: ${pages.length}`);
   
   let dispatchCount = 0;
-  let frequencyCount = 0;
-  let currentCount = 0;
-  let workbenchCount = 0;
+  let journeyCount = 0;
   
   // Convert posts
   for (const post of posts) {
@@ -249,20 +242,16 @@ async function convertXML() {
     
     switch (section) {
       case 'dispatch': dispatchCount++; break;
-      case 'frequency': frequencyCount++; break;
-      case 'current': currentCount++; break;
-      case 'workbench': workbenchCount++; break;
+      case 'journey': journeyCount++; break;
     }
     
     console.log(`✓ [${section}] ${title}`);
   }
   
   console.log('\n--- Conversion Complete ---');
-  console.log(`Dispatch (politics/writing): ${dispatchCount}`);
-  console.log(`Frequency (music): ${frequencyCount}`);
-  console.log(`Current (AI/tech/esoteric): ${currentCount}`);
-  console.log(`Workbench (projects): ${workbenchCount}`);
-  console.log(`\nTotal: ${dispatchCount + frequencyCount + currentCount + workbenchCount} posts converted`);
+  console.log(`Dispatch (politics/writing/AI/tech): ${dispatchCount}`);
+  console.log(`Journey (esoteric/spiritual): ${journeyCount}`);
+  console.log(`\nTotal: ${dispatchCount + journeyCount} posts converted`);
 }
 
 convertXML().catch(err => {

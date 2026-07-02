@@ -64,9 +64,7 @@ export default {
         },
         // Section accents - derived from logo gradient
         'dispatch': '#E85A5A',    // Coral urgency
-        'frequency': '#2EC4B6',   // Teal creativity  
-        'workbench': '#8899AD',   // Steel/muted for tools
-        'current': '#C75A9E',     // Purple blend between coral+teal
+        'journey': '#C75A9E',     // Purple - introspective, spiritual
       },
       fontFamily: {
         'display': ['Inter', 'system-ui', 'sans-serif'],

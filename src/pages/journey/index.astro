@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import Root from '../../layouts/Root.astro';
+
+const allJourney = await getCollection('journey');
+const entries = allJourney.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+---
+
+<Root
+  title="The Inner Journey"
+  description="Consciousness, esotericism, and the search for direct experience of the divine."
+  section="journey"
+>
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <p class="text-xs font-mono text-journey/60 mb-2">SECTION_02</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
+        The Inner Journey
+      </h1>
+      <p class="text-lg text-mist/60 max-w-2xl">
+        Maps for those who seek beyond the veil. Mysticism, esotericism, and inquiries into
+        consciousness — the undercurrent beneath the Dispatch.
+      </p>
+    </header>
+
+    {entries.length > 0 ? (
+      <div class="space-y-8">
+        {entries.map((entry, index) => (
+          <>
+            <article class="group">
+              <a href={`/journey/${entry.id}`} class="block">
+                <div class="flex items-baseline gap-4 mb-2">
+                  <span class="text-xs font-mono text-mist/40">
+                    {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </span>
+                  {entry.data.category && (
+                    <span class="text-xs font-mono text-journey uppercase tracking-wider">{entry.data.category}</span>
+                  )}
+                </div>
+                <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-journey transition-colors mb-3">
+                  {entry.data.title}
+                </h2>
+                <p class="text-mist/50 leading-relaxed">
+                  {entry.data.description}
+                </p>
+                <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-journey transition-colors">
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </a>
+            </article>
+
+            {index < entries.length - 1 && (
+              <hr class="border-void-50/10" />
+            )}
+          </>
+        ))}
+      </div>
+    ) : (
+      <p class="text-mist/40 text-center py-16">No entries yet. More reflections coming soon.</p>
+    )}
+
+    <div class="mt-16 p-8 border border-journey/20 bg-journey/5 text-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-radial from-journey/5 to-transparent pointer-events-none"></div>
+      <p class="text-mist/60 italic relative z-10">
+        "Unity without uniformity. Truth without dogma."
+      </p>
+    </div>
+  </div>
+</Root>
