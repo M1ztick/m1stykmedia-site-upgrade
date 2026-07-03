@@ -21,60 +21,77 @@ const dateFmt = (d: Date) =>
   description="Investigative dispatches, inner exploration, original music, and the code behind all three — from one person working in the open."
 >
   <!-- ============ HERO ============ -->
-  <section class="relative overflow-hidden px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+  <section class="relative overflow-hidden px-6 pt-16 pb-16 md:pt-20 md:pb-24">
     <!-- Decorative glow blobs -->
     <div class="absolute -top-24 -left-24 w-64 h-64 md:w-96 md:h-96 bg-coral/25 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-24 -right-16 w-64 h-64 md:w-96 md:h-96 bg-teal/25 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute inset-0 bg-circuit opacity-60 pointer-events-none"></div>
 
-    <div class="max-w-4xl mx-auto relative z-10 text-center">
-      <div class="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-void-50/20 bg-void-50/5">
-        <span class="w-1.5 h-1.5 rounded-full bg-coral animate-pulse"></span>
-        <span class="text-[11px] sm:text-xs font-mono text-mist/50 uppercase tracking-widest">Live archive, updated in the open</span>
+    <div class="max-w-6xl mx-auto relative z-10 grid md:grid-cols-[1.15fr_0.85fr] gap-10 md:gap-8 items-center">
+      <!-- Copy column -->
+      <div class="text-center md:text-left order-2 md:order-1">
+        <div class="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-void-50/20 bg-void-50/5">
+          <span class="w-1.5 h-1.5 rounded-full bg-coral animate-pulse"></span>
+          <span class="text-[11px] sm:text-xs font-mono text-mist/50 uppercase tracking-widest">Live archive, updated in the open</span>
+        </div>
+
+        <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]">
+          <span class="text-mist">Documented truth.</span><br />
+          <span class="gradient-text">Undocumented consciousness.</span>
+        </h1>
+
+        <p class="text-base md:text-lg text-mist/60 max-w-2xl mx-auto md:mx-0 leading-relaxed mb-10 px-2 md:px-0">
+          Mistyk Media is one person's ongoing investigation — into power, into presence,
+          and into the code underneath both. Dispatches on systems and narrative, essays on
+          consciousness beyond dogma, original music, and open-source software, all built solo.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-3 sm:gap-4 px-4 sm:px-0">
+          <a
+            href="/dispatch"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-dispatch text-void font-semibold text-sm rounded-md hover:bg-dispatch/90 transition-colors"
+          >
+            Read The Dispatch
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a
+            href="#paths"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-void-50/20 text-mist/70 font-medium text-sm rounded-md hover:border-coral/40 hover:text-mist transition-colors"
+          >
+            Explore Everything
+          </a>
+        </div>
+
+        <!-- Stats strip -->
+        <div class="mt-14 flex items-center justify-center md:justify-start gap-5 sm:gap-10 flex-wrap text-center md:text-left">
+          <div>
+            <div class="font-display text-2xl md:text-3xl font-bold text-dispatch">{dispatches.length}+</div>
+            <div class="text-[11px] text-mist/40 uppercase tracking-wide mt-1">Dispatches</div>
+          </div>
+          <div class="w-px h-8 bg-void-50/20"></div>
+          <div>
+            <div class="font-display text-2xl md:text-3xl font-bold text-journey">{journeys.length}</div>
+            <div class="text-[11px] text-mist/40 uppercase tracking-wide mt-1">Journeys</div>
+          </div>
+          <div class="w-px h-8 bg-void-50/20"></div>
+          <div>
+            <div class="font-display text-2xl md:text-3xl font-bold text-teal">1</div>
+            <div class="text-[11px] text-mist/40 uppercase tracking-wide mt-1">Rebel AI, live ↓</div>
+          </div>
+        </div>
       </div>
 
-      <h1 class="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
-        <span class="text-mist">Documented truth.</span><br />
-        <span class="gradient-text">Undocumented consciousness.</span>
-      </h1>
-
-      <p class="text-base md:text-lg text-mist/60 max-w-2xl mx-auto leading-relaxed mb-10 px-2">
-        Mistyk Media is one person's ongoing investigation — into power, into presence,
-        and into the code underneath both. Dispatches on systems and narrative, essays on
-        consciousness beyond dogma, original music, and open-source software, all built solo.
-      </p>
-
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0">
-        <a
-          href="/dispatch"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-dispatch text-void font-semibold text-sm rounded-md hover:bg-dispatch/90 transition-colors"
-        >
-          Read The Dispatch
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a
-          href="#paths"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-void-50/20 text-mist/70 font-medium text-sm rounded-md hover:border-coral/40 hover:text-mist transition-colors"
-        >
-          Explore Everything
-        </a>
-      </div>
-
-      <!-- Stats strip -->
-      <div class="mt-14 flex items-center justify-center gap-5 sm:gap-10 flex-wrap text-center">
-        <div>
-          <div class="font-display text-2xl md:text-3xl font-bold text-dispatch">{dispatches.length}+</div>
-          <div class="text-[11px] text-mist/40 uppercase tracking-wide mt-1">Dispatches</div>
-        </div>
-        <div class="w-px h-8 bg-void-50/20"></div>
-        <div>
-          <div class="font-display text-2xl md:text-3xl font-bold text-journey">{journeys.length}</div>
-          <div class="text-[11px] text-mist/40 uppercase tracking-wide mt-1">Journeys</div>
-        </div>
-        <div class="w-px h-8 bg-void-50/20"></div>
-        <div>
-          <div class="font-display text-2xl md:text-3xl font-bold text-teal">1</div>
-          <div class="text-[11px] text-mist/40 uppercase tracking-wide mt-1">Rebel AI, live ↓</div>
+      <!-- Visual column -->
+      <div class="order-1 md:order-2 flex justify-center md:justify-end">
+        <div class="relative w-48 sm:w-64 md:w-full max-w-sm">
+          <div class="absolute inset-0 bg-gradient-to-br from-coral/20 to-teal/20 blur-3xl rounded-full pointer-events-none"></div>
+          <img
+            src="/images/hero-face-icon.png"
+            alt="Mistyk Media — human consciousness rendered as circuitry, a face half-formed from code"
+            class="relative w-full h-auto drop-shadow-[0_0_40px_rgba(46,196,182,0.25)]"
+            width="896"
+            height="1200"
+          />
         </div>
       </div>
     </div>
