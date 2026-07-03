@@ -48,17 +48,17 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
       <div class="mb-12 p-6 rounded-lg border border-void-50/10 bg-void-50/5">
         <h3 class="font-display text-lg mb-2">Stay in the Loop</h3>
         <p class="text-sm text-mist/50 mb-4">New Dispatches delivered when they surface. No schedule, no spam, no surveillance.</p>
-        <form id="subscribe-form" class="flex gap-3">
+        <form id="subscribe-form" class="flex flex-col sm:flex-row gap-3">
           <input 
             type="email" 
             name="email"
             placeholder="your@email.com" 
             required
-            class="flex-1 px-4 py-2 rounded-md bg-void border border-void-50/20 text-mist placeholder:text-mist/30 focus:outline-none focus:border-coral/50"
+            class="flex-1 w-full px-4 py-3 sm:py-2 rounded-md bg-void border border-void-50/20 text-mist placeholder:text-mist/30 focus:outline-none focus:border-coral/50"
           />
           <button 
             type="submit"
-            class="px-6 py-2 rounded-md bg-coral/10 text-coral border border-coral/20 hover:bg-coral/20 transition-colors text-sm font-medium"
+            class="w-full sm:w-auto px-6 py-3 sm:py-2 rounded-md bg-coral/10 text-coral border border-coral/20 hover:bg-coral/20 transition-colors text-sm font-medium shrink-0"
           >
             Subscribe
           </button>
