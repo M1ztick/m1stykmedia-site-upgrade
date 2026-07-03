@@ -6,9 +6,19 @@ interface Props {
   title: string;
   description?: string;
   section?: 'dispatch' | 'journey';
+  ogImage?: string;
 }
 
-const { title, description = 'Investigative dispatches, power analysis, and documented truth from Mistyk Media.', section } = Astro.props;
+const {
+  title,
+  description = 'Investigative dispatches, power analysis, and documented truth from Mistyk Media.',
+  section,
+  ogImage = '/images/og-cover.png',
+} = Astro.props;
+
+const pageTitle = title === 'Mistyk Media' ? title : `${title} • Mistyk Media`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL(ogImage, Astro.site);
 
 const sectionColors = {
   dispatch: 'border-dispatch',
@@ -35,13 +45,27 @@ const latestJourney = journeys
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#0A0F1C" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <title>{title} • Mistyk Media</title>
+  <title>{pageTitle}</title>
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:image" content={ogImageURL} />
+  <meta property="og:site_name" content="Mistyk Media" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageURL} />
   <script is:inline>
     const theme = localStorage.getItem('theme') || 'dark';
     document.documentElement.classList.add(theme);
@@ -55,12 +79,12 @@ const latestJourney = journeys
 
   <!-- Navigation -->
   <nav class="w-full border-b border-void-50/10 sticky top-0 z-40 bg-void/80 backdrop-blur-md">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-coral to-teal flex items-center justify-center font-bold text-white text-lg shadow-lg group-hover:shadow-coral/30 transition-shadow">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5 sm:gap-3 group">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-coral to-teal flex items-center justify-center font-bold text-white text-base sm:text-lg shadow-lg group-hover:shadow-coral/30 transition-shadow shrink-0">
           M
         </div>
-        <span class="font-display font-semibold text-lg tracking-tight text-mist hidden sm:block">
+        <span class="font-display font-semibold text-base sm:text-lg tracking-tight text-mist">
           MISTYK<span class="text-mist/60">MEDIA</span>
         </span>
       </a>
@@ -76,16 +100,16 @@ const latestJourney = journeys
       <!-- Mobile menu button -->
       <button
         id="mobile-menu-btn"
-        class="md:hidden p-2 rounded-md text-mist/70 hover:text-mist hover:bg-void-50/10 transition-colors"
+        class="md:hidden flex items-center justify-center w-11 h-11 -mr-1.5 rounded-md text-mist/70 hover:text-mist hover:bg-void-50/10 transition-colors"
         aria-label="Toggle menu"
         aria-expanded="false"
       >
-        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
-        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
