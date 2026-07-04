@@ -1,7 +1,7 @@
 ---
 title: "The Nuclear Pretense: What US Intelligence Actually Said About Iran's Bomb"
 description: "On the eve of war, US intelligence assessed Iran was 'not building a nuclear weapon.' The IAEA found 'no structured program.' Carnegie noted officials engaged in 'verbal gymnastics.' Yet the strikes came anyway."
-pubDate: 2026-06-20
+pubDate: 2026-07-04
 tags: ["Iran war", "nuclear weapons", "intelligence", "Trump", "IAEA", "preventive war", "Iraq 2003", "disinformation"]
 category: "investigation"
 featured: true
