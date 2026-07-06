@@ -26,6 +26,9 @@ pnpm-debug.log*
 *.swo
 *~
 
+# wordpress migration assets
+_imports/
+
 # wrangler files
 .wrangler
 .dev.vars*
