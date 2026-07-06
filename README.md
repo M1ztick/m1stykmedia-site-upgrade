@@ -7,8 +7,8 @@ Mistyk — migrating from WordPress to a static Astro architecture.
 
 This is a blog-style setup with a focus on the **Dispatch** directory which features an
 up-to-date collection of Mistyk's well-sourced and investigative essays and articles.
-The rest is geared towards steering users towards Mistyk's other creative and 
-technical pursuits via the appropriate links. 
+The remainder of this setup focuses on connecting users to Mistyk's other creative and
+technical pursuits via the appropriate channels.
 
 | Section | Purpose | Color |
 |---------|---------|-------|
