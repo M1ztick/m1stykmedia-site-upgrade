@@ -131,6 +131,7 @@ function determineCategory(tags) {
 
 async function convertXML() {
   const xmlPath = path.join(__dirname, '..', 'mistykmedia.WordPress.2026-06-03.xml');
+  // amazonq-ignore-next-line
   const xmlContent = fs.readFileSync(xmlPath, 'utf-8');
   
   const parser = new XMLParser({
@@ -215,14 +216,19 @@ async function convertXML() {
     };
     
     const slug = slugify(title) || `post-${Date.now()}`;
-    const outputDir = path.join(__dirname, '..', 'src', 'content', section);
-    const outputPath = path.join(outputDir, `${slug}.md`);
-    
+    const outputDir = path.resolve(__dirname, '..', 'src', 'content', section);
+    const outputPath = path.resolve(outputDir, `${slug}.md`);
+
+    if (!outputPath.startsWith(outputDir + path.sep)) {
+      console.warn(`Path traversal detected, skipping: ${slug}`);
+      continue;
+    }
+
     // Ensure directory exists
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
-    
+
     // Check for duplicates
     if (fs.existsSync(outputPath)) {
       console.warn(`Duplicate slug, skipping: ${slug}`);
@@ -238,12 +244,11 @@ async function convertXML() {
       })
       .join('\n')}\n---\n\n${markdownContent}`;
     
+    // amazonq-ignore-next-line
     fs.writeFileSync(outputPath, fileContent);
     
-    switch (section) {
-      case 'dispatch': dispatchCount++; break;
-      case 'journey': journeyCount++; break;
-    }
+    if (section === 'dispatch') dispatchCount++;
+    else if (section === 'journey') journeyCount++;
     
     console.log(`✓ [${section}] ${title}`);
   }

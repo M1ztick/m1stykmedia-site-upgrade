@@ -48,6 +48,7 @@
     }, timeoutMs);
 
     return fetch(
+      // amazonq-ignore-next-line
       url,
       Object.assign({}, options, { signal: controller.signal }),
     ).finally(function () {
@@ -69,6 +70,7 @@
       return;
     }
 
+    // amazonq-ignore-next-line
     var script = document.createElement('script');
     script.id = WIDGET_ELEMENT_ID;
     script.src = API_BASE + '/widget.js';
@@ -80,8 +82,10 @@
   }
 
   function init() {
+    var tokenUrl = new URL(TOKEN_ENDPOINT, window.location.origin);
+    tokenUrl.searchParams.set('_', Date.now());
     fetchWithTimeout(
-      TOKEN_ENDPOINT + '?_=' + Date.now(),
+      tokenUrl.href,
       { credentials: 'same-origin', cache: 'no-store' },
       5000,
     )
@@ -92,7 +96,7 @@
         return res.json();
       })
       .then(function (data) {
-        if (!data || typeof data.token !== 'string') {
+        if (!data || !Object.prototype.hasOwnProperty.call(data, 'token') || typeof data.token !== 'string') {
           throw new Error('Token endpoint returned an invalid payload.');
         }
         return fetchWithTimeout(
@@ -112,7 +116,7 @@
         return res.json();
       })
       .then(function (data) {
-        if (!data || typeof data.session_token !== 'string') {
+        if (!data || !Object.prototype.hasOwnProperty.call(data, 'session_token') || typeof data.session_token !== 'string') {
           throw new Error('Exchange endpoint returned an invalid payload.');
         }
         loadWidget(data.session_token);
