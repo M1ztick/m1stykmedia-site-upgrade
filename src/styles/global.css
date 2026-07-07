@@ -111,6 +111,52 @@
   .prose-mist em {
     @apply italic;
   }
+
+  /* Broadsheet prose — newspaper feel for Dispatch articles */
+  .prose-broadsheet p {
+    @apply text-mist/80 leading-[1.85] mb-6 text-[1.0625rem];
+  }
+
+  .prose-broadsheet h2 {
+    @apply font-display text-xl font-bold text-mist mt-12 mb-4 uppercase tracking-wide;
+    border-top: 2px solid;
+    @apply border-dispatch/40 pt-4;
+  }
+
+  .prose-broadsheet h3 {
+    @apply font-display text-lg font-semibold text-mist mt-8 mb-3 italic;
+  }
+
+  .prose-broadsheet blockquote {
+    @apply relative my-10 px-6 py-1;
+    border-left: none;
+  }
+
+  .prose-broadsheet blockquote::before,
+  .prose-broadsheet blockquote::after {
+    content: '';
+    @apply block h-px bg-dispatch/40;
+  }
+
+  .prose-broadsheet blockquote p {
+    @apply text-xl text-mist/80 italic font-display text-center leading-relaxed my-4;
+  }
+
+  .prose-broadsheet strong {
+    @apply text-mist font-bold;
+  }
+
+  .prose-broadsheet a {
+    @apply text-dispatch underline underline-offset-2 hover:text-dispatch/80;
+  }
+
+  .prose-broadsheet ul, .prose-broadsheet ol {
+    @apply mb-6 space-y-2 pl-5;
+  }
+
+  .prose-broadsheet li {
+    @apply text-mist/70 leading-relaxed;
+  }
 }
 
 @layer utilities {

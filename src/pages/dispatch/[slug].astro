@@ -23,24 +23,39 @@ const { Content } = await render(entry);
   slug={entry.id}
 >
   <!-- Meta slot -->
-  <header slot="meta" class="border-b border-void-50/10 pb-8">
-    <div class="flex items-center gap-4 mb-4">
-      <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{entry.data.category}</span>
-      <span class="text-mist/30">•</span>
-      <time class="text-xs font-mono text-mist/40">
+  <header slot="meta" class="pb-8">
+    <!-- Category stamp + dateline -->
+    <div class="flex items-center gap-3 mb-5 flex-wrap">
+      <span class="text-[10px] font-mono font-bold text-void bg-dispatch px-2 py-0.5 uppercase tracking-widest">
+        {entry.data.category || 'Dispatch'}
+      </span>
+      <span class="text-mist/20">—</span>
+      <time class="text-xs font-mono text-mist/40 uppercase tracking-wider">
         {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       </time>
     </div>
-    <h1 class="font-display text-3xl md:text-4xl font-bold text-mist mb-4">{entry.data.title}</h1>
-    <p class="text-lg text-mist/60">{entry.data.description}</p>
-    
-    {entry.data.tags && entry.data.tags.length > 0 && (
-      <div class="flex flex-wrap gap-2 mt-6">
-        {entry.data.tags.map((tag) => (
-          <span class="text-xs px-2 py-1 bg-void-50/30 text-mist/40 rounded">{tag}</span>
-        ))}
-      </div>
-    )}
+
+    <!-- Headline -->
+    <h1 class="font-display text-3xl md:text-5xl font-bold text-mist leading-[1.1] mb-5 tracking-tight">
+      {entry.data.title}
+    </h1>
+
+    <!-- Deck (description) -->
+    <p class="text-base md:text-lg text-mist/60 leading-relaxed border-l-2 border-dispatch/50 pl-4 mb-6">
+      {entry.data.description}
+    </p>
+
+    <!-- Rule -->
+    <div class="border-t border-b border-void-50/20 py-2 flex items-center justify-between">
+      <span class="text-[10px] font-mono text-mist/30 uppercase tracking-widest">By Mistyk</span>
+      {entry.data.tags && entry.data.tags.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {entry.data.tags.map((tag) => (
+            <span class="text-[10px] font-mono px-2 py-0.5 border border-void-50/20 text-mist/30 uppercase tracking-wider">{tag}</span>
+          ))}
+        </div>
+      )}
+    </div>
   </header>
 
   <!-- Content -->

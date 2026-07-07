@@ -13,13 +13,25 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
 
 <Root title={title} description={description} section={section}>
   <article class="max-w-3xl mx-auto px-6 py-12">
+
+    <!-- Broadsheet masthead rule -->
+    <div class="mb-8">
+      <div class="flex items-center gap-4 mb-2">
+        <span class="text-[10px] font-mono text-dispatch uppercase tracking-[0.3em]">The Dispatch</span>
+        <div class="flex-1 h-px bg-dispatch/30"></div>
+        <span class="text-[10px] font-mono text-mist/30 uppercase tracking-widest">mistykmedia.com</span>
+      </div>
+      <div class="h-[3px] bg-gradient-to-r from-dispatch via-dispatch/60 to-transparent"></div>
+      <div class="h-px bg-void-50/20 mt-0.5"></div>
+    </div>
+
     <!-- Article header -->
     <header class="mb-12">
       <slot name="meta" />
     </header>
 
     <!-- Article content -->
-    <div class="prose prose-lg max-w-none">
+    <div class="prose prose-lg max-w-none prose-broadsheet">
       <slot />
     </div>
 
