@@ -120,7 +120,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
 
       try {
         // Fetch current count from Cloudflare Worker
-        const res = await fetch('https://likes.mistykmedia.workers.dev/?slug=' + slug);
+        const res = await fetch('https://likes.mistykmedia.workers.dev/?slug=' + encodeURIComponent(slug));
         const data = await res.json();
         count.textContent = data.count || 0;
         

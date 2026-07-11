@@ -1,6 +1,0 @@
-# Copy this file to .dev.vars (gitignored) for local `wrangler pages dev` testing.
-# In production, set the real value with:
-#   npx wrangler pages secret put INSERTABOT_API_KEY
-# Never commit the real key.
-
-INSERTABOT_API_KEY=ib_sk_replace_with_owner_key
