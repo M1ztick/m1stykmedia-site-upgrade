@@ -229,25 +229,43 @@ const dateFmt = (d: Date) =>
 
   <!-- ============ INSERTABOT TEASER ============ -->
   <section class="max-w-4xl mx-auto px-6 py-14 md:py-20">
-    <div class="crossroads-card p-7 md:p-10 relative overflow-hidden text-center">
+    <div class="crossroads-card p-7 md:p-10 relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-radial from-teal/10 to-transparent pointer-events-none"></div>
-      <div class="relative z-10">
-        <p class="text-xs font-mono text-teal uppercase tracking-widest mb-3">Psst — look in the corner</p>
-        <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-mist mb-4">
-          That's a live product, not a plugin.
-        </h2>
-        <p class="text-sm md:text-base text-mist/60 max-w-xl mx-auto mb-6 leading-relaxed">
-          The chat widget on this site is <strong class="text-mist/80">Insertabot</strong> —
-          an AI chatbot-provisioning SaaS I built solo on Cloudflare's edge. Rebel-Dev
-          personality included. Go ahead, ask it something.
-        </p>
-        <a
-          href="/links"
-          class="inline-flex items-center gap-2 px-5 py-2.5 border border-teal/30 text-teal font-medium text-sm rounded-md hover:bg-teal/10 transition-colors"
-        >
-          See what else I've built
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
+      <div class="relative z-10 flex flex-col md:flex-row md:items-center gap-8">
+
+        <!-- Left: identity -->
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="w-2 h-2 rounded-full bg-teal animate-pulse"></span>
+            <span class="text-xs font-mono text-teal uppercase tracking-widest">Live on this page</span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold text-mist mb-3 leading-tight">
+            Meet <span class="text-teal">RebelDev</span> —<br class="hidden sm:block" /> the AI that grumbles before it helps.
+          </h2>
+          <p class="text-sm md:text-base text-mist/60 leading-relaxed">
+            That chat widget in the corner isn't a plugin. It's <strong class="text-mist/80">Insertabot</strong> — a full AI chatbot-provisioning SaaS I built solo on Cloudflare's edge. RebelDev is its resident personality: sarcastic, opinionated, and genuinely useful once it stops complaining. Go ahead, provoke it.
+          </p>
+        </div>
+
+        <!-- Right: CTA -->
+        <div class="flex flex-col gap-3 md:items-end shrink-0">
+          <a
+            href="https://insertabot.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-teal text-void font-semibold text-sm rounded-md hover:bg-teal/90 transition-colors"
+          >
+            Get Insertabot for your site
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a
+            href="/links"
+            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 border border-teal/30 text-teal font-medium text-sm rounded-md hover:bg-teal/10 transition-colors"
+          >
+            See what else I've built
+          </a>
+        </div>
+
       </div>
     </div>
   </section>

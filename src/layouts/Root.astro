@@ -229,5 +229,36 @@ const latestJourney = journeys
     the full security architecture.
   -->
   <script src="/insertabot-bridge.js" defer></script>
+
+  <!-- RebelDev tooltip nudge -->
+  <div
+    id="rebeldev-nudge"
+    class="fixed bottom-24 right-4 z-50 max-w-[180px] pointer-events-none opacity-0 translate-y-2 transition-all duration-500"
+  >
+    <div class="relative bg-void border border-teal/30 rounded-lg px-3 py-2 shadow-lg shadow-teal/10">
+      <p class="text-xs text-mist/80 leading-snug">👋 Say hi to <span class="text-teal font-semibold">RebelDev</span> — he grumbles, but he helps.</p>
+      <div class="absolute -bottom-1.5 right-5 w-3 h-3 bg-void border-r border-b border-teal/30 rotate-45"></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var nudge = document.getElementById('rebeldev-nudge');
+      if (!nudge) return;
+      var dismissed = sessionStorage.getItem('rebeldev-nudge-dismissed');
+      if (dismissed) return;
+      var timer = setTimeout(function () {
+        nudge.classList.remove('opacity-0', 'translate-y-2');
+        nudge.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        nudge.addEventListener('click', function () {
+          nudge.classList.add('opacity-0', 'translate-y-2');
+          sessionStorage.setItem('rebeldev-nudge-dismissed', '1');
+        }, { once: true });
+        setTimeout(function () {
+          nudge.classList.add('opacity-0', 'translate-y-2');
+        }, 8000);
+      }, 4000);
+    })();
+  </script>
 </body>
 </html>
