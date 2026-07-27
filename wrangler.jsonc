@@ -7,5 +7,13 @@
   },
   "assets": {
     "directory": "dist"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "SUBSCRIBERS_DB",
+      "database_name": "mistykmedia-subscribers",
+      "database_id": "82738850-1ca1-4a64-844a-d983793a446b",
+      "migrations_dir": "migrations"
+    }
+  ]
 }

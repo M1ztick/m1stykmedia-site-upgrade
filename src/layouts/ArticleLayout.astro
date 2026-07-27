@@ -157,27 +157,40 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
       const form = document.getElementById('subscribe-form');
       const status = document.getElementById('subscribe-status');
       
+      const submitBtn = form?.querySelector('button[type="submit"]');
+
       form?.addEventListener('submit', async (e) => {
         e.preventDefault();
         const email = form.email.value;
-        
+
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-50', 'cursor-default');
+
         try {
-          const res = await fetch('https://subscribe.mistykmedia.workers.dev/', {
+          const res = await fetch('/api/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email })
+            body: JSON.stringify({ email, source: location.pathname })
           });
-          
+
           if (res.ok) {
             status.textContent = 'Subscribed. Welcome to the Dispatch.';
             status.className = 'mt-3 text-sm text-teal';
             form.reset();
           } else {
-            throw new Error('Failed');
+            // Surface the server's reason (bad address, not configured) when
+            // it gives one, so the visitor knows whether retrying will help.
+            const data = await res.json().catch(() => ({}));
+            throw new Error(data.error || 'Failed');
           }
-        } catch (e) {
-          status.textContent = 'Something went wrong. Try again.';
+        } catch (err) {
+          status.textContent = err.message === 'Failed'
+            ? 'Something went wrong. Try again.'
+            : err.message;
           status.className = 'mt-3 text-sm text-dispatch';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('opacity-50', 'cursor-default');
         }
         status.classList.remove('hidden');
       });
