@@ -157,6 +157,26 @@
   .prose-broadsheet li {
     @apply text-mist/90 leading-relaxed;
   }
+
+  .prose-broadsheet table {
+    @apply w-full text-sm border-collapse my-8;
+  }
+
+  .prose-broadsheet thead tr {
+    @apply border-b border-dispatch/50;
+  }
+
+  .prose-broadsheet thead th {
+    @apply text-mist font-semibold text-left py-2 px-3 uppercase tracking-wide text-xs;
+  }
+
+  .prose-broadsheet tbody tr {
+    @apply border-b border-void-50/20;
+  }
+
+  .prose-broadsheet tbody td {
+    @apply text-mist/90 py-2.5 px-3 leading-relaxed;
+  }
 }
 
 @layer utilities {
