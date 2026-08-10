@@ -71,7 +71,7 @@ const latestJourney = journeys
     document.documentElement.classList.add(theme);
   </script>
 </head>
-<body class="min-h-screen flex flex-col bg-void text-mist">
+<body class="min-h-screen flex flex-col bg-void-100 text-mist">
   <!-- Animated top accent bar -->
   <div class="h-1 w-full bg-gradient-to-r from-coral to-teal relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
@@ -85,22 +85,22 @@ const latestJourney = journeys
           M
         </div>
         <span class="font-display font-semibold text-base sm:text-lg tracking-tight text-mist">
-          MISTYK<span class="text-mist/60">MEDIA</span>
+          MISTYK<span class="text-mist/80">MEDIA</span>
         </span>
       </a>
 
       <!-- Desktop nav -->
       <div class="hidden md:flex items-center gap-1">
-        <a href="/dispatch" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
-        <a href="/journey" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-journey hover:bg-journey/10 transition-all">The Inner Journey</a>
-        <a href="/links" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-teal hover:bg-teal/10 transition-all">Links</a>
-        <a href="/about" class="px-3 py-1.5 rounded-md text-sm text-mist/70 hover:text-coral hover:bg-coral/10 transition-all">About</a>
+        <a href="/dispatch" class="px-3 py-1.5 rounded-md text-sm text-mist/90 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
+        <a href="/journey" class="px-3 py-1.5 rounded-md text-sm text-mist/90 hover:text-journey hover:bg-journey/10 transition-all">The Inner Journey</a>
+        <a href="/links" class="px-3 py-1.5 rounded-md text-sm text-mist/90 hover:text-teal hover:bg-teal/10 transition-all">Links</a>
+        <a href="/about" class="px-3 py-1.5 rounded-md text-sm text-mist/90 hover:text-coral hover:bg-coral/10 transition-all">About</a>
       </div>
 
       <!-- Mobile menu button -->
       <button
         id="mobile-menu-btn"
-        class="md:hidden flex items-center justify-center w-11 h-11 -mr-1.5 rounded-md text-mist/70 hover:text-mist hover:bg-void-50/10 transition-colors"
+        class="md:hidden flex items-center justify-center w-11 h-11 -mr-1.5 rounded-md text-mist/90 hover:text-mist hover:bg-void-50/10 transition-colors"
         aria-label="Toggle menu"
         aria-expanded="false"
       >
@@ -119,10 +119,10 @@ const latestJourney = journeys
     <!-- Mobile menu drawer -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-void-50/10 bg-void/95 backdrop-blur-md">
       <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
-        <a href="/dispatch" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
-        <a href="/journey" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-journey hover:bg-journey/10 transition-all">The Inner Journey</a>
-        <a href="/links" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-teal hover:bg-teal/10 transition-all">Links</a>
-        <a href="/about" class="px-3 py-2 rounded-md text-sm text-mist/70 hover:text-coral hover:bg-coral/10 transition-all">About</a>
+        <a href="/dispatch" class="px-3 py-2 rounded-md text-sm text-mist/90 hover:text-dispatch hover:bg-dispatch/10 transition-all">Dispatch</a>
+        <a href="/journey" class="px-3 py-2 rounded-md text-sm text-mist/90 hover:text-journey hover:bg-journey/10 transition-all">The Inner Journey</a>
+        <a href="/links" class="px-3 py-2 rounded-md text-sm text-mist/90 hover:text-teal hover:bg-teal/10 transition-all">Links</a>
+        <a href="/about" class="px-3 py-2 rounded-md text-sm text-mist/90 hover:text-coral hover:bg-coral/10 transition-all">About</a>
       </div>
     </div>
   </nav>
@@ -137,16 +137,16 @@ const latestJourney = journeys
     <div class="max-w-6xl mx-auto px-6 py-12">
       <div class="flex items-center gap-2 mb-6">
         <span class="w-2 h-2 rounded-full bg-coral animate-pulse"></span>
-        <span class="text-xs uppercase tracking-widest text-mist/40">Live Archive</span>
+        <span class="text-xs uppercase tracking-widest text-mist/60">Live Archive</span>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8 text-sm">
         <div class="space-y-3">
-          <h4 class="font-display text-mist/80 flex items-center gap-2">
+          <h4 class="font-display text-mist flex items-center gap-2">
             <span class="w-1.5 h-1.5 rounded-full bg-dispatch"></span>
             Dispatch
           </h4>
-          <ul class="space-y-2 text-mist/50">
+          <ul class="space-y-2 text-mist/80">
             {latestDispatch.map(e => (
               <li>
                 <a href={`/dispatch/${e.id}`} class="hover:text-dispatch transition-colors line-clamp-1">
@@ -158,11 +158,11 @@ const latestJourney = journeys
         </div>
 
         <div class="space-y-3">
-          <h4 class="font-display text-mist/80 flex items-center gap-2">
+          <h4 class="font-display text-mist flex items-center gap-2">
             <span class="w-1.5 h-1.5 rounded-full bg-journey"></span>
             The Inner Journey
           </h4>
-          <ul class="space-y-2 text-mist/50">
+          <ul class="space-y-2 text-mist/80">
             {latestJourney.length > 0 ? latestJourney.map(e => (
               <li>
                 <a href={`/journey/${e.id}`} class="hover:text-journey transition-colors line-clamp-1">
@@ -170,14 +170,14 @@ const latestJourney = journeys
                 </a>
               </li>
             )) : (
-              <li class="text-mist/30 italic">More reflections coming soon.</li>
+              <li class="text-mist/50 italic">More reflections coming soon.</li>
             )}
           </ul>
         </div>
 
         <div class="space-y-3">
-          <h4 class="font-display text-mist/80">Connect</h4>
-          <ul class="space-y-2 text-mist/50">
+          <h4 class="font-display text-mist">Connect</h4>
+          <ul class="space-y-2 text-mist/80">
             <li><a href="/links" class="hover:text-coral transition-colors">Links</a></li>
             <li><a href="/about" class="hover:text-coral transition-colors">About</a></li>
             <li><a href="https://github.com/M1ztick" target="_blank" rel="noopener noreferrer" class="hover:text-coral transition-colors">GitHub</a></li>
@@ -187,7 +187,7 @@ const latestJourney = journeys
     </div>
 
     <div class="border-t border-void-50/10">
-      <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-mist/30">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-mist/60">
         <p>© {new Date().getFullYear()} Mistyk Media</p>
         <p class="hidden sm:block">Challenging narratives and entrenched power structures.</p>
       </div>

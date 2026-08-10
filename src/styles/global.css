@@ -13,7 +13,7 @@
   }
   
   body {
-    @apply bg-void text-mist;
+    @apply bg-void-100 text-mist;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
@@ -73,7 +73,7 @@
 
   /* Prose styles for markdown content */
   .prose-mist {
-    @apply text-mist/80 leading-relaxed;
+    @apply text-mist leading-relaxed;
   }
   
   .prose-mist h2 {
@@ -93,7 +93,7 @@
   }
   
   .prose-mist li {
-    @apply text-mist/70;
+    @apply text-mist/90;
   }
   
   .prose-mist strong {
@@ -105,7 +105,7 @@
   }
   
   .prose-mist blockquote {
-    @apply border-l-2 border-dispatch/50 pl-4 italic text-mist/60 my-8;
+    @apply border-l-2 border-dispatch/70 pl-4 italic text-mist/80 my-8;
   }
   
   .prose-mist em {
@@ -114,7 +114,7 @@
 
   /* Broadsheet prose — newspaper feel for Dispatch articles */
   .prose-broadsheet p {
-    @apply text-mist/80 leading-[1.85] mb-6 text-[1.0625rem];
+    @apply text-mist leading-[1.85] mb-6 text-[1.0625rem];
   }
 
   .prose-broadsheet h2 {
@@ -139,7 +139,7 @@
   }
 
   .prose-broadsheet blockquote p {
-    @apply text-xl text-mist/80 italic font-display text-center leading-relaxed my-4;
+    @apply text-xl text-mist italic font-display text-center leading-relaxed my-4;
   }
 
   .prose-broadsheet strong {
@@ -155,7 +155,7 @@
   }
 
   .prose-broadsheet li {
-    @apply text-mist/70 leading-relaxed;
+    @apply text-mist/90 leading-relaxed;
   }
 }
 
