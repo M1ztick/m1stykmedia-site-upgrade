@@ -7,64 +7,64 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Core brand colors from logo
+        // Fiber optic palette
         'coral': {
-          DEFAULT: '#E85A5A',
-          50: '#FCE8E8',
-          100: '#F9D1D1',
-          200: '#F3A3A3',
-          300: '#ED7575',
-          400: '#E85A5A', // Logo primary
-          500: '#D43D3D',
-          600: '#B03030',
-          700: '#8A2626',
-          800: '#641C1C',
-          900: '#3E1212',
+          DEFAULT: '#00D4FF',
+          50: '#E0FAFF',
+          100: '#B3F3FF',
+          200: '#66E8FF',
+          300: '#1ADCFF',
+          400: '#00D4FF', // electric cyan — primary signal
+          500: '#00AACF',
+          600: '#007F9A',
+          700: '#005568',
+          800: '#002A35',
+          900: '#001018',
         },
         'teal': {
-          DEFAULT: '#2EC4B6',
-          50: '#E6F8F6',
-          100: '#CFF1ED',
-          200: '#9FE3DB',
-          300: '#6FD5C9',
-          400: '#2EC4B6', // Logo accent
-          500: '#25A094',
-          600: '#1C7C73',
-          700: '#135851',
-          800: '#0A3430',
-          900: '#051A18',
+          DEFAULT: '#7B2FFF',
+          50: '#F0E8FF',
+          100: '#D9C2FF',
+          200: '#B385FF',
+          300: '#9458FF',
+          400: '#7B2FFF', // violet — secondary signal
+          500: '#6318E0',
+          600: '#4C0FB0',
+          700: '#360A80',
+          800: '#200550',
+          900: '#0D0020',
         },
-        // Deep navy backgrounds
+        // True black backgrounds
         'void': {
-          DEFAULT: '#0A0F1C',
-          50: '#1A2133',
-          100: '#151B2B',
-          200: '#111625',
-          300: '#0D121F',
-          400: '#0A0F1C', // Logo background
-          500: '#080C16',
-          600: '#060910',
-          700: '#04060B',
-          800: '#020305',
+          DEFAULT: '#050508',
+          50: '#0F1018',
+          100: '#0A0B12',
+          200: '#08090F',
+          300: '#06070C',
+          400: '#050508',
+          500: '#030305',
+          600: '#020203',
+          700: '#010102',
+          800: '#010101',
           900: '#000000',
         },
-        // Light variant for contrast
+        // Cool white text
         'mist': {
-          DEFAULT: '#E8ECF1',
+          DEFAULT: '#E2EEFF',
           50: '#FFFFFF',
-          100: '#F7F8FA',
-          200: '#E8ECF1',
-          300: '#C8D0DB',
-          400: '#A8B4C4',
-          500: '#8899AD',
-          600: '#687E96',
-          700: '#526375',
-          800: '#3C4855',
-          900: '#262E36',
+          100: '#F4F8FF',
+          200: '#E2EEFF',
+          300: '#C0D4F5',
+          400: '#9DBAEB',
+          500: '#7A9FE0',
+          600: '#5785D6',
+          700: '#3F6AB8',
+          800: '#2C4F8A',
+          900: '#1A335C',
         },
-        // Section accents - derived from logo gradient
-        'dispatch': '#E85A5A',    // Coral urgency
-        'journey': '#C75A9E',     // Purple - introspective, spiritual
+        // Section accents
+        'dispatch': '#00D4FF',    // electric cyan — signal
+        'journey': '#BF5FFF',     // bright violet — introspective
       },
       fontFamily: {
         'display': ['Inter', 'system-ui', 'sans-serif'],
@@ -73,7 +73,7 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'logo-gradient': 'linear-gradient(135deg, #E85A5A 0%, #2EC4B6 100%)',
+        'logo-gradient': 'linear-gradient(135deg, #00D4FF 0%, #7B2FFF 100%)',
       },
     },
   },
