@@ -22,7 +22,7 @@ const { Content } = await render(entry);
   section="journey"
   slug={entry.id}
 >
-  <header slot="meta" class="border-b border-void-50/10 pb-8">
+  <header slot="meta" class="border-b border-coral/10 pb-8">
     <div class="flex items-center gap-4 mb-4">
       <span class="text-xs font-mono text-journey uppercase tracking-wider">{entry.data.category}</span>
       <span class="text-mist/30">•</span>
@@ -36,7 +36,7 @@ const { Content } = await render(entry);
     {entry.data.tags && entry.data.tags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-6">
         {entry.data.tags.map((tag) => (
-          <span class="text-xs px-2 py-1 bg-void-50/30 text-mist/40 rounded">{tag}</span>
+          <span class="text-xs px-2 py-1 bg-coral/10 text-mist/60 rounded">{tag}</span>
         ))}
       </div>
     )}
@@ -44,7 +44,7 @@ const { Content } = await render(entry);
 
   <Content />
 
-  <footer class="mt-16 pt-8 border-t border-void-50/10">
+  <footer class="mt-16 pt-8 border-t border-coral/10">
     <a href="/journey" class="text-mist/40 hover:text-journey transition-colors flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Back to The Inner Journey

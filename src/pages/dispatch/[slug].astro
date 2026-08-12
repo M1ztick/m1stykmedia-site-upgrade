@@ -46,12 +46,12 @@ const { Content } = await render(entry);
     </p>
 
     <!-- Rule -->
-    <div class="border-t border-b border-void-50/20 py-2 flex items-center justify-between">
+    <div class="border-t border-b border-coral/15 py-2 flex items-center justify-between">
       <span class="text-[10px] font-mono text-mist/30 uppercase tracking-widest">By Mistyk</span>
       {entry.data.tags && entry.data.tags.length > 0 && (
         <div class="flex flex-wrap gap-2">
           {entry.data.tags.map((tag) => (
-            <span class="text-[10px] font-mono px-2 py-0.5 border border-void-50/20 text-mist/30 uppercase tracking-wider">{tag}</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 border border-coral/15 text-mist/60 uppercase tracking-wider">{tag}</span>
           ))}
         </div>
       )}
@@ -62,7 +62,7 @@ const { Content } = await render(entry);
   <Content />
 
   <!-- Footer -->
-  <footer class="mt-16 pt-8 border-t border-void-50/10">
+  <footer class="mt-16 pt-8 border-t border-coral/10">
     <a href="/dispatch" class="text-mist/40 hover:text-dispatch transition-colors flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Back to The Dispatch

@@ -45,11 +45,12 @@
   /* Crossroads card - glassmorphism on dark */
   .crossroads-card {
     @apply relative overflow-hidden transition-all duration-300;
-    @apply border border-void-50/10 bg-void-50/5 backdrop-blur-md;
+    @apply border border-coral/10 bg-void-50/5 backdrop-blur-md;
   }
   
   .crossroads-card:hover {
-    @apply border-coral/30 shadow-lg shadow-coral/5;
+    @apply border-coral/40 shadow-lg;
+    box-shadow: 0 4px 24px rgba(0, 212, 255, 0.08);
     transform: translateY(-2px);
   }
 

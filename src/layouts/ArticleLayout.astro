@@ -21,8 +21,8 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
         <div class="flex-1 h-px bg-dispatch/30"></div>
         <span class="text-[10px] font-mono text-mist/30 uppercase tracking-widest">mistykmedia.com</span>
       </div>
-      <div class="h-[3px] bg-gradient-to-r from-dispatch via-dispatch/60 to-transparent"></div>
-      <div class="h-px bg-void-50/20 mt-0.5"></div>
+      <div class="h-[3px] bg-gradient-to-r from-coral via-teal/60 to-transparent"></div>
+      <div class="h-px bg-coral/10 mt-0.5"></div>
     </div>
 
     <!-- Article header -->
@@ -36,7 +36,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
     </div>
 
     <!-- Interaction zone -->
-    <div class="mt-16 pt-12 border-t border-void-50/10">
+    <div class="mt-16 pt-12 border-t border-coral/10">
       
       <!-- Like button -->
       <div class="mb-12">
@@ -44,7 +44,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
         <button 
           id="like-btn"
           data-slug={slug}
-          class="group flex items-center gap-3 px-6 py-3 rounded-lg border border-void-50/20 bg-void-50/5 hover:border-coral/30 hover:bg-coral/5 transition-all"
+          class="group flex items-center gap-3 px-6 py-3 rounded-lg border border-coral/15 bg-coral/5 hover:border-coral/40 hover:bg-coral/8 transition-all"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mist/50 group-hover:text-coral transition-colors">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -57,7 +57,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
       </div>
 
       <!-- Subscribe form -->
-      <div class="mb-12 p-6 rounded-lg border border-void-50/10 bg-void-50/5">
+      <div class="mb-12 p-6 rounded-lg border border-coral/10 bg-void-50/5">
         <h3 class="font-display text-lg mb-2">Stay in the Loop</h3>
         <p class="text-sm text-mist/50 mb-4">New Dispatches delivered when they surface. No schedule, no spam, no surveillance.</p>
         <form id="subscribe-form" class="flex flex-col sm:flex-row gap-3">
@@ -66,7 +66,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
             name="email"
             placeholder="your@email.com" 
             required
-            class="flex-1 w-full px-4 py-3 sm:py-2 rounded-md bg-void border border-void-50/20 text-mist placeholder:text-mist/30 focus:outline-none focus:border-coral/50"
+            class="flex-1 w-full px-4 py-3 sm:py-2 rounded-md bg-void-50 border border-coral/20 text-mist placeholder:text-mist/40 focus:outline-none focus:border-coral/60"
           />
           <button 
             type="submit"
@@ -82,7 +82,7 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
       <div class="mb-12">
         <h3 class="text-sm font-mono uppercase tracking-widest text-mist/40 mb-4">Continue the Thread</h3>
         <p class="text-sm text-mist/50 mb-4">Log in with GitHub to respond. No data collected by Mistyk Media.</p>
-        <div class="giscus-wrapper rounded-lg border border-void-50/10 p-4">
+        <div class="giscus-wrapper rounded-lg border border-coral/10 p-4">
           <script src="https://giscus.app/client.js"
             data-repo="M1ztick/m1stykmedia-site-upgrade"
             data-repo-id="R_kgDOSqxSNg"
