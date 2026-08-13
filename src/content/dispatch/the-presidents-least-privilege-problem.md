@@ -1,6 +1,6 @@
 ---
-title: "The President's Least-Privilege Problem: Who Holds the Real Keys?"
-description: "How America's intelligence and military apparatus uses need-to-know compartmentalization to keep even sitting presidents out of certain loops — and why the UAP disclosure fight is the latest battleground."
+title: "The Least-Privilege State: How Compartmentalized Programs Shape the World"
+description: "From the Manhattan Project to the UAP disclosure fight, a look at how Special Access Programs create a hidden governance layer with global consequences."
 pubDate: 2026-08-10
 tags:
   - intelligence
@@ -10,7 +10,7 @@ tags:
   - UFO
   - special-access-programs
   - oversight
-  - politics
+  - democracy
   - dispatch
 category: politics
 featured: false
@@ -18,182 +18,143 @@ featured: false
 
 # **DISPATCH**
 
-## **The President's Least-Privilege Problem: Who Holds the Real Keys?**
+## **The Least-Privilege State: How Compartmentalized Programs Shape the World**
 
-*A look at need-to-know secrecy, Special Access Programs, and the long history of presidents being kept in the dark — with UAP/UFO disclosure as the latest battleground*
-
----
-
-### **I. The Analogy: Least Privilege Applied to the Presidency**
-
-In software development and IT security, **least privilege access** is a simple rule: give a user only the minimum permissions required for their specific job. National-security secrecy operates on the same logic, just with older language. It is called **compartmentalization**, **need-to-know**, and, more recently, **Special Access Programs (SAPs)**.
-
-The idea is rational: the fewer people who know a secret, the smaller the attack surface. But in practice, that same logic can be used to **wall off the commander-in-chief** from programs the intelligence community, the Pentagon, or a private contractor does not want exposed.
-
-This dispatch traces how that architecture works, when it started, who actually controls it, and what the fight over **UAP/UFO disclosure** reveals about where presidential authority ends and bureaucratic secrecy begins.
+*How need-to-know secrecy built a parallel layer of governance — and what happens when world-altering projects are run outside democratic sight*
 
 ---
 
-### **II. The Origins of Compartmentalization**
+### **I. The Principle, Borrowed From IT**
 
-Compartmentalization is ancient. The Byzantines used it to protect the secret of Greek fire. The Allies used it in World War II to guard the **Ultra** decryption program. The Manhattan Project split work by location and function so no single participant possessed the whole design of the atomic bomb.
+In cybersecurity, **least privilege access** means giving a user only the minimum permissions necessary for a specific task. In national security, the same principle is called **compartmentalization**, or **need-to-know**. The fewer people who know a secret, the smaller the attack surface, the lower the leak risk, the tighter the control.
 
-In the modern U.S. government, the formal classification system was born in secrecy during the presidency of **Franklin D. Roosevelt**. Roosevelt established the **Office of Strategic Services**, the CIA’s predecessor, and imposed the first real classification system on executive-branch information. The system was later codified through a chain of executive orders, including **Truman’s EO 10290 (1951)** and **Eisenhower’s EO 10501 (1953)**, which created the structure of Confidential, Secret, and Top Secret information that survives, with modifications, today.
+The logic is sound. But when applied to programs that can reshape wars, economies, energy systems, or even humanity’s understanding of physics, it also concentrates extraordinary power in the hands of very small groups. Those groups are not elected, rarely audited, and often hidden behind classification walls so thick that even a sitting president can find them difficult to penetrate.
 
-Those orders gave the president the *theoretical* power of total oversight. In reality, they also created the legal scaffolding for programs to be hidden from the president — or at least hidden well enough that the president would need to know the right question to ask.
+This dispatch looks at how that architecture works, where it came from, who actually controls it, and what it means for everyone else when the most consequential projects on Earth are run on a need-to-know basis.
 
 ---
 
-### **III. The Machinery: Special Access Programs**
+### **II. From Greek Fire to the Manhattan Project**
 
-Standard classified information is organized by clearance level: Confidential, Secret, Top Secret. But there is an additional layer of restriction for especially sensitive material: **Special Access Programs**, or SAPs.
+Compartmentalization is ancient. The Byzantine Empire protected the formula for Greek fire by limiting the number of people who knew its ingredients. The Allies divided the **Ultra** decryption secret so that no single analyst could compromise the whole program. The Manhattan Project went further: scientists and workers were scattered across multiple sites, and no single participant had the complete blueprint for the atomic bomb.
 
-A SAP is not merely a higher clearance. It is a separate control system layered on top of a clearance. As the Department of Homeland Security directive on SAPs states, access is granted only to people who:
+The modern U.S. classification system emerged during World War II. President Franklin D. Roosevelt built the first real executive-branch classification scheme, and the system was later codified by **Truman’s Executive Order 10290 (1951)** and **Eisenhower’s EO 10501 (1953)**. Those orders created the Confidential / Secret / Top Secret hierarchy that still exists today.
 
-- Have the appropriate underlying clearance,
-- Have a validated **need-to-know**, and
-- Are determined to **materially and directly contribute** to the program.
+The system was designed to protect weapons, strategies, and intelligence sources from foreign enemies. But it also created the institutional conditions under which programs could be hidden from Congress, the public, and even parts of the executive branch itself — protected not by the Constitution but by clearance forms and access rosters.
 
-In other words, even a cabinet secretary or the president can be denied access if a program manager decides they are not essential to the program's execution.
+---
 
-#### Types of SAPs
+### **III. Special Access Programs: The Hidden Layer**
 
-| Type | What is known |
+A standard classified document is controlled by its clearance level. A **Special Access Program (SAP)** adds another dimension entirely. It is a separate access-control layer built on top of a clearance. Having a Top Secret clearance does not automatically admit you to a SAP. As Department of Homeland Security guidance states, a person must also have a **validated need-to-know** and a role that **materially and directly contributes** to the program.
+
+In other words, access is determined by function, not rank.
+
+#### The SAP Spectrum
+
+| Type | Description |
 |---|---|
-| **Acknowledged SAP** | Existence may be publicly disclosed; details are classified |
-| **Unacknowledged SAP (USAP)** | Existence itself is secret; known only to authorized personnel |
-| **Waived SAP** | Subset of unacknowledged SAPs exempt from most reporting requirements |
+| **Acknowledged SAP** | Existence is known; details are classified. |
+| **Unacknowledged SAP** | Existence itself is secret; only authorized personnel know it exists. |
+| **Waived SAP** | A subset of unacknowledged SAPs exempted from most standard reporting requirements. |
 
-#### Who can create one?
+For **waived-unacknowledged SAPs**, congressional oversight is narrowed to the so-called **Gang of Eight**: the chairs and ranking members of the House and Senate intelligence, armed services, and appropriations committees. Even they may receive only minimal summaries.
 
-A SAP can be initiated, modified, or terminated only by the head of a department or agency with original Top Secret classification authority: the **Secretary of State, Secretary of Defense, Secretary of Energy, Secretary of Homeland Security, the Attorney General, or the Director of National Intelligence** — plus principal deputies and presidential designees. The Secretary of Defense is the key authority for most Pentagon SAPs.
+#### Who Creates Them?
 
-#### Who decides who gets in?
+A SAP can be created, modified, or terminated only by the head of an agency with original Top Secret classification authority: the **Secretary of State, Secretary of Defense, Secretary of Energy, Secretary of Homeland Security, the Attorney General, the Director of National Intelligence**, or their principal deputies and presidential designees. The Secretary of Defense is the gatekeeper for the vast majority of Pentagon SAPs.
 
-Inside a SAP, access approvals are handled by a chain of officials that includes the **Special Access Program Central Office (SAPCO)**, the **Program Security Officer (PSO)**, the **Government Activity Manager (GAM)**, and the **Access Approval Authority (AAA)**. These are career or appointed officials with deep program knowledge. They are the ones who actually determine whether someone, including a newly elected president, gets read in.
+#### Who Decides Who Gets In?
 
-For **waived-unacknowledged SAPs**, congressional notification is narrowed even further. By statute, only the so-called **Gang of Eight** — the chairs and ranking members of the House and Senate Intelligence, Armed Services, and Appropriations committees — are required to be informed. And even they may receive only minimal summaries.
+Within a SAP, the actual access decisions are made by career officials operating in offices such as the **Special Access Program Central Office (SAPCO)**, the **Program Security Officer (PSO)**, the **Government Activity Manager (GAM)**, and the **Access Approval Authority (AAA)**. These are the people who maintain the program binder, vet participants, and adjucate whether a request for access is legitimate.
 
-This is where the analogy breaks down. In a normal IT system, an admin can reset anyone’s permissions. In the national-security system, the president has supreme legal authority on paper, but in practice, the **program administrators hold the keys**.
+The president is commander-in-chief and holds ultimate legal authority. But if a program is buried deeply enough, the president may not know it exists — or may be told only what program managers want disclosed. Legal supremacy does not guarantee operational visibility.
 
 ---
 
-### **IV. Historical Cases of Presidents and Their Own Secrets**
+### **IV. The Pattern in History**
 
-#### Bay of Pigs (1961)
+Secrecy does not always fail. But when it does, the pattern is consistent: a small group inside a compartment makes a decision with global stakes, while everyone outside the compartment learns too late.
 
-The CIA’s invasion plan at the Bay of Pigs was kept so tightly compartmentalized that, according to declassified accounts, **the agency's own intelligence analysts** were cut out of the planning. The experts who might have warned that Cuban resistance was weaker than advertised were not read in. Whether President Kennedy was fully informed of the plan’s weaknesses remains debated, but the point stands: the operation’s compartmentalization allowed a flawed plan to reach execution without adequate challenge.
+#### The Atomic Bomb
 
-#### U-2 Incident (1960)
+The Manhattan Project was the proof of concept. Thousands of workers were kept in the dark about the end product. Congress funded it indirectly, through black budgets and cover allocations, without knowing what it was building. When the bomb was used, it transformed geopolitics overnight. The public and most of the world had no say in its creation — and no warning of its deployment.
 
-President Eisenhower personally authorized the U-2 spy flights over the Soviet Union. But the mission was structured as a CIA program with layers of deniability. When Francis Gary Powers was shot down, the Eisenhower administration initially put out a NASA weather-research cover story. Eisenhower was then forced to admit the truth after Khrushchev revealed Powers was alive and the film had been recovered. The incident showed how **compartmented programs can create public blame shifts that extend all the way to the Oval Office**.
+#### The Bay of Pigs (1961)
 
-#### Nixon and the President’s Daily Brief
-
-The President’s Daily Brief, or PDB, is meant to keep the president informed, but its distribution is itself a matter of political control. During parts of the Nixon administration, the PDB’s formal readership was narrowed to **just Nixon and Henry Kissinger**. Vice President Gerald Ford was initially excluded from the distribution list and had to be brought in only after the CIA director pushed back. Even an advisory product meant for the president can be turned into a closed circle.
+The CIA’s invasion plan was so tightly compartmentalized that the agency’s own analysts were excluded from parts of the planning. The people who might have challenged the assumption that Cubans would rise up against Castro were not read in. The result was a failed invasion, international humiliation, and a lasting chill in U.S.-Cuba relations.
 
 #### Iran-Contra (1985–1986)
 
-Iran-Contra is perhaps the cleanest modern example of the president being kept deliberately out of a loop. President Reagan signed a secret finding authorizing arms sales to Iran, but National Security Adviser **John Poindexter later testified that he intentionally withheld from Reagan the fact that proceeds were being diverted to support the Contras in Nicaragua**. Poindexter said he was protecting the president. The congressional report concluded that, regardless of what Reagan personally knew, **“the ultimate responsibility for the events in the Iran-Contra Affair must rest with the President. If the President did not know what his National Security Advisers were doing, he should have.”**
+Arms were sold to Iran. The proceeds were diverted to anti-communist Contra forces in Nicaragua. National Security Adviser John Poindexter later testified that he intentionally withheld the diversion from President Reagan to protect him. A congressional report concluded that the president was ultimately responsible, but the episode demonstrated how a small compartment could run a foreign policy operation that Congress, the public, and parts of the White House did not fully know about.
 
-#### Post-9/11 CIA Black Sites and Torture
+#### CIA Black Sites and Torture
 
-Details of the CIA’s rendition, detention, and interrogation program were hidden not only from the public but also from broad parts of Congress. Senate investigators later concluded that the CIA provided inaccurate and incomplete information to oversight committees about the program’s scope, methods, and effectiveness. The Bush White House was involved at the top, but the **operational details were kept inside a narrow chain**.
+After 9/11, the CIA built a global detention and interrogation network. Details were hidden not only from the public but from broad swaths of Congress. Senate investigators later found that the CIA provided inaccurate and incomplete information to oversight committees about the program’s scope, effectiveness, and legality.
 
-#### NSA Bulk Surveillance (Snowden Revelations, 2013)
+#### NSA Bulk Surveillance
 
-Documents leaked by Edward Snowden revealed that the NSA had built **mass surveillance capabilities** under legal interpretations that were neither widely known nor fully debated in public. President Obama defended the programs as legal and subject to oversight, but the disclosures showed how **a program authorized through classified legal opinions can operate for years with only a tiny circle of officials knowing its full extent**.
-
----
-
-### **V. The UAP/UFO Case Study: Secrecy Meets Disclosure**
-
-The modern UAP debate is where the architecture of least-privilege secrecy becomes most visible.
-
-In **July 2023**, former intelligence officer **David Grusch** testified before a House subcommittee that the U.S. government and its contractors possess **recovered non-human craft and biological remains**, and that this information has been concealed from Congress through **“rogue” Special Access Programs**. Grusch, who had served as the National Reconnaissance Office representative to the Pentagon’s UAP task force, said he could not publicly identify the programs or the officials running them because the information was classified, but that he had provided names in closed sessions.
-
-Grusch’s claims remain **unproven in the public record**, but they triggered a legislative response: the **UAP Disclosure Act of 2023**, introduced as an amendment to the Fiscal Year 2024 National Defense Authorization Act by Senators Chuck Schumer and Mike Rounds.
-
-#### What the Disclosure Act Did
-
-The act, modeled on the JFK Assassination Records Collection Act, established:
-
-- A **UAP Records Collection** at the National Archives
-- A process for agencies to turn over covered records within **300 days**
-- An **independent UAP Records Review Board** with nine members, appointed by the president and confirmed by the Senate
-- A **controlled disclosure campaign plan** for material deemed too sensitive to release immediately
-- Federal eminent domain over any **recovered technologies of unknown origin** held by private persons or entities
-- A mechanism by which the **president can override or concur with the Review Board’s decisions**
-
-The act’s structure is revealing. It assumes that UAP records are scattered, that some are held by **private defense contractors**, and that existing agencies cannot be trusted to release them voluntarily. It also gives the president final authority — but only after an independent board has reviewed the material.
-
-#### Presidents on the Record
-
-Multiple presidents have been asked whether they were briefed on UFOs:
-
-- **Bill Clinton** said he investigated Area 51 records as president and found nothing definitive.
-- **Barack Obama**, on a 2025 podcast, said he saw no evidence that aliens had made contact, then later clarified: **“They’re real, but I haven’t seen them. And they’re not being kept in Area 51.”**
-- **Donald Trump** was asked repeatedly. In 2020 he said he had been briefed but was “not a believer.” During his second term, in February 2026, he accused Obama of revealing classified information and directed agencies to prepare for release of UAP files — while also saying, **“I don’t know if they’re real or not.”**
-
-These statements are notable less for what they reveal than for what they imply: **even presidents choose their words carefully**, and none has offered a direct, detailed public account of what they were or were not shown.
+Edward Snowden’s 2013 disclosures revealed that the NSA had constructed mass surveillance capabilities under classified legal interpretations that had never been publicly debated. The programs were authorized through secret court opinions and known only to a small circle. Whether or not one views the surveillance as justified, its existence was determined by a compartmented process, not by open democratic deliberation.
 
 ---
 
-### **VI. Who Actually Makes the Decisions?**
+### **V. The UAP/UFO Case: Secrecy on Display**
 
-The answer is layered:
+The modern UAP (Unidentified Anomalous Phenomena) debate has become the clearest public window into how far SAP-style secrecy can extend.
 
-| Decision-maker | Authority |
-|---|---|
-| **President / Original Classification Authorities** | Can create, expand, or declassify programs in theory |
-| **Secretary of Defense / Secretary of State / DNI / DHS / DOJ / DOE** | Can initiate, modify, or terminate SAPs |
-| **Program Security Officer (PSO)** | Manages day-to-day access controls and security |
-| **Government Activity Manager (GAM)** | Runs the program and decides staffing needs |
-| **Access Approval Authority (AAA)** | Approves or denies individual access requests |
-| **Gang of Eight** | Receive legally required notification for waived SAPs |
-| **Private contractors** | Often hold physical custody of records, locations, and recovered material |
+In **July 2023**, former intelligence officer **David Grusch** testified before a House subcommittee that the U.S. government possesses **non-human craft and biological remains**, and that related programs are being run as **illegally concealed special access programs** shielded from Congress and presidential oversight. Grusch’s claims are allegations, and the Defense Department has denied them. But they fit a recognizable pattern: a compartmented program, alleged to be operating outside normal authorization chains, with custodians arguing that disclosure would threaten national security.
 
-The practical result is that **no single person, including the president, automatically knows everything**. Access is distributed across a network of program managers, security officers, contractors, and congressional gatekeepers. A president who wants to know something specific must first know that the program exists and then must demand access through channels controlled by people who may have institutional reasons to resist.
+The **UAP Disclosure Act**, included in the National Defense Authorization Act for Fiscal Year 2024, tried to force accountability. It created an independent review board with authority to collect records and an expedited process for records release. It also gave the President authority to prevent disclosure of certain records through a written directive — a compromise between transparency and national-security secrecy.
+
+Public statements by recent presidents reinforce how little even the White House seems to know. **Barack Obama** joked that he had asked about UFOs and been told there was nothing. **Bill Clinton** said much the same. **Donald Trump** has oscillated, at times promising full disclosure and at other times being briefed down. In June 2025, Obama suggested the public could handle disclosure, while Trump ordered executive agencies to prepare release plans — though by mid-2026, substantial release had not materialized.
+
+The significance is structural as much as extraterrestrial. If a technology or phenomenon with energy, propulsion, or medical implications is locked inside a SAP, then a small group of custodians may control information that could alter civilization — and they are answerable to no electorate.
 
 ---
 
-### **VII. How Far Does It Go?**
+### **VI. What It Means for the World**
 
-The short answer: far enough that the system is **designed to keep presidents technically sovereign while operationally limited**.
+The least-privilege model was built to protect secrets from foreign adversaries. But once in place, it also protects programs from citizens, from journalists, and from the elected officials who are supposed to authorize them. That has consequences.
 
-The president retains the legal power to classify or declassify information. The president can issue executive orders reshaping the classification system. But the president cannot declassify what they do not know exists, cannot access what a program manager denies on need-to-know grounds, and cannot oversee what is buried inside a contractor’s facility outside normal inspection procedures.
+#### 1. Technological Asymmetry
 
-The limits are also cultural. Career officials often view presidents as temporary occupants of the White House. Presidents serve four or eight years; intelligence programs can span decades. From the perspective of a program manager, suspending judgment of a new president’s discretion is not conspiracy — it is risk management.
+If breakthrough technologies exist inside SAPs — whether exotic propulsion, advanced AI, directed-energy weapons, or undisclosed surveillance capabilities — they are developed without public input and potentially without international treaty constraints. The public has no voice in how, or whether, they are used.
 
-The result is a permanent tension: **democratic oversight vs. operational secrecy**, with the president caught in the middle.
+#### 2. Arms-Race Incentives
+
+Secret programs tend to beget more secret programs. When one side builds something in a black box, rivals assume the worst and accelerate their own classified efforts. The result is an international security environment shaped less by treaties and more by mutual suspicion.
+
+#### 3. Democratic Asymmetry
+
+Compartmentalization shrinks the number of people who can debate a policy before it is enacted. A program may be technically legal while being politically invisible. That is not how representative government is supposed to function, especially on questions of war, surveillance, or civilizational risk.
+
+#### 4. Corruption Risk
+
+Unacknowledged programs are difficult to audit. Waived SAPs bypass normal reporting. Contractor involvement adds another layer of opacity. The less oversight, the greater the risk that programs will be mismanaged, overfunded, or directed toward ends that would not survive public scrutiny.
 
 ---
 
-### **VIII. Conclusion: The Least-Privilege Presidency**
+### **VII. Conclusion: Who Watches the Compartments?**
 
-The U.S. national-security state runs on the same principle as a well-secured server: access only what you need. That logic protects genuine secrets and sometimes prevents catastrophic leaks. But it also creates a structure in which **the elected head of government can be denied access to programs run in the government’s name**.
+The least-privilege model is rational. It protects intelligence sources, military operations, and weapons designs. But the same architecture that protects a nuclear warhead design can also hide a flawed invasion plan, a torture program, or — if the more explosive UAP allegations are accurate — recovered technology that belongs in the public domain of human knowledge.
 
-From the U-2 program to Iran-Contra, from CIA black sites to the ongoing UAP disclosure fight, the pattern repeats. Programs are born in secrecy, grow their own access controls, and sometimes hide even from the institutions meant to supervise them. The president sits at the top of the org chart, but **the keys are held lower down**.
+The question is not whether secrecy is sometimes necessary. It is whether the people inside the compartments can be held accountable by the people outside them. Right now, the architecture answers that question with another: *Do you have a need-to-know?*
 
-The UAP debate is therefore not only about aliens. It is about whether a constitutional democracy can maintain secrets so tightly that the public, Congress, and even the president are unable to verify what is being done in its name.
+For the rest of the world, the answer is almost always no.
 
 ---
 
 ### **Sources**
 
-- *Wikipedia / Compartmentalization (information security)* — historical overview of need-to-know practices.
-- *Columbia Magazine* — Alex Abella interview with scholars on declassified documents and the modern classification system.
-- *Engelsberg Ideas* — history of the President’s Daily Brief and restricted readership under Nixon and Ford.
-- National Security Archive — Iran-Contra documents and congressional testimony.
-- Brown University Cheit Program — Iran-Contra majority report and presidential knowledge analysis.
-- Department of Homeland Security Directive 140-04 — Special Access Programs governance.
-- Department of Defense Manual 5205.07 — SAP Security Manual and access approval authorities.
-- *The War Zone* — overview of waived-unacknowledged SAPs and Gang of Eight notification.
-- *Wikipedia / Special access program* — SAP authorities and acknowledgment categories.
-- David Grusch whistleblower testimony, House Oversight Committee, July 26, 2023.
-- UAP Disclosure Act of 2023 amendment to the FY2024 NDAA.
-- Senate Democrats press release — Schumer/Rounds UAP disclosure framework.
-- NewsNation — UAP Records Review Board structure and timeline.
-- AP News, BBC, NBC News — Obama and Trump 2025–2026 UAP/aliens public statements.
+- Department of Homeland Security and DoD directives on Special Access Program administration and access controls.
+- Truman, Executive Order 10290 (1951); Eisenhower, Executive Order 10501 (1953).
+- National Security Archive documents on the Manhattan Project and Cold War classification.
+- Senate Select Committee on Intelligence report on CIA detention and interrogation.
+- Iran-Contra Affair congressional reports and Poindexter testimony.
+- PBS NewsHour / PolitiFact coverage of UAP and the 2023 disclosure hearing.
+- David Grusch testimony, House Oversight Subcommittee on National Security, the Border, and Foreign Affairs, July 26, 2023.
+- National Defense Authorization Act for Fiscal Year 2024, UAP Disclosure Act provisions.
+- Obama, Clinton, and Trump public remarks on UAP/UFOs, 2014–2026.
+- Edward Snowden / NSA documents as reported by The Guardian, The Washington Post, and subsequent congressional testimony.
 
 **Report compiled:** August 10, 2026
