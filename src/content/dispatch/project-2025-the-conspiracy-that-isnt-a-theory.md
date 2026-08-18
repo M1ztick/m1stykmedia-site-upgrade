@@ -12,67 +12,71 @@ category: politics
 featured: false
 ---
 
-Introduction To Project 2025
+***Introduction To Project 2025***
 The Quiet Takeover & The Political Scarecrow
 In the last decade, we have witnessed a strange and concerning political obstinacy and polarity that has not been experienced in the US likely since the mid-nineteenth century, when political chaos and unwavering party loyalty eventually gave rise to the Civil War.
 
-The Heritage Foundation's Origins
-A Power Play 50 Years in the Making
+**The Heritage Foundation's Origins:
+A Power Play 50 Years in the Making**
 The Heritage Foundation didn't emerge from a vacuum of principled conservative thought — it was deliberately engineered as a corporate-funded ideological weapon, born from frustration that even Richard Nixon was too liberal. Founded on February 16, 1973, during the Nixon administration, it was the direct institutional offspring of the Powell Memorandum — a 1971 memo by corporate attorney Lewis Powell (later a Supreme Court Justice), urging American business to wage a coordinated, long-term war on academia, the press, and government regulation to protect corporate interests.
 
-A Power Grab, Not a Policy Plan
+***A Power Grab, Not a Policy Plan***
 Strip away the Heritage Foundation's carefully curated language about "constitutional accountability" and "cutting red tape," and what you find underneath is a systematic strategy to obliterate checks and balances that Americans have relied on since 1789. The Mandate for Leadership isn't a governing document — it's an installation guide for executive supremacy. It tells exactly which agencies to gut, which civil servants to fire, which regulations to erase, and how to route all decision-making authority to one man in the White House.americanprogress+1
 The project is built around six structural power grabs:[americanprogress]​
 
  	
-Weaponizing the DOJ for political retribution against enemies of the administration
+1. Weaponizing the DOJ for political retribution against enemies of the administration
 
  	
-Ending independent agencies like the FTC, FEC, NLRB, and EEOC — institutions specifically designed to exist outside presidential control
+2. Ending independent agencies like the FTC, FEC, NLRB, and EEOC — institutions specifically designed to exist outside presidential control
 
  	
-Purging career civil servants and replacing expert staff with ideological loyalists
+3. Purging career civil servants and replacing expert staff with ideological loyalists
 
  	
-Impounding Congressional funds — spending taxpayer money as the president sees fit, ignoring what Congress actually authorized
+4. Impounding Congressional funds — spending taxpayer money as the president sees fit, ignoring what Congress actually authorized
 
  	
-Weakening the free press through regulatory and legal intimidation
+5. Weakening the free press through regulatory and legal intimidation
 
  	
-Weaponizing the Insurrection Act to deploy military force against American protesters on American soil
+6. Weaponizing the Insurrection Act to deploy military force against American protesters on American soil
 
 That last one is not a hypothetical. Documents drafted by Russ Vought's Center for Renewing America included invoking the Insurrection Act on Day One to "quash protests". These are not policy proposals from a think tank. This is an authoritarian faction with a pen and a president willing to sign anything they put in front of him.[americanprogress]​
 
-The Civil Service Purge Is Already Happening
+***The Civil Service Purge Is Already Happening***
 The most insidious piece of Project 2025 isn't a headline-grabbing executive order — it's the quiet massacre of the nonpartisan federal workforce. In February 2026, the Trump administration finalized regulations reclassifying approximately 50,000 federal employees under the renamed Schedule F — now called Schedule Policy/Career — stripping them of civil service protections, appeal rights, and meaningful whistleblower recourse. Whistleblower complaints from converted employees are now referred to the employing agency's own general counsel — the equivalent of asking a crime suspect to investigate themselves.govexec+1
+
 This is how authoritarianism actually works in a modern democracy: not tanks in the streets, but bureaucratic instruments used to methodically hollow out every institution that might push back. The Varieties of Democracy dataset now classifies the U.S. as potentially "the fastest autocratizing country in contemporary history that does not involve a coup d'état". That's not hyperbole from a leftist blog — that's political science. Meanwhile, the Office of Personnel Management began soliciting federal job applicants to write essays about their favorite Trump policy. Loyalty oaths dressed up as hiring forms.tandfonline+1
 
-The Courts Are the Last Firewall — And They're Under Siege
+**The Courts Are the Last Firewall — And They're Under Siege**
 The federal judiciary has emerged as the primary friction point against the Project 2025 agenda, but the administration is fighting tooth and nail to remove even that check. Since January 2025, Trump's legal team has bombarded courts with unprecedented claims of presidential power, forcing judges to rule on emergency timelines over issues no court has ever previously addressed. The Supreme Court agreed to hear a case over whether emergency powers allow the president to unilaterally impose tariffs — a ruling that could strip Congress of its control over trade entirely.[politico]​
+
 In February 2026, the Supreme Court issued a rare 6-3 rebuke — written by conservative Chief Justice John Roberts — striking down Trump's sweeping tariff authority. Trump's response was characteristically dismissive: he claimed the ruling was "already sanctioned" and insisted he didn't need Congressional approval for powers the court just ruled he didn't possess. That posture — the refusal to accept constitutional limits even when imposed by a Republican-majority court he helped stack — tells you everything about the nature of this project.[reuters]​
+
 Predictions from legal analysts suggest SCOTUS will rule in Trump's favor in Trump v. Slaughter in early 2026, potentially allowing the president to fire members of the FTC and other independent agencies — with ripple effects that could dismantle the NLRB and EEOC altogether. Every branch of constitutional resistance is being targeted simultaneously, by design.[jdsupra]​
 
-What's Already Been Destroyed
+***What's Already Been Destroyed?***
+
 At 53% implementation, the damage already done is staggering:[progressivereform]​
 
  	
-The Department of Education is on a path to elimination — school vouchers redirecting public funds to private institutions are already law[pbs]​
+- The Department of Education is on a path to elimination — school vouchers redirecting public funds to private institutions are already law[pbs]​
 
  	
-DEI programs have been eradicated across the federal government, with the Pentagon leading the rollback[pbs]​
+- DEI programs have been eradicated across the federal government, with the Pentagon leading the rollback[pbs]​
 
  	
-Climate regulations are being systematically reversed; the EPA's authority to set health-based air quality standards is now under threat[earthjustice]​
+- Climate regulations are being systematically reversed; the EPA's authority to set health-based air quality standards is now under threat[earthjustice]​
 
  	
-Title IX protections for LGBTQ+ students have been rolled back and enforcement gutted[pbs]​
+- Title IX protections for LGBTQ+ students have been rolled back and enforcement gutted[pbs]​
 
  	
-Reproductive healthcare access has been narrowed through agency funding conditions and guidance[axios]​
+- Reproductive healthcare access has been narrowed through agency funding conditions and guidance[axios]​
 
  	
-The federal immigration enforcement apparatus has been weaponized far beyond its statutory mandate[politico]​
+- The federal immigration enforcement apparatus has been weaponized far beyond its statutory mandate[politico]​
 
 The disability community has been among the most vocal in sounding the alarm: Project 2025's assault on healthcare access, the social safety net, and housing programs represents an existential threat to millions of Americans whose lives depend on the very agencies being dismantled. As one researcher put it plainly: "The cruelty is the point".[ojs.scholarsportal]​
 
