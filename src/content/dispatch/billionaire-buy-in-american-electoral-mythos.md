@@ -47,7 +47,11 @@ ________________________________________________________________________________
 
 ***Works Cited***
 
-    Center for Responsive Politics. "Cost of Election." OpenSecrets, 2024, www.opensecrets.org/elections-overview/cost-of-election. Accessed 24 Nov. 2025.Federal Election Commission. "Understanding Citizens United." FEC.gov, United States Government, www.fec.gov/legal-resources/court-cases/citizens-united-v-fec/. Accessed 24 Nov. 2025.Gilens, Martin, and Benjamin I. Page. "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens." Perspectives on Politics, vol. 12, no. 3, 2014, pp. 564–581.Lessig, Lawrence. Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It. Twelve, 2011.Toobin, Jeffrey. "Money Unlimited: How Chief Justice John Roberts Orchestrated the Citizens United Decision." The New Yorker, 21 May 2012.
+    Center for Responsive Politics. "Cost of Election." OpenSecrets, 2024, www.opensecrets.org/elections-overview/cost-of-election. Accessed 24 Nov.     2025.
+    Federal Election Commission. "Understanding Citizens United." FEC.gov, United States Government, www.fec.gov/legal-resources/court-cases/citizens-united-v-fec/. Accessed 24 Nov. 2025.
+    Gilens, Martin, and Benjamin I. Page. "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens." Perspectives on Politics, vol. 12, no. 3, 2014, pp. 564–581.
+    Lessig, Lawrence. Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It. Twelve, 2011.
+    Toobin, Jeffrey. "Money Unlimited: How Chief Justice John Roberts Orchestrated the Citizens United Decision." The New Yorker, 21 May 2012.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
