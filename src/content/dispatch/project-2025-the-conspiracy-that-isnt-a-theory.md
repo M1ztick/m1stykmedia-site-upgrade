@@ -151,4 +151,4 @@ ________________________________________________________________________________
 
 ***If you enjoyed this article, please consider subscribing and or sharing this eye-opening content. It is only through education, unity, and perseverance that we will restore justice and balance to our republic.***
 
-Mistyk Media is an independent publisher. All rights reserved.
+***Mistyk Media is an independent publisher. All rights reserved.***
