@@ -103,7 +103,7 @@ ________________________________________________________________________________
 
 ### The 47% That Remains: What's Still on the Table ###
 
-Heritage Foundation architects published their 2026 policy priorities in December 2025, making it abundantly clear that the movement has no intention of slowing down. What they still want to accomplish includes: [axios]​
+***Heritage Foundation architects published their 2026 policy priorities in December 2025, making it abundantly clear that the movement has no intention of slowing down. What they still want to accomplish includes: [axios]​***
 
 - Full elimination of independent agencies such as: FTC, NLRB, and EEOC independence via SCOTUS ruling
 
