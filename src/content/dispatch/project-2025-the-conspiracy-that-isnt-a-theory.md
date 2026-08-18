@@ -26,7 +26,7 @@ featured: false
 The Heritage Foundation didn't emerge from a vacuum of principled conservative thought — it was deliberately engineered as a corporate-funded ideological weapon, born from frustration that even Richard Nixon was too liberal. Founded on February 16, 1973, during the Nixon administration, it was the direct institutional offspring of the Powell Memorandum — a 1971 memo by corporate attorney Lewis Powell (later a Supreme Court Justice), urging American business to wage a coordinated, long-term war on academia, the press, and government regulation to protect corporate interests.
 
 
-### A Power Grab, Not a Policy Plan ###
+## A Power Grab, Not a Policy Plan ##
 
 Strip away the Heritage Foundation's carefully curated language about "constitutional accountability" and "cutting red tape," and what you find underneath is a systematic strategy to obliterate checks and balances that Americans have relied on since 1789. The Mandate for Leadership isn't a governing document — it's an installation guide for executive supremacy. It tells exactly which agencies to gut, which civil servants to fire, which regulations to erase, and how to route all decision-making authority to one man in the White House. [americanprogress+1]
 
@@ -55,8 +55,7 @@ That last one is not a hypothetical. Documents drafted by Russ Vought's Center f
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-### The Civil Service Purge Is Already Happening ###
-
+## The Civil Service Purge Is Already Happening ##
 
 The most insidious piece of Project 2025 isn't a headline-grabbing executive order — it's the quiet massacre of the nonpartisan federal workforce. In February 2026, the Trump administration finalized regulations reclassifying approximately 50,000 federal employees under the renamed Schedule F — now called Schedule Policy/Career — stripping them of civil service protections, appeal rights, and meaningful whistle-blower recourse. Whistle-blower complaints from converted employees are now referred to the employing agency's own general counsel — the equivalent of asking a crime suspect to investigate themselves. [govexec+1]
 
@@ -64,7 +63,7 @@ This is how authoritarianism actually works in a modern democracy: not tanks in 
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-### The Courts Are the Last Firewall — And They're Under Siege ###
+## The Courts Are the Last Firewall — And They're Under Siege ##
 
 
 The federal judiciary has emerged as the primary friction point against the Project 2025 agenda, but the administration is fighting tooth and nail to remove even that check. Since January 2025, Trump's legal team has bombarded courts with unprecedented claims of presidential power, forcing judges to rule on emergency timelines over issues no court has ever previously addressed. The Supreme Court agreed to hear a case over whether emergency powers allow the president to unilaterally impose tariffs — a ruling that could strip Congress of its control over trade entirely. [politico]​
@@ -75,7 +74,7 @@ Predictions from legal analysts suggest SCOTUS will rule in Trump's favor in Tru
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-### What's Already Been Destroyed? ###
+## What's Already Been Destroyed? ##
 
 
 ***At 53% implementation, the damage already done is staggering: [progressivereform]***
@@ -97,7 +96,7 @@ The disability community has been among the most vocal in sounding the alarm: Pr
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-### The 47% That Remains: What's Still on the Table ###
+## The 47% That Remains: What's Still on the Table ##
 
 ***Heritage Foundation architects published their 2026 policy priorities in December 2025, making it abundantly clear that the movement has no intention of slowing down. What they still want to accomplish includes: [axios]​***
 
@@ -119,7 +118,7 @@ The 2026 midterms represent a critical intervention point. Civil rights leaders,
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-### Resistance Is Not Optional ###
+## Resistance Is Not Optional ##
 
 Human Rights Watch's first-year assessment of Trump's second term is damning across every dimension: targeting marginalized communities, undermining press freedom, chilling dissent, concentrating executive power, weakening independent institutions, and systematically undermining voting rights. This is not partisan spin — it is a documented, methodical assault cataloged by one of the world's leading human rights organizations. [hrw]​
 
