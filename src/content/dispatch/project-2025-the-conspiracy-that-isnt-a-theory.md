@@ -11,26 +11,22 @@ tags:
 category: politics
 featured: false
 ---
-
 # Introduction To Project 2025 #
 
 
-
 ## The Quiet Takeover & The Political Scarecrow ##
-
 
 ***In the last decade, we have witnessed a strange and concerning political obstinacy and polarity that has not been experienced in the US likely since the mid-nineteenth century, when political chaos and unwavering party loyalty eventually gave rise to the Civil War.***
 
 .....................................................................................................................................................
 
 
-### The Heritage Foundation's Origins: A Power Play 50 Years in the Making ###
-
+## The Heritage Foundation's Origins: A Power Play 50 Years in the Making ##
 
 The Heritage Foundation didn't emerge from a vacuum of principled conservative thought — it was deliberately engineered as a corporate-funded ideological weapon, born from frustration that even Richard Nixon was too liberal. Founded on February 16, 1973, during the Nixon administration, it was the direct institutional offspring of the Powell Memorandum — a 1971 memo by corporate attorney Lewis Powell (later a Supreme Court Justice), urging American business to wage a coordinated, long-term war on academia, the press, and government regulation to protect corporate interests.
 
 
-#### A Power Grab, Not a Policy Plan ####
+### A Power Grab, Not a Policy Plan ###
 
 Strip away the Heritage Foundation's carefully curated language about "constitutional accountability" and "cutting red tape," and what you find underneath is a systematic strategy to obliterate checks and balances that Americans have relied on since 1789. The Mandate for Leadership isn't a governing document — it's an installation guide for executive supremacy. It tells exactly which agencies to gut, which civil servants to fire, which regulations to erase, and how to route all decision-making authority to one man in the White House. [americanprogress+1]
 
