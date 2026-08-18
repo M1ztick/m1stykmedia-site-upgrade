@@ -14,7 +14,6 @@ tags:
 category: essay
 featured: false
 ---
-
 # The American Political Campaign Mythos #
 
 ***The notion that anyone can become President is a compelling American myth. The idea that a small-town teacher or community organizer can rise to the top solely on ideas and the people's will is a tantalizing representation of the American Dream. One that many still wholeheartedly believe in. However, this illusion is shattered when you examine the modern campaign landscape. The path to political power is not paved with good intentions, but with immense wealth and resources.***
@@ -22,6 +21,7 @@ ________________________________________________________________________________
 
 
 ## The "Serious" Candidate & the Barrier to Entry ##
+
 
 The current campaign system, influenced by hedge funds, dark money, and wealth-based primary elections for both major political parties, effectively bars average citizens from meaningful participation, raising the question: Do voters truly choose their leaders, or are they merely confirming the choices of the financial elite?
 
@@ -39,6 +39,7 @@ ________________________________________________________________________________
 
 ## The Mechanics of Influence: Hedge Funds and The Big Donors ##
 
+
 The modern campaign is less a battle of ideas and more a venture capital pitch. Following the Supreme Court’s 2010 decision in Citizens United v. FEC, which allowed unlimited independent expenditures by corporations and unions, the role of the "Big Donor" shifted from influential to decisive. 
 Hedge funds and private equity firms play a massive role in this ecosystem. They do not simply donate; they invest. 
 
@@ -50,6 +51,7 @@ ________________________________________________________________________________
 
 ## The Outcome: Representation vs. Return on Investment ##
 
+
 How does this typically turn out for the electorate? The data suggests a grim correlation between donor desires and legislative outcomes. A landmark study by Martin Gilens and Benjamin I. Page found that "economic elites and organized groups representing business interests have substantial independent impacts on U.S. government policy, while average citizens and mass-based interest groups have little or no independent influence" (Gilens and Page 564).
 
 The public often gets a representative who is culturally aligned with them but economically beholden to their sponsors. This manifests in the "ratchet effect" of policy: social issues may fluctuate, but economic policies favoring Wall Street—such as favorable capital gains taxes or subsidies for major industries—remain remarkably stable regardless of which party holds power.
@@ -57,6 +59,7 @@ ________________________________________________________________________________
 
 
 ## Final Takeaway ##
+
 
 The design of the US political campaign system is a complex apparatus that filters out the underfunded, regardless of their competence. It is a system where "viability" is purchased, not earned, and the price of admission inherently compromises. Until the mechanisms of campaign finance are overhauled to reduce reliance on large financiers, the American electorate will continue to find that while they have the freedom to vote, the menu of options has been preselected by a boardroom they were never invited to enter.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
