@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
+import ArchiveNav from '../../components/ArchiveNav.astro';
 
 const allDispatches = await getCollection('dispatch');
 const dispatches = allDispatches.sort(
@@ -102,10 +103,6 @@ const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
     </div>
   </div>
 </Root>
-
-<!-- Reusable archive navigation component -->
-{/* @ts-ignore: local Astro component fragment */}
-{([years, byYear]) => null}
 
 <style>
   /* Custom scrollbar for the archive sidebar */
