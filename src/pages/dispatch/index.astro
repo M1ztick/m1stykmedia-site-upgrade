@@ -6,6 +6,16 @@ const allDispatches = await getCollection('dispatch');
 const dispatches = allDispatches.sort(
   (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
+
+// Group dispatches by year for the sidebar archive
+const byYear = dispatches.reduce<Record<string, typeof dispatches>>((acc, entry) => {
+  const year = new Date(entry.data.pubDate).getFullYear().toString();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(entry);
+  return acc;
+}, {});
+
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
 ---
 
 <Root 
@@ -13,53 +23,118 @@ const dispatches = allDispatches.sort(
   description="Narratives, power structures, and the search for what holds."
   section="dispatch"
 >
-  <div class="max-w-4xl mx-auto px-6 py-16">
-    <!-- Section Header -->
-    <header class="mb-16">
-      <p class="text-xs font-mono text-dispatch/60 mb-2">SECTION_01</p>
-      <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
-        The Dispatch
-      </h1>
-      <p class="text-lg text-mist/60 max-w-2xl">
-        Where power is named and narratives are dismantled. Investigations, analysis, and essays on systems, structures, and the stories we tell ourselves.
-      </p>
-    </header>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <div class="lg:grid lg:grid-cols-[280px_1fr] lg:gap-12">
+      <!-- Mobile archive toggle -->
+      <div class="lg:hidden mb-8">
+        <button
+          id="archive-toggle"
+          class="w-full flex items-center justify-between px-4 py-3 rounded-lg border border-coral/20 bg-void-50/30 text-mist hover:border-dispatch/50 transition-colors"
+          aria-expanded="false"
+          aria-controls="archive-menu"
+        >
+          <span class="text-sm font-medium">Browse the archive</span>
+          <svg id="archive-chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div id="archive-menu" class="hidden mt-2 p-4 rounded-lg border border-coral/10 bg-void-50/30 max-h-[60vh] overflow-y-auto">
+          <ArchiveNav years={years} byYear={byYear} />
+        </div>
+      </div>
 
-    <!-- Dispatch List -->
-    <div class="space-y-8">
-      {dispatches.map((entry, index) => (
-        <>
-          <article class="group">
-            <a href={`/dispatch/${entry.id}`} class="block">
-              <div class="flex items-baseline gap-4 mb-2">
-                <span class="text-xs font-mono text-mist/40">
-                  {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </span>
-                {entry.data.category && (
-                  <span class="text-xs font-mono text-dispatch uppercase tracking-wider">{entry.data.category}</span>
-                )}
-              </div>
-              <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
-                {entry.data.title}
-              </h2>
-              <p class="text-mist/50 leading-relaxed">
-                {entry.data.description}
-              </p>
-              <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-dispatch transition-colors">
-                <span>Read</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div>
-            </a>
-          </article>
+      <!-- Desktop sticky sidebar -->
+      <aside class="hidden lg:block">
+        <div class="sticky top-28 max-h-[calc(100vh-9rem)] overflow-y-auto pr-2 py-1">
+          <h3 class="text-xs font-mono text-dispatch uppercase tracking-wider mb-6">Archive</h3>
+          <ArchiveNav years={years} byYear={byYear} />
+        </div>
+      </aside>
 
-          {index < dispatches.length - 1 && (
-            <hr class="border-coral/10" />
-          )}
-        </>
-      ))}
+      <!-- Main dispatch feed -->
+      <div>
+        <!-- Section Header -->
+        <header class="mb-16">
+          <p class="text-xs font-mono text-dispatch/60 mb-2">SECTION_01</p>
+          <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
+            The Dispatch
+          </h1>
+          <p class="text-lg text-mist/60 max-w-2xl">
+            Where power is named and narratives are dismantled. Investigations, analysis, and essays on systems, structures, and the stories we tell ourselves.
+          </p>
+        </header>
+
+        <!-- Dispatch List -->
+        <div class="space-y-8">
+          {dispatches.map((entry, index) => (
+            <>
+              <article class="group" id={entry.id}>
+                <a href={`/dispatch/${entry.id}`} class="block">
+                  <div class="flex items-baseline gap-4 mb-2">
+                    <span class="text-xs font-mono text-mist/40">
+                      {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                    </span>
+                    <span class="text-xs font-mono text-dispatch uppercase tracking-wider">Dispatch</span>
+                  </div>
+                  <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
+                    {entry.data.title}
+                  </h2>
+                  <p class="text-mist/50 leading-relaxed">
+                    {entry.data.description}
+                  </p>
+                  <div class="mt-4 flex items-center text-sm text-mist/40 group-hover:text-dispatch transition-colors">
+                    <span>Read</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+
+              {index < dispatches.length - 1 && (
+                <hr class="border-coral/10" />
+              )}
+            </>
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 </Root>
+
+<!-- Reusable archive navigation component -->
+{/* @ts-ignore: local Astro component fragment */}
+{([years, byYear]) => null}
+
+<style>
+  /* Custom scrollbar for the archive sidebar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 107, 107, 0.25);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 107, 107, 0.45);
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('archive-toggle');
+  const menu = document.getElementById('archive-menu');
+  const chevron = document.getElementById('archive-chevron');
+
+  if (toggle && menu && chevron) {
+    toggle.addEventListener('click', () => {
+      const isHidden = menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', !isHidden);
+      chevron.classList.toggle('rotate-180', isHidden);
+      toggle.setAttribute('aria-expanded', String(isHidden));
+    });
+  }
+</script>
