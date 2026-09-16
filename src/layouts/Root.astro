@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import '../styles/global.css';
+import { sortByNewest } from '../lib/dispatch';
 
 interface Props {
   title: string;
@@ -33,12 +34,8 @@ const [dispatches, journeys] = await Promise.all([
   getCollection('journey'),
 ]);
 
-const latestDispatch = dispatches
-  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
-  .slice(0, 3);
-const latestJourney = journeys
-  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
-  .slice(0, 3);
+const latestDispatch = sortByNewest(dispatches).slice(0, 3);
+const latestJourney = sortByNewest(journeys).slice(0, 3);
 ---
 
 <!DOCTYPE html>

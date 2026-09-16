@@ -1,7 +1,7 @@
 ---
 title: "The Epstein Jail Video, Part 2: The DOJ's Smoking Gun"
 description: "Federal officials called the Epstein jailhouse video airtight. A closer look at the footage—its missing minute, its editing menu, its unrecorded call—suggests otherwise."
-pubDate: 2025-08-01
+pubDate: 2025-07-31
 category: analysis
 subject: domestic-politics
 tags:

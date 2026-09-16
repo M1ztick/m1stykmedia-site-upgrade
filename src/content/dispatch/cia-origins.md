@@ -1,7 +1,7 @@
 ---
 title: "How the CIA Was Born: From OSS to Cold War Shadow War"
 description: "A concise history of the CIA's creation—from the wartime OSS and Truman's Central Intelligence Group to the National Security Act of 1947 and the early scandals that defined the agency."
-pubDate: 2025-06-14
+pubDate: 2026-08-31
 category: analysis
 subject: history
 tags:

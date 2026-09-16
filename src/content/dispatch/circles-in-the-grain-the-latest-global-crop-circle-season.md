@@ -1,7 +1,7 @@
 ---
 title: "Circles in the Grain: The Global Crop Circle Season"
 description: "A dispatch on the 2025 crop circle season—the geometry of modern formations, the evidence problem, and the competing theories behind who, or what, draws in the grain."
-pubDate: 2025-08-17
+pubDate: 2026-09-11
 category: analysis
 subject: media-culture
 tags:

@@ -2,12 +2,12 @@
 import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 import ArchiveNav from '../../components/ArchiveNav.astro';
-import { subjectLabel } from '../../lib/dispatch';
+import { subjectLabel, sortByNewest } from '../../lib/dispatch';
 
 const allDispatches = await getCollection('dispatch');
-const dispatches = allDispatches.sort(
-  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
-);
+// Newest → oldest, regardless of subject. Ordering is shared with every other
+// listing via `sortByNewest` so the feed can never drift out of sync.
+const dispatches = sortByNewest(allDispatches);
 
 // Group dispatches by year for the sidebar archive
 const byYear = dispatches.reduce<Record<string, typeof dispatches>>((acc, entry) => {

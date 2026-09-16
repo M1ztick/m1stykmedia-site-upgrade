@@ -121,13 +121,42 @@ Rights Council, company filings, witness testimony, declassified documents.*
 - Never use `## Sources & Reading`, `### Sources`, or `**Sources:**` variants.
 - A one-line provenance note may follow as a second italic paragraph.
 
-## 6. Voice
+## 6. Dates and ordering
+
+`pubDate` is the article's real publication date, and it is the **only** thing that
+decides where the piece appears — every Dispatch listing is ordered strictly
+newest → oldest, across all subjects, with no grouping or per-beat sections.
+
+### Where the date comes from
+
+| Article | Date source |
+|---|---|
+| Published on the old WordPress site | `wp:post_date` — the *site-local* date WordPress displayed |
+| Written after the migration (never on WordPress) | the day its file was first committed to this repository |
+
+- **Never use `wp:post_date_gmt`.** The original migration did, which shifted
+  every evening post forward a day and produced off-by-one dates.
+- An article written after the migration may not be dated before the commit that
+  created it. If it is, correct it to that commit date.
+- Fixing dates is scripted: `python3 scripts/fix-dispatch-dates.py --check`,
+  then re-run without `--check` to apply. The WordPress export lives (gitignored)
+  at `_imports/mistykmedia.WordPress.2026-06-03.xml`; the authoritative
+  slug → local-date table is embedded in the script so it stays reproducible.
+
+### Ordering
+
+- Ordering is a single shared comparator, `sortByNewest` in `src/lib/dispatch.ts`.
+  Import it — never hand-roll a sort in a page, or the listings will drift apart.
+- Ties on the same day are broken by title, then id, so the order is deterministic
+  and stable across builds.
+
+## 7. Voice
 
 - Clear, direct, evidence-based. Let the facts carry the weight.
 - Distinguish allegation, finding, and proven claim. Attribute contested claims.
 - No sensationalism and no speculation presented as fact.
 
-## 7. Pre-commit checklist
+## 8. Pre-commit checklist
 
 - [ ] Filename is kebab-case with no dates.
 - [ ] Frontmatter keys in canonical order; `category` and `subject` both set from

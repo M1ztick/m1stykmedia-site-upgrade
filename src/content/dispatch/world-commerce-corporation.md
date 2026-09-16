@@ -1,7 +1,7 @@
 ---
 title: "The World Commerce Corporation: OSS Veterans and the Postwar Shadow Market"
 description: "A look at the World Commerce Corporation—its origins in the British-American-Canadian Corporation, its intelligence-veteran leadership, and the controversies that still surround it."
-pubDate: 2025-06-14
+pubDate: 2026-08-30
 category: analysis
 subject: history
 tags:

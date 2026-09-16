@@ -1,7 +1,7 @@
 ---
 title: "Western Esotericism: A Luminous Thread"
 description: "Beneath the clamor of consumerism and dogma lies Western Esotericism: a luminous current focused on experiencing the divine rather than simply believing in it. Spanning from ancient Greek rites to Victorian-era lodges, this tapestry of mystery traditions, mystical practices, and occult philosophies, as explored in works like Manly P. Hall's The Secret Teachings of All Ages, reveals a shared quest across diverse traditions such as the pagan mysteries, Kabbalah, Christian mysticism, and the Hermetic Order of the Golden Dawn, to transform human consciousness and achieve direct union with the Absolute."
-pubDate: 2025-12-06
+pubDate: 2025-12-05
 tags:
   - esotericism
   - history

@@ -1,7 +1,7 @@
 ---
 title: "Tragedy in Gaza: 62 Palestinians Killed, Many While Seeking Aid"
 description: "Dozens of civilians desperate for food were killed at aid distribution sites—the latest in a documented pattern of violence against those seeking supplies."
-pubDate: 2025-08-04
+pubDate: 2025-08-03
 category: briefing
 subject: world-affairs
 tags:
