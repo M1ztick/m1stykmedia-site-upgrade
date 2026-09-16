@@ -98,3 +98,10 @@ Palantir is best understood not as a conventional technology company but as a ut
 The expansion of AI regulation in the United States, the European Union, and the United Kingdom will likely intensify scrutiny of the company. But scrutiny may also deepen its entrenchment, because regulators tend to need the very technical infrastructure that Palantir provides to oversee complex, data-intensive systems.
 
 The question the rest of us face is whether a world in which public health, policing, immigration, and warfare all run on the same surveillance-derived data architecture is a world we want to live in. Palantir will keep supplying the tools. Democratic institutions, if they are going to matter, will have to supply the limits.
+
+**Sources and further reading:**
+- Wikipedia: Palantir (contracts and controversies, 2026)
+- KuCoin Flash News: Palantir Surpasses $1 Billion in U.S. Government Contracts in 2026
+- The Urban Legend: Palantir secures billions in government contracts
+- Ground News: Palantir CEO defends surveillance tech as U.S. government contracts boost sales
+- The Guardian / BBC / Computing: London Met Police Palantir contract blocked, NYC hospitals drop Palantir
