@@ -113,19 +113,26 @@
     @apply italic;
   }
 
-  /* Broadsheet prose — newspaper feel for Dispatch articles */
+  /* Broadsheet prose — newspaper feel for Dispatch articles.
+     Headings are uniform across every article: upright (never italic), no
+     numeral prefixes, a single hairline rule above each major section. */
   .prose-broadsheet p {
     @apply text-mist leading-[1.85] mb-6 text-[1.0625rem];
   }
 
   .prose-broadsheet h2 {
-    @apply font-display text-xl font-bold text-mist mt-12 mb-4 uppercase tracking-wide;
-    border-top: 2px solid;
-    @apply border-dispatch/40 pt-4;
+    @apply font-display text-xl font-bold text-mist mt-14 mb-5 tracking-wide;
+    border-top: 1px solid;
+    @apply border-dispatch/30 pt-5;
   }
 
   .prose-broadsheet h3 {
-    @apply font-display text-lg font-semibold text-mist mt-8 mb-3 italic;
+    @apply font-display text-base font-semibold text-mist mt-9 mb-3 tracking-wide;
+  }
+
+  /* The first section follows the header rule — keep it tight. */
+  .prose-broadsheet > h2:first-child {
+    @apply mt-0;
   }
 
   .prose-broadsheet blockquote {

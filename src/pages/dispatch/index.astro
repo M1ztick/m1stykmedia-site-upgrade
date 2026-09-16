@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Root from '../../layouts/Root.astro';
 import ArchiveNav from '../../components/ArchiveNav.astro';
+import { subjectLabel } from '../../lib/dispatch';
 
 const allDispatches = await getCollection('dispatch');
 const dispatches = allDispatches.sort(
@@ -56,7 +57,7 @@ const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
       <div>
         <!-- Section Header -->
         <header class="mb-16">
-          <p class="text-xs font-mono text-dispatch/60 mb-2">SECTION_01</p>
+          <p class="text-xs font-mono text-dispatch/60 mb-2 uppercase tracking-[0.3em]">Dispatch &rarr; All Subjects</p>
           <h1 class="font-display text-4xl md:text-5xl font-bold text-mist mb-4">
             The Dispatch
           </h1>
@@ -71,11 +72,14 @@ const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
             <>
               <article class="group" id={entry.id}>
                 <a href={`/dispatch/${entry.id}`} class="block">
-                  <div class="flex items-baseline gap-4 mb-2">
+                  <div class="flex items-baseline gap-2 mb-2 flex-wrap">
+                    <span class="text-xs font-mono text-dispatch uppercase tracking-wider">Dispatch</span>
+                    <span class="text-dispatch/50 text-xs font-mono">&rarr;</span>
+                    <span class="text-xs font-mono text-dispatch/80 uppercase tracking-wider">{subjectLabel(entry.data.subject)}</span>
+                    <span class="text-mist/20">—</span>
                     <span class="text-xs font-mono text-mist/40">
                       {new Date(entry.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                     </span>
-                    <span class="text-xs font-mono text-dispatch uppercase tracking-wider">Dispatch</span>
                   </div>
                   <h2 class="font-display text-xl md:text-2xl text-mist group-hover:text-dispatch transition-colors mb-3">
                     {entry.data.title}

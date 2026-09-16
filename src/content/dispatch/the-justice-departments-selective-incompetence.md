@@ -1,23 +1,18 @@
 ---
-title: The Justice Department's Selective Incompetence
-description: Department of Justice’s recent failure to redact the names of Jeffrey Epstein’s victims is not a routine clerical lapse. It is a breakdown so significant that it undermines the narrative of mere bureaucratic oversight and reasonably calls for scrutiny of whether this “error” now functions as a barrier to further transparency.
+title: "The Justice Department's Selective Incompetence"
+description: "The DOJ's failure to redact the names of Epstein's victims is not a routine clerical lapse. It is a breakdown that now functions as a barrier to further transparency."
 pubDate: 2025-11-29
+category: analysis
+subject: domestic-politics
 tags:
-  - coverup
-  - op-ed
-  - politics
-  - blog
-  - bureaucratic-corruption
   - department-of-justice
-  - elites
   - epstein-files
-  - party-politics
-  - trump-administration
-category: politics
+  - transparency
+  - bureaucratic-corruption
+  - coverup
 featured: false
 ---
 
-## Why the DOJ’s Redaction Failure Warrants Scrutiny, Not Just Apologies
 The Department of Justice’s recent failure to redact the names of Jeffrey Epstein’s victims is not a routine clerical lapse. It is a breakdown so significant that it undermines the narrative of mere bureaucratic oversight and reasonably calls for scrutiny of whether this “error” now functions as a barrier to further transparency.
 
 The latest tranche of records related to Jeffrey Epstein’s arrest, transmitted by the Department of Justice (DOJ) to a congressional committee, was publicly framed as a step toward accountability. Instead, it resulted in a serious breach of victim privacy. In tens of thousands of pages, the DOJ and Epstein’s estate failed to consistently remove the names and identifying details of numerous victims, including those who were minors at the time of the alleged offenses. Survivors who had been assured confidentiality found themselves unexpectedly exposed and contacted, despite years spent rebuilding their lives outside the public eye.
@@ -34,4 +29,6 @@ The central question, then, is not simply whether a redaction protocol broke dow
 
 ---
 
-*Sources: NBC News, “Judge seeks to shield Epstein victims after dozens of names exposed in DOJ, estate files” (Nov. 27, 2025); ABC News, “Law firm representing alleged Epstein victims sends scathing letter to DOJ” (Nov. 26, 2025); Wall Street Journal, “Dozens of Epstein Victims’ Names Exposed in Files Released by Congress” (Nov. 26, 2025).*
+## Sources
+
+*NBC News, “Judge seeks to shield Epstein victims after dozens of names exposed in DOJ, estate files” (Nov. 27, 2025); ABC News, “Law firm representing alleged Epstein victims sends scathing letter to DOJ” (Nov. 26, 2025); Wall Street Journal, “Dozens of Epstein Victims’ Names Exposed in Files Released by Congress” (Nov. 26, 2025).*

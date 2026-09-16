@@ -1,19 +1,15 @@
 ---
-title: "The Uni-Party Setup: Authoritarianism Wasn't A Glitch"
-description: "Introduction  The media has sold America’s political story as a clash of red vs. blue, but the scoreboard never changes: elites win, the rest of us lo..."
+title: "The Uni-Party Setup: Authoritarianism Wasn't a Glitch"
+description: "The scoreboard never changes no matter who wins. What looks like a partisan seesaw is a single power structure with two paint colors—and an authoritarian turn built in."
 pubDate: 2025-08-31
+category: essay
+subject: domestic-politics
 tags:
-  - coverup
-  - history
-  - op-ed
-  - politics
-  - scandal
-  - trending
-  - artificial-intelligence
-  - blog
-  - bureaucratic-corruption
-  - business
-category: politics
+  - uni-party
+  - authoritarianism
+  - big-tech
+  - elites
+  - trump-administration
 featured: false
 ---
 
@@ -82,4 +78,10 @@ They didn’t need a coup. They didn’t even need tanks in the streets. They ju
 
 Meaning Trump wasn't some unaccounted-for, renegade candidate who managed to slip through elite clutches and is here to benefit us commoners (or so he and his base would have you believe). Instead, he may be the next step in a carefully constructed ploy by the elite class to truly take that last authoritarian/technocratic hammer stroke that we'll likely regret terribly when enacted in policy.
 
-Stay authentic friends. -MiStyk
+Stay authentic friends.
+
+---
+
+## Sources
+
+*Public statements, federal contracting records, and the historical record.*

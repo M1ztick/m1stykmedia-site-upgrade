@@ -1,11 +1,15 @@
 ---
-title: Meta's Troubling History with User Privacy
-description: Meta's history reveals a series of privacy violations and legal issues, including tracking users without consent, extensive fines for data misuse, and lawsuits related to child safety and addictive algorithms. Ongoing problems include non-consensual data tracking and psychological experiments, highlighting concerns over Big Tech's disregard for user welfare.
+title: "Meta's Troubling History with User Privacy"
+description: "From undisclosed tracking to record GDPR fines and child-safety suits, Meta's record on user privacy is a decade-long pattern rather than a run of accidents."
 pubDate: 2025-07-18
+category: analysis
+subject: surveillance-state
 tags:
-  - artificial-intelligence
-  - technology
-category: essay
+  - meta
+  - privacy
+  - big-tech
+  - gdpr
+  - user-data
 featured: false
 ---
 
@@ -63,4 +67,6 @@ It's important to remember that Big Tech prioritizes business, profits, governme
 
 ---
 
-*Sources: Public regulatory filings, EU GDPR enforcement records, FTC actions, and aggregated news reporting.*
+## Sources
+
+*Public regulatory filings, EU GDPR enforcement records, FTC actions, and aggregated news reporting.*

@@ -1,17 +1,16 @@
 ---
-title: "Billionaire Buy In: American Electoral Mythos"
-description: The notion that anyone can become President is a compelling American myth. The idea that a small-town teacher or community organizer can rise to the top solely on ideas and the people's will is a tantalizing representation of the American Dream. One that many still wholeheartedly believe in. However, this illusion is shattered when you examine the modern campaign landscape.
+title: "Billionaire Buy-In: The American Electoral Mythos"
+description: "The idea that anyone can become president is a defining American myth. The modern campaign landscape tells a different story: viability is purchased, and the price of admission is set by a donor class the electorate never chose."
 pubDate: 2026-02-13
+category: analysis
+subject: domestic-politics
 tags:
-  - history
-  - politics
-  - blog
-  - bureaucratic-corruption
-  - domestic-policy
+  - campaign-finance
+  - citizens-united
+  - dark-money
+  - elections
   - elites
-  - government-overreach
-  - us-economics
-category: essay
+  - representation
 featured: false
 ---
 
@@ -37,4 +36,6 @@ The design of the US political campaign system is a complex apparatus that filte
 
 ---
 
-*Sources: Center for Responsive Politics, "Cost of Election." OpenSecrets, 2024, www.opensecrets.org/elections-overview/cost-of-election. Accessed 24 Nov. 2025.Federal Election Commission. "Understanding Citizens United." FEC.gov, United States Government, www.fec.gov/legal-resources/court-cases/citizens-united-v-fec/. Accessed 24 Nov. 2025.Gilens, Martin, and Benjamin I. Page. "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens." Perspectives on Politics, vol. 12, no. 3, 2014, pp. 564–581.Lessig, Lawrence. Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It. Twelve, 2011.Toobin, Jeffrey. "Money Unlimited: How Chief Justice John Roberts Orchestrated the Citizens United Decision." The New Yorker, 21 May 2012.
+## Sources
+
+*Center for Responsive Politics, "Cost of Election." OpenSecrets, 2024, www.opensecrets.org/elections-overview/cost-of-election. Accessed 24 Nov. 2025.Federal Election Commission. "Understanding Citizens United." FEC.gov, United States Government, www.fec.gov/legal-resources/court-cases/citizens-united-v-fec/. Accessed 24 Nov. 2025.Gilens, Martin, and Benjamin I. Page. "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens." Perspectives on Politics, vol. 12, no. 3, 2014, pp. 564–581.Lessig, Lawrence. Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It. Twelve, 2011.Toobin, Jeffrey. "Money Unlimited: How Chief Justice John Roberts Orchestrated the Citizens United Decision." The New Yorker, 21 May 2012.*

@@ -1,16 +1,14 @@
 ---
-title: Human Beats AI in 10-Hour Coding Marathon – Here’s How
-description: "In a moment straight out of a tech-thriller, the competitive programming world witnessed an epic upset: Przemysław Dębiak—better known as “Psyho”—defe..."
+title: "Human Beats AI in a 10-Hour Coding Marathon"
+description: "At the AtCoder World Tour Finals, a human competitor outlasted OpenAI's system across ten hours of programming. What the upset does—and doesn't—say about machine intelligence."
 pubDate: 2025-07-20
+category: analysis
+subject: technology
 tags:
   - artificial-intelligence
-  - news
-  - technology
-  - chat-gpt
-  - gen-ai
-  - innovation
   - openai
-category: essay
+  - competitive-programming
+  - automation
 featured: false
 ---
 
@@ -32,13 +30,13 @@ As the clock wound down, OpenAIAHC held a narrow lead. But in the final stretch,
 
 Debiak’s win was nothing short of incredible and a true demonstration in human problem-solving abilities. His instincts, sharpened by years of high-level competition, guided him through the chaos of the challenge. While the AI rapidly cranked out solutions, Debiak crafted a unique and creative approach that made the difference. And through it all, he showed remarkable endurance, relying on experience and a heavy dose of caffeine to push through exhaustion.
 
-Afterward, he summed it up candidly: “I’m completely exhausted… I got about 10 hours of sleep in three days. I’m barely alive. Humanity has prevailed.” 
+Afterward, he summed it up candidly: “I’m completely exhausted… I got about 10 hours of sleep in three days. I’m barely alive. Humanity has prevailed.”
 
 ## Looking Ahead
 
 With AI evolving at breakneck speed, many believe this may likely be the last time a human claims the top spot in such a contest. Even OpenAI CEO Sam Altman, from atop his AI/Tech throne gave a rare gesture of approval.
 
-Just a year ago, no AI even cracked the top 10. Now, OpenAI’s model came within 10% of winning. The speed of progress is staggering—and if I may be frank—a little spooky. 
+Just a year ago, no AI even cracked the top 10. Now, OpenAI’s model came within 10% of winning. The speed of progress is staggering—and if I may be frank—a little spooky.
 
 ## Who Is “Psyho”?
 
@@ -50,8 +48,12 @@ As AI tools grow smarter and faster, human creativity, instinct, and resilience 
 
 OpenAI’s remark: “Congrats to the champion for holding us off this time.”
 
-Let me know in the comments if you think machine or man will be next year's victor. 
+Let me know in the comments if you think machine or man will be next year's victor.
 
-If you enjoyed this, then consider sharing or subscribing. 
+If you enjoyed this, then consider sharing or subscribing.
 
--Mistyk
+---
+
+## Sources
+
+*AtCoder World Tour Finals 2025; OpenAI's post-competition statement; competitive-programming records.*

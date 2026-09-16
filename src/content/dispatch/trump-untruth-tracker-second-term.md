@@ -1,21 +1,19 @@
 ---
-title: "Trump Untruth Tracker: The Second Term Ledger"
-description: "A running account of Donald Trump's false and misleading public statements from the 2024 campaign through year two of his second presidency, drawing on the Washington Post, CNN, PolitiFact, and other major fact-checkers."
+title: "Trump Untruth Tracker: The Second-Term Ledger"
+description: "A running account of Donald Trump's false and misleading public statements from the 2024 campaign through his second presidency, drawing on the major fact-checking desks."
 pubDate: 2026-08-09
+category: briefing
+subject: domestic-politics
 tags:
   - trump
   - fact-check
   - misinformation
-  - politics
   - second-term
   - media
-  - democracy
-  - dispatch
-category: politics
 featured: false
 ---
 
-### **I. The Short Version**
+## The Short Version
 
 The most rigorous count of Donald Trump’s falsehoods remains the **Washington Post Fact Checker’s tally of 30,573 false or misleading claims during his first term**. No equivalent live national database exists for his second term, but major fact-checkers — CNN, the Post, PolitiFact, AP, and Reuters — have continued documenting a high volume of untruths across speeches, interviews, social media, and formal addresses.
 
@@ -31,7 +29,7 @@ A viral social-media claim alleging **85,654 false statements by July 2026** has
 
 ---
 
-### **II. The Gold Standard: First-Term 30,573**
+## The Gold Standard: First-Term 30,573
 
 The *Washington Post*’s Fact Checker project, maintained by Glenn Kessler, produced the most cited presidential dishonesty tally in modern history. The project tracked every verified false or misleading statement across Trump’s presidency:
 
@@ -45,7 +43,7 @@ The database was not restarted as a public, continuously updating second-term pr
 
 ---
 
-### **III. The 2024 Campaign: Lie of the Year**
+## The 2024 Campaign: Lie of the Year
 
 Before returning to office, Trump ran a 2024 campaign that fact-checkers described as saturated with falsehoods:
 
@@ -57,7 +55,7 @@ No single authoritative full-year total for 2024 has been published, but the pat
 
 ---
 
-### **IV. Second Term: First 100 Days**
+## Second Term: First 100 Days
 
 On **April 30, 2025**, CNN published a comprehensive debunking article titled **“Fact check: Debunking 100 Trump false claims from his first 100 days.”**
 
@@ -74,7 +72,7 @@ This gives a second-term baseline of **roughly 1 false claim per day** at minimu
 
 ---
 
-### **V. Second Term: Year One and Beyond**
+## Second Term: Year One and Beyond
 
 Major fact-checking attention continued into 2026:
 
@@ -90,7 +88,7 @@ PolitiFact also declared **2025 the “Year of the Lies,”** noting that the vo
 
 ---
 
-### **VI. What About Press Interviews vs. Public Hearings?**
+## What About Press Interviews vs. Public Hearings?
 
 This is where the trail goes cold.
 
@@ -102,7 +100,7 @@ So while we know interviews produce many falsehoods and hearings produce essenti
 
 ---
 
-### **VII. The 85,654 Number: Treat It as Unverified**
+## The 85,654 Number: Treat It as Unverified
 
 A social-media meme has claimed that, as of **July 27, 2026**, Trump had made **85,654 false statements** across his presidencies, averaging about 169 per day.
 
@@ -112,7 +110,7 @@ The likely source appears to be an extrapolation or social-media estimate based 
 
 ---
 
-### **VIII. Why There Is No Simple Second-Term Number**
+## Why There Is No Simple Second-Term Number
 
 Several factors prevent a clean cumulative count:
 
@@ -123,7 +121,7 @@ Several factors prevent a clean cumulative count:
 
 ---
 
-### **IX. Looking Forward**
+## Looking Forward
 
 If a second-term equivalent to the 30,573 figure ever materializes, it will almost certainly come from the same institutions that produced the first one. Until then, the safest statement is:
 
@@ -131,8 +129,7 @@ If a second-term equivalent to the 30,573 figure ever materializes, it will almo
 
 ---
 
----
+## Sources
 
-*Sources: Glenn Kessler, Salvador Rizzo, and Meg Kelly, The Washington Post Fact Checker; CNN / Daniel Dale fact-check series (2025–2026); PolitiFact Donald Trump archives (2025–2026); PBS NewsHour / PolitiFact; AP and Reuters fact-checking coverage.*
-
+*Glenn Kessler, Salvador Rizzo, and Meg Kelly, The Washington Post Fact Checker; CNN / Daniel Dale fact-check series (2025–2026); PolitiFact Donald Trump archives (2025–2026); PBS NewsHour / PolitiFact; AP and Reuters fact-checking coverage.*
 *Report compiled: August 9, 2026.*

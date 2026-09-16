@@ -1,14 +1,21 @@
 ---
 import Root from './Root.astro';
+import { motif } from '../lib/dispatch';
 
 interface Props {
   title: string;
   description?: string;
   section?: 'dispatch' | 'journey';
+  subject?: string;
   slug: string;
 }
 
-const { title, description, section = 'dispatch', slug } = Astro.props;
+const { title, description, section = 'dispatch', subject, slug } = Astro.props;
+
+// Masthead kicker. Dispatch articles lead with the section motif
+// ("Dispatch → Global Finance"); everything else falls back to a plain label.
+const kicker = section === 'dispatch' ? motif(subject) : 'The Inner Journey';
+const kickerColor = section === 'dispatch' ? 'text-dispatch' : 'text-journey';
 ---
 
 <Root title={title} description={description} section={section}>
@@ -17,8 +24,8 @@ const { title, description, section = 'dispatch', slug } = Astro.props;
     <!-- Broadsheet masthead rule -->
     <div class="mb-8">
       <div class="flex items-center gap-4 mb-2">
-        <span class="text-[10px] font-mono text-dispatch uppercase tracking-[0.3em]">The Dispatch</span>
-        <div class="flex-1 h-px bg-dispatch/30"></div>
+        <span class={`text-[10px] font-mono ${kickerColor} uppercase tracking-[0.3em]`}>{kicker}</span>
+        <div class={`flex-1 h-px ${section === 'dispatch' ? 'bg-dispatch/30' : 'bg-journey/30'}`}></div>
         <span class="text-[10px] font-mono text-mist/30 uppercase tracking-widest">mistykmedia.com</span>
       </div>
       <div class="h-[3px] bg-gradient-to-r from-coral via-teal/60 to-transparent"></div>

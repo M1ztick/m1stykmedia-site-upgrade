@@ -1,21 +1,16 @@
 ---
-title: Israel's Starvation of Palestine ~ 40,000 Babies At Risk
-description: An Objective Glimpse into Israel's Recent War Crimes  Heartbreak is unfolding in Gaza as the Israeli-imposed Palestinian humanitarian crisis takes ano...
+title: "Israel's Starvation of Palestine: 40,000 Babies at Risk"
+description: "As Israel's blockade tightens, infants are dying of malnutrition and Gaza's government warns that 40,000 babies are at risk."
 pubDate: 2025-07-26
-tags:
-  - international-news
-  - news
-  - politics
-  - genocide-in-gaza
-  - humanitarian-crises
-  - infanticide
-  - israel-hamas-war
-  - israeli-war-crimes
 category: essay
+subject: world-affairs
+tags:
+  - gaza
+  - famine
+  - humanitarian-crises
+  - israeli-war-crimes
 featured: false
 ---
-
-An Objective Glimpse into Israel's Recent War Crimes
 
 Heartbreak is unfolding in Gaza as the Israeli-imposed Palestinian humanitarian crisis takes another chilling turn. Just this week, two more infants became the latest Palestinian children to die from malnutrition. Over 120 people—more than 80 of them children—have now starved to death as Israel’s blockade tightens around the Gaza Strip.
 
@@ -25,14 +20,14 @@ The director of Gaza’s main children’s hospital gave a chilling warning: “
 
 ## A Personal Reflection
 
-When faced with these painful realities, I sometimes ask myself and God why we're allowing helpless children to be starved. Why is Israel committing these heinous atrocities, and why is my government sanctioning it? 
+When faced with these painful realities, I sometimes ask myself and God why we're allowing helpless children to be starved. Why is Israel committing these heinous atrocities, and why is my government sanctioning it?
 
 Why would people who were less than a century ago strong-armed, starved, and dehumanized themselves turn around and commit those same atrocities upon a neighboring people? And while some do periodically come forward to say something, nothing is being done. The world is either pretending it isn't happening or idling, observing on the sidelines while thousands of innocent civilians, including youngsters and babies, are paying for it agonizingly with their lives.
 
 It’s challenging to imagine, but this is reality now for families in Gaza. If we believe in basic humanity, we can’t look away. Share this story. Speak about it. Contact your representatives. We can’t let the world forget Gaza’s children.
 
--Mistyk
-
 ---
 
-*Sources: Al Jazeera, https://aje.io/f4w0aa*
+## Sources
+
+*Al Jazeera, <https://aje.io/f4w0aa*>*
