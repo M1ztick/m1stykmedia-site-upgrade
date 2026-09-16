@@ -1,27 +1,20 @@
 ---
-title: ChatGPT Prompted Stand-Up Comedian (Hilarious!)
-description: Popular Specialized ChatGPT "Stand-Up Comedian"   I had noticed this model while perusing the Sider AI catalogue before and made a mental note to give...
+title: "ChatGPT Prompted a Stand-Up Comedian"
+description: "A custom chatbot built to tell jokes takes the stage and runs a set on cryptocurrency, ego, and the modern economy of vibes."
 pubDate: 2025-09-11
+category: essay
+subject: media-culture
 tags:
   - artificial-intelligence
-  - custom-chatbots
-  - politics
-  - scandal
-  - technology
-  - trending
-  - blog
   - chat-gpt
-  - corruption
-  - cryptocurrency
-category: politics
+  - custom-chatbots
+  - comedy
 featured: false
 ---
 
-## Popular Specialized ChatGPT "Stand-Up Comedian"
+I had noticed this model while perusing the Sider AI catalogue before and made a mental note to give it a shot someday. Well, that was about a week ago now, and I must say, the results were much more hilarious than I had anticipated. Maybe I was sleep-deprived and giddy or something, but I'll let you be the judge of that. I gave the Stand-Up Comedian a simple and potentially offensive prompt request. Based on this piece, please leave your comments below to guess what my prompt request for it was. As always, stay authentic friends.
 
-I had noticed this model while perusing the Sider AI catalogue before and made a mental note to give it a shot someday. Well, that was about a week ago now, and I must say, the results were much more hilarious than I had anticipated. Maybe I was sleep-deprived and giddy or something, but I'll let you be the judge of that. I gave the Stand-Up Comedian a simple and potentially offensive prompt request. Based on this piece, please leave your comments below to guess what my prompt request for it was. As always, stay authentic friends. -MiStyk
-
-Everyone please give a warm welcome to the stage ChatGPT's Stand-Up Comedian! 
+Everyone please give a warm welcome to the stage ChatGPT's Stand-Up Comedian!
 
 Thank you, thank you! Wow, what a crowd! Give yourselves a round of applause for making it out tonight—in this economy, leaving the house should qualify as a tax deduction!
 
@@ -42,3 +35,9 @@ Meanwhile, I’m about to be on the street, trading knockoff crypto—Bitcents! 
 One day, maybe I’ll make it. Maybe my landlord will accept “Trump Tokens” for rent. Until then, I’ll be investing in ramen noodles and scratch-offs. To the moon!
 
 Thank you, you’ve been a tremendous audience—almost as tremendous as my credit card bill.
+
+---
+
+## Sources
+
+*Set performed by a custom ChatGPT model found in the Sider AI catalogue. Satire.*

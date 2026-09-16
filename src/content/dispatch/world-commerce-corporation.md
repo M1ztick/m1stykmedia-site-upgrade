@@ -1,13 +1,18 @@
 ---
-title: "Dispatch: The World Commerce Corporation — OSS, Intrepid, and the Postwar Shadow Market"
-description: "A look at the World Commerce Corporation: its origins in the British-American-Canadian Corporation, its intelligence-veteran leadership, global trade operations, and the controversies that still surround it."
-pubDate: 2025-06-14T12:00:00Z
-category: "dispatch"
-tags: ["World Commerce Corporation", "OSS", "William Donovan", "William Stephenson", "intelligence", "cold war", "cartels", "trade", "Permindex", "JFK"]
+title: "The World Commerce Corporation: OSS Veterans and the Postwar Shadow Market"
+description: "A look at the World Commerce Corporation—its origins in the British-American-Canadian Corporation, its intelligence-veteran leadership, and the controversies that still surround it."
+pubDate: 2025-06-14
+category: analysis
+subject: history
+tags:
+  - world-commerce-corporation
+  - oss
+  - william-donovan
+  - william-stephenson
+  - cold-war
+  - permindex
 featured: false
 ---
-
-# The World Commerce Corporation: OSS, Intrepid, and the Postwar Shadow Market
 
 ## What Was It?
 
@@ -61,19 +66,19 @@ One account suggests the WCC was designed to **fill the void left by the break-u
 
 ## Controversies and Shadow Connections
 
-### 1. The "Little ECA"
+### The "Little ECA"
 
 A 1949 *New York Times* article nicknamed the WCC a **"Little ECA"** — an informal, private-sector counterpart to the Marshall Plan's Economic Cooperation Administration. The framing was provocative: a private company run by former spies acting in a space normally occupied by governments and aid institutions.
 
-### 2. Cold War Dealings
+### Cold War Dealings
 
 A declassified State Department cable from the early 1950s records WCC president Frank Ryan negotiating on behalf of a German steel company to purchase a Czechoslovak strip mill held under a U.S. Treasury blocking order. The proposed transaction required U.S. government approval and Treasury licensing — clear evidence that WCC operations intersected with high-stakes Cold War trade policy, even if the transaction itself may not have been illicit.
 
-### 3. The FBI Question
+### The FBI Question
 
 Rumors persist that the **FBI opened or considered opening an investigation of the WCC** and that the inquiry was stifled because of the company's powerful intelligence and banking connections. To date, I have not located a declassified FBI file or uncontested primary document confirming this specific claim. The WCC's activities were clearly visible to U.S. regulators (the Treasury licensing case above is proof), but whether there was a formal, suppressed FBI investigation is **speculative and unverified**.
 
-### 4. Permindex and the JFK Assassination Fringe
+### Permindex and the JFK Assassination Fringe
 
 The WCC name appears in the conspiracy literature around the **John F. Kennedy assassination**, primarily through **William Torbitt's** manuscript *Nomenclature of an Assassination Cabal* (1970). Torbitt linked elements of the WCC/BSC network to **Permindex**, a Swiss-based trade organization, and to **Clay Shaw's** Centro Mondiale Commerciale in Italy. Torbitt alleged that these entities were fronts for assassination planning.
 
@@ -99,7 +104,7 @@ The WCC is best understood as a case study in how wartime intelligence networks 
 
 ---
 
-## Sources & Reading
+## Sources
 
 - *The New York Times*, "Anglo-U. S. Group Called 'Little ECA'" (January 2, 1949)
 - *The New York Times*, "World Trade Body Ready to Function" (September 24, 1947)
@@ -108,7 +113,4 @@ The WCC is best understood as a case study in how wartime intelligence networks 
 - Reciprocal Contradiction (blog) — "World Commerce Corporation & Developing Jamaica" (January 8, 2021)
 - H. Montgomery Hyde, *The Quiet Canadian: The Secret Service Story of Sir William Stephenson*
 - William Torbitt (pseudonym), *Nomenclature of an Assassination Cabal* (1970) — [treat as conspiracy literature, not verified fact]
-
----
-
 *Dispatch generated from open-source research. Claims marked as speculative should not be presented as established fact.*

@@ -1,20 +1,20 @@
 ---
-title: "Iran Strikes Tankers, US Retaliates: The MOU Unravels During Khamenei's Funeral"
-description: "A breakdown of Iran's attacks on commercial shipping in the Strait of Hormuz, the US military response, and what it means for the already-fraying US-Iran ceasefire agreement."
+title: "Iran Strikes Tankers, the US Retaliates, and the MOU Unravels"
+description: "A breakdown of Iran's attacks on commercial shipping in the Strait of Hormuz, the US military response, and what it means for an already-fraying ceasefire."
 pubDate: 2026-07-08
-tags:
-  - 2026-iran-war
-  - us-foreign-policy
-  - iran
-  - middle-east
-  - oil-and-gas
-  - geopolitics
-  - blog
 category: investigation
+subject: world-affairs
+tags:
+  - iran
+  - strait-of-hormuz
+  - oil-and-gas
+  - us-foreign-policy
+  - middle-east
+  - geopolitics
 featured: false
 ---
 
-### **I. The Attacks: What Happened (July 6–7, 2026)**
+## The Attacks: What Happened (July 6–7, 2026)
 
 Over a roughly 24-hour period, **Iran's Islamic Revolutionary Guard Corps (IRGC) attacked three commercial vessels** transiting through the Strait of Hormuz. This was not ambiguous, not accidental, and not deniable.
 
@@ -30,7 +30,7 @@ Qatar's foreign ministry spokesperson, **Majed Al-Ansari**, called the *Al Rekay
 
 ---
 
-### **II. The Trigger: Who Decides Which Route Ships Take?**
+## The Trigger: Who Decides Which Route Ships Take?
 
 The immediate cause was a dispute over **transit corridors** through the Strait of Hormuz.
 
@@ -42,29 +42,33 @@ The underlying issue: **Iran is attempting to stop Western and Gulf efforts to b
 
 ---
 
-### **III. The MOU: What Articles 4 and 5 Actually Say**
+## The MOU: What Articles 4 and 5 Actually Say
 
 The **Memorandum of Understanding** signed June 15 (announced) / June 17 (formally signed) is a 14-point document. These are the sections in dispute:
 
-#### **Article 4 — U.S. Obligations:**
+### Article 4 — U.S. Obligations
+
 > *"Immediately upon the signing of this MOU, the United States of America will begin the removal of its naval blockade and any disturbances or impediments against the Islamic Republic of Iran, and it will fully end the naval blockade within 30 days. During this period, the traffic of vessels will be in proportion to the numbers of pre-war traffic being restored by the Islamic Republic of Iran. United States of America further undertakes to remove its forces from the proximity of the Islamic Republic of Iran within 30 days after the final deal."*
 
-#### **Article 5 — Iran's Obligations:**
+### Article 5 — Iran's Obligations
+
 > *"Upon the signing of this MOU, the Islamic Republic of Iran will make arrangements using its best efforts for the safe passage of commercial vessels with no charge for 60 days, only from the Persian Gulf to the Sea of Oman and vice versa. The traffic of commercial vessels will immediately start, and considering the need for removing the technical and military obstacles and de-mining by the Islamic Republic of Iran will be instated within 30 days. The Islamic Republic of Iran will conduct dialog with the Sultanate of Oman to define the future administration and maritime services in the Strait of Hormuz, in discussion with other Persian Gulf littoral states in line with the applicable international law and the sovereign rights of coastal states of the Strait of Hormuz."*
 
 ---
 
-### **IV. Did Iran Violate the MOU?**
+## Did Iran Violate the MOU?
 
 **Technically, yes. Strategically, Iran disputes it.**
 
-#### **The Case Against Iran:**
+### The Case Against Iran
+
 1. **Article 5 commits to "no charge" safe passage.** Firing missiles at LNG and crude tankers is the **opposite** of safe passage.
 2. **"Best efforts" does not permit military enforcement of unilateral routing rules.** The MOU requires Iran to **consult Oman** on future administration—not impose routes by missile strike.
 3. **The IRGC warning to ships** to use Iranian-designated corridors effectively created a **de facto blockade** of internationally recognized lanes.
 4. **CENTCOM explicitly called the attacks** "unwarranted, dangerous, and a **clear violation of the ceasefire.**"
 
-#### **Iran's Counterargument:**
+### Iran's Counterargument
+
 1. **"Best efforts" is not an absolute guarantee.** Iran claims it was *safeguarding* the strait by preventing unauthorized transit.
 2. **The vessels violated Iranian sovereign routing.** Tehran asserts the right to regulate traffic in its territorial waters.
 3. **The U.S. failed to fully remove the blockade within 30 days.** Iran claims the U.S. violated **Article 4 first** by maintaining military presence and enforcement.
@@ -72,11 +76,12 @@ The **Memorandum of Understanding** signed June 15 (announced) / June 17 (formal
 
 ---
 
-### **V. The U.S. Response: Airstrikes and Revoked Waivers**
+## The U.S. Response: Airstrikes and Revoked Waivers
 
 The U.S. military response was described by officials as **larger than previous retaliatory strikes** against Iran.
 
-#### **USCENTCOM Strikes (Tuesday, July 7):**
+### USCENTCOM Strikes (Tuesday, July 7)
+
 - Iranian **air-defense systems**
 - **Coastal surveillance sites**
 - **Surface-to-air missile (SAM) batteries**
@@ -86,25 +91,28 @@ The U.S. military response was described by officials as **larger than previous 
 
 Strikes were delivered by **Air Force jets and Navy Tactical aircraft**. **President Trump approved the strike plan from Turkey**, where he was attending the NATO summit.
 
-#### **Treasury Department Action:**
+### Treasury Department Action
+
 Simultaneously, the U.S. **revoked the temporary sanctions waiver** that had permitted Iran to sell oil and petrochemicals. The waiver—originally scheduled through **August 21**—was cut short. All authorized transactions must now wind down by **July 17**.
 
 ---
 
-### **VI. The Funeral Context: Was the U.S. Supposed to Hold Fire?**
+## The Funeral Context: Was the U.S. Supposed to Hold Fire?
 
 This is where the timeline becomes politically charged.
 
 **Ayatollah Ali Khamenei was killed on February 28, 2026**, in the opening U.S.-Israeli strikes on Iran. His body lay in state for nearly four months before the **state funeral began Saturday, July 4**. The ceremonies are ongoing and scheduled to conclude with burial in Mashhad on **July 9**.
 
-#### **What Trump Said:**
+### What Trump Said
+
 > *"We gave them a week off for a funeral because we're nice."*
 > — **Trump, July 4 speech at Mount Rushmore**
 
 And to Axios:
 > *"They are all there. One shot [and we can take them all out], but we are not going to do that because then we would have nobody to negotiate with."*
 
-#### **The Reality:**
+### The Reality
+
 1. **There was no formal "no-hostilities" agreement** tied to the funeral. The pause was a **bilateral understanding** mediated by Qatar and Pakistan that peace talks would be temporarily suspended—not that military operations would cease.
 2. **Trump explicitly framed the restraint as tactical, not principled.** He held fire on Iranian leadership gatherings for **strategic leverage** (needing negotiators alive), not out of obligation.
 3. **However, the symbolism matters.** Launching strikes against Iran **during active mourning for the Supreme Leader killed by U.S. weapons** is a significant escalation of tone, even if not a formal treaty violation.
@@ -112,7 +120,7 @@ And to Axios:
 
 ---
 
-### **VII. The MOU Is Functionally Dead**
+## The MOU Is Functionally Dead
 
 Let us be direct about what the current cycle reveals:
 
@@ -128,7 +136,7 @@ Both sides are treating the MOU as **transactional leverage**, not a binding fra
 
 ---
 
-### **VIII. The Deeper Problem: Competing Interpretations**
+## The Deeper Problem: Competing Interpretations
 
 As **Al Jazeera reported**:
 > *"Tehran claims the memorandum is specifically worded to leave it, in consultation with Oman, to manage the reopening of the strait... At a briefing in Tehran, foreign ministry officials insisted Iran had a right to impose fees on all ships using the strait."*
@@ -144,7 +152,7 @@ The MOU was **ambiguous by design**— drafted in haste to stop a war, with enou
 
 ---
 
-### **IX. What This Says About US Reliability**
+## What This Says About US Reliability
 
 The revocation of the sanctions waiver is the most telling detail.
 
@@ -156,7 +164,7 @@ Trump's **"week off because we're nice"** framing reveals the fundamental attitu
 
 ---
 
-### **X. The Stakes Going Forward**
+## The Stakes Going Forward
 
 | Scenario | Likelihood |
 |----------|------------|
@@ -172,8 +180,7 @@ The MOU was supposed to build trust. Instead, it demonstrated **why trust was ab
 
 ---
 
----
+## Sources
 
-*Sources: The Guardian, NBC News, Axios, Al Jazeera, BBC, Reuters, Times of Israel, Jerusalem Post, The Hindu, CNBC, NPR, Institute for the Study of War, UK Maritime Trade Operations, Qatari Foreign Ministry, Saudi Foreign Ministry, U.S. Central Command (CENTCOM), U.S. Treasury Department.*
-
+*The Guardian, NBC News, Axios, Al Jazeera, BBC, Reuters, Times of Israel, Jerusalem Post, The Hindu, CNBC, NPR, Institute for the Study of War, UK Maritime Trade Operations, Qatari Foreign Ministry, Saudi Foreign Ministry, U.S. Central Command (CENTCOM), U.S. Treasury Department.*
 *Report compiled: July 2026.*

@@ -1,21 +1,20 @@
 ---
-title: "The Phantom Menace: Why the Trump Administration Is Inventing a Far-Left Terror Crisis"
-description: "A data-driven look at the administration's new 'FLT' counterterrorism push, the leaderless Antifa designation, and how counterterror machinery is being redirected toward political opponents."
+title: "The Phantom Menace: Inventing a Far-Left Terror Crisis"
+description: "A data-driven look at the administration's new 'far-left terrorism' push, the leaderless Antifa designation, and the redirection of counterterror machinery toward political opponents."
 pubDate: 2026-07-17
+category: investigation
+subject: domestic-politics
 tags:
-  - politics
+  - counterterrorism
+  - antifa
   - civil-liberties
-  - terrorism
+  - dissent
   - authoritarianism
   - trump-administration
-  - antifa
-  - dissent
-  - counterterrorism
-category: politics
 featured: false
 ---
 
-### **I. The Three-Letter Acronym You Need to Know**
+## The Three-Letter Acronym You Need to Know
 
 "FLT" is the administration's newest rhetorical weapon. It stands for **far-left terrorism**, and it is being deployed with the same emotional register that "WMD" carried into Iraq: a vague, expandable label designed to stampede public opinion and loosen legal constraints on state power.
 
@@ -27,7 +26,7 @@ There is just one problem with all of this: the threat does not match the respon
 
 ---
 
-### **II. The Numbers Don't Support the Panic**
+## The Numbers Don't Support the Panic
 
 | Timeframe | Far-Right Fatalities | Far-Left Fatalities |
 |-----------|----------------------|---------------------|
@@ -36,7 +35,7 @@ There is just one problem with all of this: the threat does not match the respon
 | Since 2001 | ~75–80% of domestic terrorism deaths | ~10–15% of incidents, <5% of deaths |
 | H1 2025 | 1 (killed 2 people) | 5 (killed 0 people) |
 
-Sources: Center for Strategic and International Studies (CSIS), University of Maryland/START, PBS NewsHour analysis.
+*Sources: Center for Strategic and International Studies (CSIS), University of Maryland/START, PBS NewsHour analysis.*
 
 The administration's own preferred data point is a **2025 CSIS finding** that, for the first time in more than 30 years, left-wing terrorist attacks and plots outnumbered right-wing ones in the first half of the year. That is real. But it is also a **statistical blip** in a decades-long pattern of **far-right lethality**.
 
@@ -44,7 +43,7 @@ CSIS itself warned that the data should not be used "as an excuse for a crackdow
 
 ---
 
-### **III. What Is Actually Being Proposed?**
+## What Is Actually Being Proposed?
 
 The administration's 2026 counterterrorism strategy identifies three primary threats:
 
@@ -60,7 +59,7 @@ The strategy does not treat right-wing violence the same way. The January 6 insu
 
 ---
 
-### **IV. Why Antifa? And Why Now?**
+## Why Antifa? And Why Now?
 
 Antifa is the perfect target for a government that wants to criminalize opposition.
 
@@ -75,7 +74,7 @@ Yet that is precisely the point. A leaderless, shapeless enemy can never be full
 
 ---
 
-### **V. The Double Standard: Two Justice Systems**
+## The Double Standard: Two Justice Systems
 
 | Jan. 6 Defendants | Anti-ICE Protesters (Prairieland, TX) |
 |---------------------|---------------------------------------|
@@ -84,7 +83,7 @@ Yet that is precisely the point. A leaderless, shapeless enemy can never be full
 | **All received pardons or commutations from President Trump** | Sentenced to **30, 60, and up to 100 years** in federal prison |
 | Several had prior convictions for rape, domestic violence, child sexual abuse material | Sentences longer than any handed down for Jan. 6 |
 
-Sources: U.S. House Judiciary Committee Democrats, PBS NewsHour, The Atlantic.
+*Sources: U.S. House Judiciary Committee Democrats, PBS NewsHour, The Atlantic.*
 
 The administration has also reportedly **fired career prosecutors** who worked on Jan. 6 cases and has explored financial compensation for participants. Meanwhile, it has used the full weight of federal prosecution against anti-ICE protesters and alleged Antifa members.
 
@@ -92,7 +91,7 @@ That is not neutral law enforcement. That is **political patronage and punishmen
 
 ---
 
-### **VI. The Real Danger: Counterterrorism as Domestic Policy**
+## The Real Danger: Counterterrorism as Domestic Policy
 
 The scariest part of the FLT framing is not the rhetoric. It is the **machinery** being unlocked.
 
@@ -113,7 +112,7 @@ This is consistent with history. The FBI's **COINTELPRO** program spied on, smea
 
 ---
 
-### **VII. Is There Any Legitimate Core Here?**
+## Is There Any Legitimate Core Here?
 
 Yes — and it is important not to dismiss it.
 
@@ -125,7 +124,7 @@ The question is not whether left-wing violence exists. The question is whether t
 
 ---
 
-### **VIII. Questions the Administration Has Not Answered**
+## Questions the Administration Has Not Answered
 
 1. If far-right violence has killed 112 Americans in the past decade and far-left violence has killed 13, why is the July 2026 ministerial focused exclusively on the left?
 2. How does the government define membership in Antifa for prosecution, surveillance, or immigration purposes?
@@ -137,7 +136,7 @@ Until these questions have coherent answers, the FLT campaign cannot be taken se
 
 ---
 
-### **IX. Conclusion: A Label, Not a Threat**
+## Conclusion: A Label, Not a Threat
 
 The United States does not have a far-left terrorism crisis. It has a political movement that has successfully branded its domestic opponents as terrorists and is now building the legal and international architecture tosuppress them.
 
@@ -147,8 +146,7 @@ If history is any guide, the first targets will be the most radical and least sy
 
 ---
 
----
+## Sources
 
-*Sources: Center for Strategic and International Studies, NBC News, Axios, FactCheck.org, PBS NewsHour, The Atlantic, The Washington Post, Reuters, Al Jazeera, Time, CNN, ABC News, ACLU, Brennan Center, Just Security, Lawfare, House Judiciary Committee Democrats, Stanford Law School, International Center for Not-for-Profit Law, U.S. Department of State, The White House.*
-
+*Center for Strategic and International Studies, NBC News, Axios, FactCheck.org, PBS NewsHour, The Atlantic, The Washington Post, Reuters, Al Jazeera, Time, CNN, ABC News, ACLU, Brennan Center, Just Security, Lawfare, House Judiciary Committee Democrats, Stanford Law School, International Center for Not-for-Profit Law, U.S. Department of State, The White House.*
 *Report compiled: July 2026.*

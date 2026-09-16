@@ -1,100 +1,140 @@
-# Dispatch Article Format Rules
+# Dispatch Article Format — Canonical Spec
 
-These rules govern every article in `src/content/dispatch/` for the MistykMedia site.
+Every article in `src/content/dispatch/` must conform to this spec. It is the single
+source of truth for frontmatter, structure, and the **Dispatch → Subject** motif.
+If a piece deviates, fix the piece — never the spec.
 
-## File naming convention
+---
 
-- Use lowercase kebab-case: `article-title-keywords.md`
-- No dates in filenames
-- No special characters except hyphens
+## 1. The motif
 
-## Required frontmatter fields
+Every Dispatch is introduced by the same kicker line:
+
+```
+DISPATCH → GLOBAL FINANCE
+```
+
+- `DISPATCH` is the fixed masthead word (electric cyan `#00D4FF`).
+- The arrow `→` is the only separator between section and beat.
+- **Subject** is the article's beat, rendered in uppercase from the `subject` field.
+
+The motif appears in three places and must read identically in all of them:
+
+| Location | Element |
+|---|---|
+| Article masthead | `The Dispatch → <Subject>` |
+| Article header | `Dispatch → <Subject>` stamp above the headline |
+| Dispatch index card | `Dispatch → <Subject>` stamp above the headline |
+
+Never use roman numerals, "Part I", bold-wrapped headings, or italic headings.
+
+---
+
+## 2. Filename
+
+- Lowercase **kebab-case**: `the-federal-reserve-and-the-dollar.md`
+- No dates, no underscores, no uppercase, no special characters beyond hyphens.
+
+## 3. Frontmatter
 
 ```yaml
 ---
-title: "Article Title in Title Case"
-description: "A compelling 1-2 sentence summary of the article."
+title: "Who Makes Money When Missiles Fly"
+subtitle: "A ledger of the firms that profit from the Iran war"
+description: "Since February 2026, defense contractors have added billions in market cap while the cost is borne by civilians."
 pubDate: 2026-06-18
 category: investigation
-subject: tech-surveillance
+subject: global-finance
 tags:
-  - palantir
-  - surveillance
-  - civil-liberties
-featured: false
+  - iran-war
+  - defense-contractors
+  - military-industrial-complex
+featured: true
 ---
 ```
 
-### Field definitions
+Keys appear in exactly this order. Rules:
 
-- **title**: Title case or sentence case; keep under 80 characters; no trailing period.
-- **description**: 1–2 sentences; plain text; no Markdown; shown in listings and SEO.
-- **pubDate**: ISO date only: `YYYY-MM-DD`. No time, no timezone, no quotes.
-- **category**: The genre/format of the piece. Must be one of:
-  - `essay` — argument-driven first-person or analytical prose
+- **title** — Title Case, under 80 characters, no trailing period. Always double-quoted.
+- **subtitle** *(optional)* — one short line that sharpens the headline (the old
+  "deck"). Double-quoted. Omit the key entirely when unused.
+- **description** — 1–2 plain-text sentences, no Markdown, no trailing ellipsis.
+  Used for listings, SEO, and social cards. Always double-quoted.
+- **pubDate** — ISO date only: `YYYY-MM-DD`. No time, no timezone, no quotes.
+- **category** — the *genre* of the piece. One of:
+  - `essay` — argument-driven or first-person analytical prose
   - `analysis` — evidence-based interpretation of events or ideas
-  - `investigation` — reported or sourced deep-dive exposing systems, patterns, or hidden structures
+  - `investigation` — sourced deep-dive exposing systems or hidden structures
   - `briefing` — concise factual update or explainer
-- **subject**: The beat or topic area of the piece. Must be one of:
-  - `world-affairs`
+- **subject** — the *beat*. One of:
   - `domestic-politics`
+  - `world-affairs`
   - `global-finance`
-  - `economics`
-  - `tech-surveillance`
+  - `technology`
+  - `surveillance-state`
   - `history`
-  - `culture`
-  - `media`
-  - `labor`
-  - `climate`
-  - `health`
-- **tags**: Block-list format only (kebab-case, lowercase, no spaces). Convert spaces to hyphens, remove quotes, remove special characters.
-- **featured**: Boolean. Use `false` unless explicitly promoting the piece.
+  - `media-culture`
+  - `science-health`
+- **tags** — YAML block list only. Lowercase kebab-case, one per line, no quotes,
+  no spaces, de-duplicated. Never an inline array.
+- **featured** — unquoted boolean. `false` unless explicitly promoting the piece.
 
-### Deprecated
+### Deprecated — do not use
 
-- `category: dispatch` — this was a placeholder. Replace with both `category` and `subject`.
-- Inline tag arrays such as `tags: ["tag one", "tag two"]` — always use block-list syntax.
-- Timezone-aware pubDates such as `2025-06-14T14:00:00Z` — use date only.
+- `category: dispatch`, `category: politics` (these were placeholders).
+- Inline arrays: `tags: ["one", "two"]`.
+- Timezone-aware dates: `2025-06-14T14:00:00Z`.
+- Blank lines between frontmatter keys.
 
-## Body structure
+## 4. Body structure
 
-1. Do **not** repeat the title/heading at the top of the body. The layout renders the frontmatter title as `<h1>`.
-2. Begin with `## I. First Section` or `## First Section`. Be consistent within a single article.
-3. Use `##` for major sections and `###` for subsections.
-4. Use bold for the first mention of key proper nouns, institutions, or technical terms within a section.
-5. Keep paragraphs relatively short (3–5 sentences) for readability.
-6. Use blockquotes only for direct quotations.
-7. End every article with a standardized sources block.
+1. **Never repeat the title, subtitle, category, date, or byline in the body.** The
+   layout renders all of them from frontmatter as `<h1>` / header block.
+2. Begin directly with body copy: an opening paragraph, or `## Section`.
+3. Use `##` for major sections and `###` for subsections. Never skip a level.
+   Never start a heading with `I.`, `1.`, or wrap it in `**`.
+4. Keep headings in sentence case (`The dollar recycling engine`), not ALL-CAPS.
+5. Paragraphs 3–5 sentences. Use `**bold**` for the first mention of a key proper
+   noun or term; use italics only for emphasis, titles, and quoted words.
+6. Separators between sections are a bare `---` on its own line (one blank line
+   either side). Do not stack two rules together.
+7. Use blockquotes only for direct quotations, and tables only for tabular data.
 
-## Sources block
+## 5. Sources block
 
-Use exactly this format at the end of the article:
+A Dispatch that draws on external reporting ends with a sources section in
+exactly this shape:
 
 ```md
 ---
 
-*Sources: The Guardian, BBC News, Amnesty International (2025), United Nations Human Rights Council, company filings, witness testimony, declassified documents.*
+## Sources
+
+*The Guardian, BBC News, Amnesty International (2025), United Nations Human
+Rights Council, company filings, witness testimony, declassified documents.*
 ```
 
-- Begin with a horizontal rule `---`.
-- Follow with an italic paragraph beginning `*Sources:` and ending with `*`.
-- Do not use a `## Sources` or `## Sources & Reading` header.
-- List publications and institutions, optionally including year or document type.
-- If sources are numerous or sensitive, summarize rather than enumerating every citation.
+- A bare `---` rule, a blank line, then the literal heading `## Sources`.
+- One italic paragraph listing publications/institutions, separated by commas.
+- For annotated bibliographies (title-by-title citations), use a bulleted list
+  under the same `## Sources` heading instead of the paragraph.
+- Never use `## Sources & Reading`, `### Sources`, or `**Sources:**` variants.
+- A one-line provenance note may follow as a second italic paragraph.
 
-## Style and tone
+## 6. Voice
 
-- Clear, direct, and evidence-based.
-- Avoid sensationalism; let the facts carry weight.
-- Distinguish between allegations, findings, and proven claims.
-- Attribute contested claims to specific reports, institutions, or reporters.
-- Avoid speculative claims presented as fact.
+- Clear, direct, evidence-based. Let the facts carry the weight.
+- Distinguish allegation, finding, and proven claim. Attribute contested claims.
+- No sensationalism and no speculation presented as fact.
 
-## Internal consistency
+## 7. Pre-commit checklist
 
-Dispatch articles should feel like a coherent series. Maintain consistent:
-- heading style,
-- date format,
-- tag conventions,
-- sources block format,
-- framing of uncertain or contested claims.
+- [ ] Filename is kebab-case with no dates.
+- [ ] Frontmatter keys in canonical order; `category` and `subject` both set from
+      the allowed vocabularies.
+- [ ] `pubDate` is `YYYY-MM-DD`, unquoted.
+- [ ] `title`/`description` double-quoted; `tags` a block list, kebab-case, de-duped.
+- [ ] Body opens with copy — no duplicate title, subtitle, or byline.
+- [ ] Headings are clean `##` / `###`, no numerals, no bold, no italics.
+- [ ] Ends with `---` + `## Sources`.
+- [ ] `npm run build` passes.

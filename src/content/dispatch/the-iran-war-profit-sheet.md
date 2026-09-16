@@ -1,14 +1,17 @@
 ---
 title: "The Iran War Profit Sheet: Who Makes Money When Missiles Fly"
-description: "Since February 28, 2026, defense contractors have added billions in market cap, oil majors have doubled profits, and the Pentagon unlocked $153 billion in emergency funds. The cost is borne by civilians in Iran, Lebanon, and at American gas pumps."
+description: "Since the war began, defense contractors have added billions in market cap and oil majors have doubled profits. The cost is borne by civilians and at the gas pump."
 pubDate: 2026-06-18
-tags: ["Iran war", "defense contractors", "military-industrial complex", "oil profits", "RTX", "Lockheed Martin", "Raytheon", "arms sales", "Saudi Arabia"]
-category: "investigation"
+category: investigation
+subject: global-finance
+tags:
+  - iran-war
+  - defense-contractors
+  - military-industrial-complex
+  - oil-profits
+  - arms-sales
 featured: true
 ---
-
-# The Iran War Profit Sheet
-## Who Makes Money When Missiles Fly
 
 On February 28, 2026, the United States and Israel launched joint strikes against Iranian nuclear and military facilities, killing Supreme Leader Ali Khamenei and triggering a regional war that has lasted nearly four months. The human toll is measured in thousands dead, millions displaced, and a region pushed to the brink of wider conflagration.
 
@@ -167,6 +170,6 @@ The only thing not making money is peace.
 
 ---
 
-*Sources: House of Saud analysis; ABC News/Good Morning America; CNBC; Yahoo Finance; Japan Times; Military Watch Magazine; Defence Express; SIPRI Arms Industry Database; RTX Corporation Q1 2026 earnings; BP Q1 2026 results; ExxonMobil Q1 2026 earnings.*
+## Sources
 
-*Mistyk Media is an independent publication. If this analysis holds value, share it or continue the thread below.*
+*House of Saud analysis; ABC News/Good Morning America; CNBC; Yahoo Finance; Japan Times; Military Watch Magazine; Defence Express; SIPRI Arms Industry Database; RTX Corporation Q1 2026 earnings; BP Q1 2026 results; ExxonMobil Q1 2026 earnings.*

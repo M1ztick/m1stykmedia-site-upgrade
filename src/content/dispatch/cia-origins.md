@@ -1,13 +1,20 @@
 ---
-title: "Dispatch: How the CIA Was Born — From OSS to Cold War Shadow War"
-description: "A concise history of the CIA's creation from the wartime OSS, through Truman's Central Intelligence Group, to the National Security Act of 1947 — plus the early controversies that defined the agency."
-pubDate: 2025-06-14T14:00:00Z
-category: "dispatch"
-tags: ["CIA", "OSS", "William Donovan", "Harry Truman", "National Security Act 1947", "Cold War", "covert action", "MKULTRA", "Church Committee", "Eisenhower"]
+title: "How the CIA Was Born: From OSS to Cold War Shadow War"
+description: "A concise history of the CIA's creation—from the wartime OSS and Truman's Central Intelligence Group to the National Security Act of 1947 and the early scandals that defined the agency."
+pubDate: 2025-06-14
+category: analysis
+subject: history
+tags:
+  - cia
+  - oss
+  - william-donovan
+  - harry-truman
+  - national-security-act-1947
+  - cold-war
+  - covert-action
+  - mkultra
 featured: false
 ---
-
-# How the CIA Was Born: From OSS to Cold War Shadow War
 
 ## Spies for a World War
 
@@ -60,7 +67,7 @@ That single catch-all sentence became the legal foundation for covert action, pa
 
 Contrary to the idea that Eisenhower tried to dissolve the CIA, the Eisenhower years (1953–1961) were the period in which the Agency took on its modern shape and scale. Eisenhower valued covert action as a cheaper, deniable alternative to direct military intervention.
 
-### Under Eisenhower:
+### Under Eisenhower
 
 - **1953**: The CIA and Britain's MI6 overthrew Iranian Prime Minister **Mohammad Mossadegh** in **Operation Ajax**, restoring the Shah.
 - **1954**: The CIA overthrew Guatemalan President **Jacobo Árbenz** in **Operation PBSuccess**, triggering decades of instability and civil war.
@@ -97,7 +104,7 @@ Its birth certificate is public law: the **National Security Act of 1947**. But 
 
 ---
 
-## Sources & Reading
+## Sources
 
 - CIA, official history: "History of CIA" and Donovan-Truman dissolution letter
 - Federation of American Scientists, *Factbook on Intelligence* — genesis of the CIA
@@ -107,7 +114,4 @@ Its birth certificate is public law: the **National Security Act of 1947**. But 
 - Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee) reports, 1975–1976
 - Tim Weiner, *Legacy of Ashes: The History of the CIA*
 - John Ranelagh, *The Agency: The Rise and Decline of the CIA*
-
----
-
 *Dispatch generated from open-source research. Where interpretation is offered, it is identified as such; the historical events and dates cited are documented in declassified and public records.*

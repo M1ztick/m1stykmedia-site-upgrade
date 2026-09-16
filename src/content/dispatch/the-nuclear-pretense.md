@@ -1,14 +1,18 @@
 ---
-title: "The Nuclear Pretense: What US Intelligence Actually Said About Iran's Bomb"
-description: "On the eve of war, US intelligence assessed Iran was 'not building a nuclear weapon.' The IAEA found 'no structured program.' Carnegie noted officials engaged in 'verbal gymnastics.' Yet the strikes came anyway."
+title: "The Nuclear Pretense: What US Intelligence Actually Said"
+description: "On the eve of war, US intelligence assessed that Iran was not building a nuclear weapon and the IAEA found no structured program. The strikes came anyway."
 pubDate: 2026-07-04
-tags: ["Iran war", "nuclear weapons", "intelligence", "Trump", "IAEA", "preventive war", "Iraq 2003", "disinformation"]
-category: "investigation"
+category: investigation
+subject: world-affairs
+tags:
+  - iran-war
+  - nuclear-weapons
+  - intelligence
+  - iaea
+  - preventive-war
+  - iraq-2003
 featured: true
 ---
-
-# The Nuclear Pretense
-## What US Intelligence Actually Said About Iran's Bomb
 
 On February 28, 2026, the United States and Israel launched a coordinated military assault on Iran. The stated casus belli, repeated by President Trump and echoed across allied capitals, was clear: Iran's nuclear program had reached an inflection point. The regime was on the verge of acquiring nuclear weapons. The threat was imminent. Action was unavoidable.
 
@@ -170,6 +174,6 @@ The nuclear pretense served its function. It provided a moral frame for a war wh
 
 ---
 
-*Sources: Congressional Research Service IF12106 (April 9, 2026); IAEA statements via Director General Rafael Grossi; Carnegie Endowment for International Peace (May 4, 2026); Foundation for Defense of Democracies (May 6, 2026); Reuters reporting (May 2026); Critical Threats Project (September 2025).*
+## Sources
 
-*Mistyk Media is an independent publication. If this analysis holds value, share it or continue the thread below.*
+*Congressional Research Service IF12106 (April 9, 2026); IAEA statements via Director General Rafael Grossi; Carnegie Endowment for International Peace (May 4, 2026); Foundation for Defense of Democracies (May 6, 2026); Reuters reporting (May 2026); Critical Threats Project (September 2025).*
