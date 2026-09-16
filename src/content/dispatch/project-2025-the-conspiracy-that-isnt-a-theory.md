@@ -1,7 +1,7 @@
 ---
 title: "Project 2025: The Conspiracy That Isn't a Theory"
 description: "Project 2025 is not a think-tank wish list—it is an installation guide for executive supremacy, and roughly half of it is already in force."
-pubDate: 2026-03-19
+pubDate: 2026-03-18
 category: investigation
 subject: domestic-politics
 tags:

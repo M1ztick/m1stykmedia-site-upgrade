@@ -1,7 +1,7 @@
 ---
 title: "Palantir: The Expanding Shadow of the Surveillance State"
 description: "Palantir's origins, its founder's ideological motivations, its intelligence pedigree, and what its systems mean for ordinary people caught in the widening web of government AI."
-pubDate: 2026-06-18
+pubDate: 2026-09-13
 category: investigation
 subject: surveillance-state
 tags:

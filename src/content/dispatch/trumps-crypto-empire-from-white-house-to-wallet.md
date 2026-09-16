@@ -1,7 +1,7 @@
 ---
 title: "Trump's Crypto Empire: From White House to Wallet"
 description: "About 60% of Trump's reported net worth now comes from cryptocurrency—a windfall that tracks uncomfortably well with the policy he signs."
-pubDate: 2025-07-28
+pubDate: 2025-07-27
 category: analysis
 subject: domestic-politics
 tags:

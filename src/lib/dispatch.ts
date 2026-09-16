@@ -38,3 +38,28 @@ export function subjectLabel(subject?: string | null): string {
 export function motif(subject?: string | null): string {
   return `${DISPATCH_PREFIX} \u2192 ${subjectLabel(subject)}`;
 }
+
+/**
+ * Shared ordering for every Dispatch listing: strictly newest → oldest.
+ *
+ * Articles are ordered by `pubDate` alone — never grouped or reordered by
+ * subject — so the feed reads the same no matter what each piece is about.
+ * Ties are broken by title (then id) so the order is deterministic and stable
+ * across builds rather than depending on the collection's read order.
+ */
+export function byNewest<
+  T extends { id: string; data: { pubDate: Date | string; title?: string } },
+>(a: T, b: T): number {
+  const delta =
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+  if (delta !== 0) return delta;
+  const byTitle = (a.data.title ?? '').localeCompare(b.data.title ?? '');
+  return byTitle !== 0 ? byTitle : a.id.localeCompare(b.id);
+}
+
+/** Convenience wrapper: returns a new newest-first array (does not mutate). */
+export function sortByNewest<
+  T extends { id: string; data: { pubDate: Date | string; title?: string } },
+>(entries: T[]): T[] {
+  return [...entries].sort(byNewest);
+}

@@ -1,13 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
 import Root from '../layouts/Root.astro';
+import { sortByNewest } from '../lib/dispatch';
 
 const dispatches = await getCollection('dispatch');
 const journeys = await getCollection('journey');
 
-const sortedDispatches = dispatches.sort(
-  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
-);
+// Newest → oldest across all subjects (shared comparator, see lib/dispatch).
+const sortedDispatches = sortByNewest(dispatches);
 
 const featuredDispatch = sortedDispatches[0];
 const recentDispatches = sortedDispatches.slice(1, 3);
