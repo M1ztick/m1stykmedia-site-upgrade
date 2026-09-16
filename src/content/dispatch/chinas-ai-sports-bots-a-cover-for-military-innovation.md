@@ -17,7 +17,7 @@ Framing a false initiative for disguised intentions as such is, of course, not u
 
 Continue to spread awareness my fellow devs. Keep the torch of truth bright and burning, and we may yet have an impact on whether the AI age will be mankind’s greatest achievement or worst nightmare. 
 
-# We need to get involved
+## We Need to Get Involved
 
 #ai safety and ethics first
 
@@ -29,6 +29,6 @@ Continue to spread awareness my fellow devs. Keep the torch of truth bright and 
 
 #don’t trust big tech
 
-Source:
+---
 
-https://www.perplexity.ai/search/what-better-way-to-eventually-ObJxpZmERyeZtkIvQKO68Q#0
+*Sources: Perplexity AI conversation, https://www.perplexity.ai/search/what-better-way-to-eventually-ObJxpZmERyeZtkIvQKO68Q#0*

@@ -1,12 +1,7 @@
-
 ---
-
-title: "The Architecture of Global Finance: Who Holds the Levers" 
-
-description: Take a closer look at what they don't tell you about the global financial architecture.
-
+title: "The Architecture of Global Finance: Who Holds the Levers"
+description: "Take a closer look at what they don't tell you about the global financial architecture."
 pubDate: 2026-06-26
-
 tags:
   - history
   - politics
@@ -17,11 +12,8 @@ tags:
   - government-overreach
   - us-economics
   - global-economics
-
-category: essay
-
+category: investigation
 featured: false
-
 ---
 
 # The Architecture of Global Finance: Who Holds the Levers
@@ -192,14 +184,8 @@ Those outcomes include:
 
 The system is not immutable. It was built by humans, and it can be rebuilt by humans. But first, its walls must be seen.
 
-***
+---
 
-*Sources:*
-*   *Shanaka Anslem Perera, "BlackRock: The Shadow Central Bank That Ate the World" (January 2026)*
-*   *CEPR, "The Cost of Debt in a Time of Overlapping Crises" (April 2026)*
-*   *S. Yash Kalash / CIGI, Paper on BIS Digital Financial Infrastructure (March 2026)*
-*   *CNN Reporting on ODNI and BIS (2025–2026)*
-*   *BlackRock Q3 2025 Earnings Release*
-*   *IMF Debt Vulnerabilities and Financing Challenges (February 2025)*
+*Sources: Shanaka Anslem Perera, "BlackRock: The Shadow Central Bank That Ate the World" (January 2026); CEPR, "The Cost of Debt in a Time of Overlapping Crises" (April 2026); S. Yash Kalash / CIGI, Paper on BIS Digital Financial Infrastructure (March 2026); CNN Reporting on ODNI and BIS (2025–2026); BlackRock Q3 2025 Earnings Release; IMF Debt Vulnerabilities and Financing Challenges (February 2025).*
 
 *Mistyk Media is an independent publication. If you found this essay insightful, consider sharing it with friends and family.*

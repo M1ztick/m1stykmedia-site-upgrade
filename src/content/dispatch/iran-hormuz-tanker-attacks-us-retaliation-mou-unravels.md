@@ -1,11 +1,7 @@
 ---
-
 title: "Iran Strikes Tankers, US Retaliates: The MOU Unravels During Khamenei's Funeral"
-
 description: "A breakdown of Iran's attacks on commercial shipping in the Strait of Hormuz, the US military response, and what it means for the already-fraying US-Iran ceasefire agreement."
-
 pubDate: 2026-07-08
-
 tags:
   - 2026-iran-war
   - us-foreign-policy
@@ -14,19 +10,8 @@ tags:
   - oil-and-gas
   - geopolitics
   - blog
-
-category: essay
-
+category: investigation
 featured: false
-
----
-
-# **DISPATCH**
-
-## **Iran Strikes Tankers, US Retaliates: The MOU Unravels During Khamenei's Funeral**
-
-*Iran fired missiles at three commercial vessels in the Strait of Hormuz. The US responded with airstrikes on Iranian military targets—all while Ayatollah Khamenei's body lay in state. Here's what actually happened, what the MOU said, and why both sides claim the other broke the deal first.*
-
 ---
 
 ### **I. The Attacks: What Happened (July 6–7, 2026)**
@@ -187,6 +172,8 @@ The MOU was supposed to build trust. Instead, it demonstrated **why trust was ab
 
 ---
 
-**Sources:** The Guardian, NBC News, Axios, Al Jazeera, BBC, Reuters, Times of Israel, Jerusalem Post, The Hindu, CNBC, NPR, Institute for the Study of War, UK Maritime Trade Operations, Qatari Foreign Ministry, Saudi Foreign Ministry, U.S. Central Command (CENTCOM), U.S. Treasury Department.
+---
 
-**Report compiled:** July 2026
+*Sources: The Guardian, NBC News, Axios, Al Jazeera, BBC, Reuters, Times of Israel, Jerusalem Post, The Hindu, CNBC, NPR, Institute for the Study of War, UK Maritime Trade Operations, Qatari Foreign Ministry, Saudi Foreign Ministry, U.S. Central Command (CENTCOM), U.S. Treasury Department.*
+
+*Report compiled: July 2026.*

@@ -1,33 +1,18 @@
 ---
-
-title: "Iran_War_Windfall"
-
-description: "This is a more extensive look at the wartime profit mechanisms enjoyed by the Military Industrial Complex and a select few other organizations."
-
+title: "The Iran War Windfall: Who's Cashing In on the 2026 Conflict"
+description: "A survey of the defense contractors, energy giants, financial institutions, and nation-states profiting from the U.S.-Israel war on Iran."
 pubDate: 2026-06-16
-
 tags:
-  - "2026 Iran War"
+  - 2026-iran-war
   - geo-politics
   - blog
   - macro-economics
   - corruption
   - us-economics
   - military-industrial-complex
-  - black-rock
-
-category: essay
-
+  - blackrock
+category: investigation
 featured: false
-
----
-
-# **DISPATCH**
-
-## **The Iran War Windfall: Who's Cashing In on the 2026 Conflict**
-
-*A survey of the defense contractors, energy giants, financial institutions, and nation-states profiting from the U.S.-Israel war on Iran*
-
 ---
 
 ### **I. The Bottom Line**
@@ -161,6 +146,8 @@ For the defense sector, as MarketWatch bluntly put it: *"War can be good for bus
 
 ---
 
-**Sources:** Responsible Statecraft, BBC, Al Jazeera, TIME, Defense Security Monitor (Forecast International), MP-IDSA (Institute for Defence Studies and Analyses), MinnPost, SCTimes, MarketWatch, Wall Street Journal.
+---
 
-**Report compiled:** June 2026
+*Sources: Responsible Statecraft, BBC, Al Jazeera, TIME, Defense Security Monitor (Forecast International), MP-IDSA (Institute for Defence Studies and Analyses), MinnPost, SCTimes, MarketWatch, Wall Street Journal.*
+
+*Report compiled: June 2026.*

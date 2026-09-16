@@ -61,6 +61,6 @@ Letting Meta lead the charge on superintelligence, huh? It's a good thing they h
 
 It's important to remember that Big Tech prioritizes business, profits, government relations, and self-serving interests over the well-being of users. These companies are not benevolent.
 
-Source:
+---
 
-https://www.bing.com/search?q=Meta%20AI&cc=US&PC=SANSAAND&form=LWS001&filters=sid%3A%2243b7f086-e9bc-cac8-4cec-54586f925fd0%22
+*Sources: Public regulatory filings, EU GDPR enforcement records, FTC actions, and aggregated news reporting.*

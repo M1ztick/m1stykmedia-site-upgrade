@@ -17,9 +17,9 @@ category: politics
 featured: false
 ---
 
-A Historical Analysis of Political Co-operation
+## A Historical Analysis of Political Co-operation
  
-Introduction
+## Introduction
  
 
 If you’ve spent any time on X (formerly Twitter) lately, then you’ve probably witnessed the political circus firsthand. CNN and Fox News warriors, waving their blue and red flags, hurl the loudest, most offensive memes they can dig up at each other. Users have opted for blood sport in place of constructive debate as each posting is designed to enrage the other side and widen the canyon of political disparity between them.
@@ -29,7 +29,7 @@ But here’s the uncomfortable truth: it doesn’t matter which side you pick. Y
 Call it the American casino. Your vote is the roulette ball, blue and red are your colors, and while you argue over where it lands, the house, i.e., the corporations, lobbyists, military-industrial complex, etc., keeps stacking chips.
 
  
-The Origins: From No Parties to Two
+## The Origins: From No Parties to Two
  
 
 When the Declaration of Independence (1776) was signed, the Founders hadn’t yet invented political parties. They actively feared them. George Washington’s Farewell Address warned against “the baneful effects of the spirit of party.” James Madison, in Federalist No. 10, called factions dangerous, though he figured a large republic might dilute their power. But ideals collide with reality fast. By the 1790s, factions hardened into the first U.S. parties:
@@ -47,7 +47,7 @@ When the Declaration of Independence (1776) was signed, the Founders hadn’t ye
 By the 1820s, the Federalists collapsed, and a new two-party cycle emerged: Democrats vs. Whigs, then Democrats vs. Republicans by the 1860s. Despite all the warnings, the United States locked itself into a permanent two-party structure in less than a century.
 
  
-The Historical Timeline (1776 → Today)
+## The Historical Timeline (1776 → Today)
  
 
 	1776–1787: No parties. The Revolution united colonists.
@@ -81,7 +81,7 @@ The Historical Timeline (1776 → Today)
 	2000s–Today: Culture war polarization goes nuclear—but on war, surveillance, and corporate protection, both sides quietly converge.
 
  
-Bipartisan Policies: The Great Convergence
+## Bipartisan Policies: The Great Convergence
  
 
 Here’s the dirty truth, the X warriors were not informed of: Politicians may don their red and blue jerseys and scream at each other on the podium or on camera, but behind closed doors, they’ve been quietly building the same machine. Different marketing, same product. Here are some examples.
@@ -111,7 +111,7 @@ And let’s not forget the War on Drugs and mass incarceration. Clinton built th
 Now we arrive at Trump’s second term. Instead of reversing course, he has amplified the trend. Not only has he picked up where Biden left off—sustaining surveillance authorities, defense contracts, and corporate protections—he has now taken the unprecedented step of mobilizing military force domestically. In Washington, D.C., Trump federalized local police and brought in National Guard units to “restore order” despite historically low violent crime. In Los Angeles, he deployed troops without the governor’s request, sparking lawsuits and constitutional challenges. What was once a bipartisan consensus around war and surveillance abroad has now crept homeward: military power turned inward on American citizens. To make matters worse, the trump administration has already signed numerous contracts with big tech giants as they seek to further enmesh the private and public sectors to instate what appears to be an autocratic technocracy. Let's be honest with ourselves, do we really think voting for a Democrat next time will slow any of this down?
 
  
-Final Thoughts: The House Always Wins
+## Final Thoughts: The House Always Wins
  
 
 So here we are. It's no wonder the founding fathers warned against factionalism. If we don't course correct soon,  the results could prove dire for our republic, so there isn't much time.  So next time your blood starts boiling over a politically charged internet meme remember: The two-party system that pretends to offer choice really only quietly maintains elite interests. Surveillance continues. Wars continue. Corporate bailouts continue. And now, even the military has been pulled directly into domestic politics.

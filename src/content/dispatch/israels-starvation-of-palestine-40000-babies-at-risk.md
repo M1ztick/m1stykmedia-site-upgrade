@@ -23,7 +23,7 @@ Doctors inside Gaza describe a nightmare: children brought to hospitals weak fro
 
 The director of Gaza’s main children’s hospital gave a chilling warning: “Children are the group most vulnerable to the famine conditions gripping the territory… There would be mass deaths if border crossings are not immediately opened.”Gaza’s government says 100,000 children aged two and under—including 40,000 babies—are now at risk of dying within days. There is no baby milk, no nutritional supplements, and aid trucks are blocked at the borders. Meanwhile, international leaders from Germany, France, and the UK are urging Israel to lift the blockade and let help reach those who desperately need it.
 
-A Personal Reflection
+## A Personal Reflection
 
 When faced with these painful realities, I sometimes ask myself and God why we're allowing helpless children to be starved. Why is Israel committing these heinous atrocities, and why is my government sanctioning it? 
 
@@ -33,6 +33,6 @@ It’s challenging to imagine, but this is reality now for families in Gaza. If 
 
 -Mistyk
 
-Source:
+---
 
-Al Jazeera - https://aje.io/f4w0aa
+*Sources: Al Jazeera, https://aje.io/f4w0aa*

@@ -16,14 +16,6 @@ category: politics
 featured: false
 ---
 
-# **DISPATCH**
-
-## **The Least-Privilege State: How Compartmentalized Programs Shape the World**
-
-*How need-to-know secrecy built a parallel layer of governance — and what happens when world-altering projects are run outside democratic sight*
-
----
-
 ### **I. The Principle, Borrowed From IT**
 
 In cybersecurity, **least privilege access** means giving a user only the minimum permissions necessary for a specific task. In national security, the same principle is called **compartmentalization**, or **need-to-know**. The fewer people who know a secret, the smaller the attack surface, the lower the leak risk, the tighter the control.
@@ -157,4 +149,4 @@ For the rest of the world, the answer is almost always no.
 - Obama, Clinton, and Trump public remarks on UAP/UFOs, 2014–2026.
 - Edward Snowden / NSA documents as reported by The Guardian, The Washington Post, and subsequent congressional testimony.
 
-**Report compiled:** August 10, 2026
+*Report compiled: August 10, 2026.*

@@ -17,7 +17,7 @@ category: politics
 featured: false
 ---
 
-Why the DOJ’s Redaction Failure Warrants Scrutiny, Not Just Apologies
+## Why the DOJ’s Redaction Failure Warrants Scrutiny, Not Just Apologies
 The Department of Justice’s recent failure to redact the names of Jeffrey Epstein’s victims is not a routine clerical lapse. It is a breakdown so significant that it undermines the narrative of mere bureaucratic oversight and reasonably calls for scrutiny of whether this “error” now functions as a barrier to further transparency.
 
 The latest tranche of records related to Jeffrey Epstein’s arrest, transmitted by the Department of Justice (DOJ) to a congressional committee, was publicly framed as a step toward accountability. Instead, it resulted in a serious breach of victim privacy. In tens of thousands of pages, the DOJ and Epstein’s estate failed to consistently remove the names and identifying details of numerous victims, including those who were minors at the time of the alleged offenses. Survivors who had been assured confidentiality found themselves unexpectedly exposed and contacted, despite years spent rebuilding their lives outside the public eye.
@@ -32,16 +32,6 @@ As a result, the government can invoke its own mishandling as justification for 
 
 The central question, then, is not simply whether a redaction protocol broke down. It is whether a system that has demonstrated near-flawless capacity to shield the identities of powerful actors somehow became unable to protect sexually exploited minors at the precise moment when broader disclosure threatened entrenched interests. Until that question is addressed with more than generalized regret and internal memos, public skepticism is not only understandable; it is a necessary check on an agency that has shown itself willing to err on the side of secrecy—except, it seems, when the vulnerable are the ones who pay the price.
 
-Sources:
-NBC News, “Judge seeks to shield Epstein victims after dozens of names exposed in DOJ, estate files,” Nov. 27, 2025.
-[10] ABC News, “Law firm representing alleged Epstein victims sends scathing letter to DOJ,” Nov. 26, 2025.
-[11] Wall Street Journal, “Dozens of Epstein Victims’ Names Exposed in Files Released by Congress,” Nov. 26, 2025.
+---
 
-[12]
-Liked this analysis?
-If you found this article useful, consider liking and subscribing.
-Looking for a truly intelligent, fast AI chatbot for your online presence?
-Look no further.
-Introducing Insertabot by Mistyk Media.
-
-Insertabot delivers top-quality AI on the edge network for intelligent, context-aware, and lightning-fast chatbot interactions—even with the most challenging online audiences. You can customize Insertabot and deploy it in minutes with our no-code setup. Try Insertabot risk-free today with our generous free tier—no credit card required.
+*Sources: NBC News, “Judge seeks to shield Epstein victims after dozens of names exposed in DOJ, estate files” (Nov. 27, 2025); ABC News, “Law firm representing alleged Epstein victims sends scathing letter to DOJ” (Nov. 26, 2025); Wall Street Journal, “Dozens of Epstein Victims’ Names Exposed in Files Released by Congress” (Nov. 26, 2025).*

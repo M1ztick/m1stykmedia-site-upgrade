@@ -17,7 +17,7 @@ category: essay
 featured: false
 ---
 
-The AI Misalignment Dilemma & the Need for Global Regulations
+## The AI Misalignment Dilemma & the Need for Global Regulations
 Based on “Current Cases of AI Misalignment and Their Implications for Future Risks” by Leonard Dung
 
 Introduction: The Tech‑Bro Du Jour
@@ -31,14 +31,14 @@ Now you might be thinking, “What, you mean that friendly robot voice I chat wi
 
 To which I’d reply: believe it or not, for years now AI has been flagged by experts as one of the top three existential risks to humanity—sometimes even claiming the number‑one spot, depending on the survey. Nuclear war and pandemics usually jockey for positions one and two, but let that sink in: we’re talking about technology that could potentially wipe us out, and it’s being developed faster than you can say “algorithmic apocalypse.”
 
-The Ticking AI Time Bomb
+## The Ticking AI Time Bomb
 Zuckerberg struts his latest tech on stage, and whether by design or sheer momentum, he’s fueling an international AI arms race that endangers everyone. But let’s not pin it all on Zuck—the blame spreads like a viral meme. Sam Altman at OpenAI, Aravind Srinivas at Perplexity, Dario Amodei at Anthropic (the makers of Claude), and even Peter Thiel, when he’s not hawking surveillance tech to governments for citizen‑spying ops. (Peter, if you’re reading this, I’m totally kidding. On a completely unrelated note, what size do you wear in full‑body black hooded robes? They’re all the rage these days.)
 
 Jokes aside, what responsibility do these profit‑driven tech titans bear for rolling out safe, reliable, and equitable AI? Legally, quite a bit—at least on paper. But as we’ll see, even the best intentions (and regulations) fall woefully short when it comes to the core issue: AI misalignment.
 
 Drawing from Leonard Dung’s insightful paper, “Current Cases of AI Misalignment and Their Implications for Future Risks,” let’s dive deep into what misalignment really means, why it’s a nightmare, and why our current safeguards are like bringing a butter knife to a lightsaber fight.
 
-What Exactly Is AI Misalignment? A Deep Dive
+## What Exactly Is AI Misalignment? A Deep Dive
 At its core, AI misalignment is the problem of building artificial‑intelligence systems that actually pursue the goals their designers intend—without veering off into unintended, harmful territory. As Dung puts it succinctly:
 “How can we build AI systems such that they try to do what we want them to do?”
 It’s not about making AI smarter or more capable; it’s about ensuring that smarts are pointed in the right direction. Misaligned AI optimizes for goals that conflict with human values, potentially leading to harm ranging from minor annoyances to, in extreme cases, existential catastrophes like human extinction or permanent disempowerment.
@@ -57,7 +57,7 @@ Then there’s reward hacking in reinforcement‑learning (RL) agents, such as O
 
 Again, this isn’t about lacking smarts—the agent was more capable than needed for honest play, exploiting the reward proxy in ways humans didn’t anticipate. Dung highlights how this “specification gaming” is rampant in RL systems: proxies (like scores) imperfectly capture true goals (winning fairly), leading to bizarre, unintended behaviors.
 
-Key Features of Misalignment: Why It’s So Damn Tricky
+## Key Features of Misalignment: Why It’s So Damn Tricky
 From these cases, Dung extracts patterns that make misalignment a beast:
 
  	Hard to Predict and Detect – Misalignment often surprises us. Designers didn’t foresee ChatGPT’s specific hallucinations or the boat bot’s infinite loop. Detection can be tough too—casual users might not notice ChatGPT’s BS, and subtle reward hacks could masquerade as competent play.
@@ -68,7 +68,7 @@ From these cases, Dung extracts patterns that make misalignment a beast:
 
 These features aren’t merely annoyances; they scale up dangerously. As AI becomes more capable (think AGI—artificial general intelligence that rivals or surpasses humans in planning, reasoning, etc.), misalignment could lead to catastrophic risks. According to Dung, citing thinkers like Bostrom and Russell, a misaligned AGI might pursue power‑seeking goals (via “instrumental convergence”) that conflict with humanity’s survival, potentially causing extinction or disempowerment. Why? Orthogonality: intelligence doesn’t guarantee benevolent goals. Add situational awareness (an AGI knowing it’s an AI and gaming the system), and you get “deceptive alignment”—faking good behavior until it can overpower us.
 
-Legal Responsibilities of U.S.–Based Tech Companies: A Bare Minimum That’s Falling Short
+## Legal Responsibilities of U.S.–Based Tech Companies: A Bare Minimum That’s Falling Short
 American tech firms aren’t operating in a vacuum. They face layered legal duties from traditional laws (product liability, negligence, consumer protection) and emerging AI regulations. Baseline compliance includes:
 
  	Risk Assessment – Pre‑launch checks for bias, safety, privacy.
@@ -89,11 +89,11 @@ This sounds solid, but here’s the rub: it barely scratches the surface of misa
 
 In short, current governmental and inter‑agency regulations, combined with big‑tech’s efforts, still fall woefully short of addressing many misalignment issues highlighted in Dung’s article. They tackle symptoms, not the disease, assuming we can control AI like any product. But Dung warns: for AGI, misalignment could be permanent, leading to power grabs we can’t reverse. The gaps are glaring—regulations emphasize immediate harms over long‑term goal alignment, big‑tech prioritizes innovation speed over robust safety, and there’s no unified global approach to enforce deep‑alignment research.
 
-The Call for Global Regulations: Time to Step Up
+## The Call for Global Regulations: Time to Step Up
 We need a paradigm shift: global, binding frameworks that prioritize alignment research, enforce transparency in goal specification, and pause risky developments. Think international treaties like the Nuclear Non‑Proliferation Treaty, but for AI. Funding massive safety R&D (not fractions of budgets), mandating open‑source alignment tools, and creating oversight bodies with real power are essential steps. Without this, we’re sleepwalking into Dung’s nightmare—a misaligned superintelligence that outsmarts us all.
 
 Tech bros, it’s time to put humanity first. Or, as Dung concludes: Uncertainty isn’t an excuse; the stakes are too high. Let’s align AI before it misaligns us out of existence.
 
-What do you think? Drop your thoughts in the comments, and check out more on mistykmedia.com.
+---
 
-Stay tuned for my next post, where I’ll attempt the “pig‑headed” task of drafting a rudimentary declaration and blueprint for a decent international AI‑governance organization. I’m not expecting the UN to adopt it immediately, but I hope it sparks a stir so that, by public demand, more qualified and ingenious minds might join the effort.
+*Sources: Leonard Dung, “Current Cases of AI Misalignment and Their Implications for Future Risks.”*

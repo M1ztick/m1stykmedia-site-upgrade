@@ -17,13 +17,13 @@ category: politics
 featured: false
 ---
 
-Introduction
+## Introduction
 
 The media has sold America’s political story as a clash of red vs. blue, but the scoreboard never changes: elites win, the rest of us lose. Wall Street, the Military Industrial Complex, Big Tech, and Big Pharma walk away richer every decade, regardless of which party occupies the White House. That’s not democracy; it’s a revolving door with two paint colors.
 
 I’ve called this before the “uni-party.” However, the more I look at it, the clearer I see that the Trump Administration is nothing like a liberating detour. Conversely, it merges power and authoritarianism dressed in Republican red—a consumerist trap that blurs the line between the public and private sectors and has all of Big Tech bowing the knee before them.
 
-From Reagan to Biden: Different Names, Same Winners
+## From Reagan to Biden: Different Names, Same Winners
 
 The trend is undeniable if you trace trade and economic policies since the Reagan years.
 
@@ -37,13 +37,13 @@ Biden, despite populist branding, hardly shook up the corporate consensus.
 
 Different parties, same outcome: a system tilted upward while working people sink. That’s the uni-party pattern.
 
-My Biden Setup Theory
+## My Biden Setup Theory
 
 Biden’s presidency was haunted by visible decline almost from the outset. Forget partisanship — it was apparent he wasn’t entirely in control. Which begs the question: Who was? Staffers? Party elders? An overzealous subordinate? Or perhaps the same network of extreme wealth and corporate power brokers quietly steering both parties for decades?
 
 Here’s the kicker: Biden’s decline not only left us with a bad taste in our mouths regarding the Democratic Party, but it was also the perfect setup. A shaky, stumbling presidency conditioned Americans to crave something “decisive.” No nuance or timidity, but a strongman. And right on cue, Trump is reintroduced, not as a fluke, but as the “solution.”
 
-Why the Strongman Suits the Moment
+## Why the Strongman Suits the Moment
 
 Globally, authoritarianism is trending. From Orbán to Erdoğan, Modi to Putin, the template is clear: Prey on the fears of your less diverse supporter base by exaggerating the current crime-related data trends, and promise safety and order in a society seemingly on the verge of collapse. This will accomplish two significant goals:
 
@@ -52,7 +52,7 @@ Consistent threats of extreme crime waves and societal breakdown pacify the publ
 
 Elites don't want a soft-spoken technocrat in a turbulent America already rife with inequality, polarization, and unrest. They want someone who can deregulate quickly, smash unions, silence critics, and promote “law and order.” A Republican authoritarian fits the script perfectly.
 
-The Big Tech Twist
+## The Big Tech Twist
 
 Here’s where things get truly dangerous. While Trump plays the populist strongman on stage, his administration is tightening its bond with Silicon Valley behind the curtain.
 
@@ -62,7 +62,7 @@ Digital ID systems and biometric tech creep into everyday life, giving the state
 
 This is the merger of two worlds: the Democratic idea of technocracy — rule by experts and algorithms — fused with Republican authoritarianism. A hybrid regime: a surveillance state run like a corporation, enforced like a dictatorship.
 
-The Uni-Party’s Long Game
+## The Uni-Party’s Long Game
 
 Seen in this light, Trump’s authoritarian bent may not have been unintentional, as MAGAs would have us believe. Instead, the system is simply evolving. The elites didn’t fight it because it serves them. In fact, they may have choreographed it.
 
@@ -74,7 +74,7 @@ A controlled collapse (Biden’s frailty, dysfunction in Washington) primes the 
 The strongman rises — not as an outsider, but as the system’s most efficient vessel.
 Big Tech ascends to power, transforming authoritarianism into a digitally enforced order.
 
-Call It What It Is
+## Call It What It Is
 
 We’re told we’re “sliding toward dictatorship.” That’s too generous. The truth may be harsher: authoritarianism isn’t a slide; it’s the next phase of the uni-party.
 

@@ -15,14 +15,6 @@ category: politics
 featured: false
 ---
 
-# **DISPATCH**
-
-## **Trump Untruth Tracker: The Second Term Ledger**
-
-*A survey of Donald Trump’s false and misleading public statements from the 2024 campaign through August 2026*
-
----
-
 ### **I. The Short Version**
 
 The most rigorous count of Donald Trump’s falsehoods remains the **Washington Post Fact Checker’s tally of 30,573 false or misleading claims during his first term**. No equivalent live national database exists for his second term, but major fact-checkers — CNN, the Post, PolitiFact, AP, and Reuters — have continued documenting a high volume of untruths across speeches, interviews, social media, and formal addresses.
@@ -139,14 +131,8 @@ If a second-term equivalent to the 30,573 figure ever materializes, it will almo
 
 ---
 
-### **Sources**
+---
 
-- Glenn Kessler, Salvador Rizzo, and Meg Kelly, *The Washington Post* Fact Checker: “Trump’s false or misleading claims total 30,573 over 4 years.”
-- CNN / Daniel Dale: “Fact check: Debunking 100 Trump false claims from his first 100 days” (April 30, 2025).
-- CNN / Daniel Dale: “Fact check: Trump marks one year in office with series of false claims” (January 20, 2026).
-- CNN / Daniel Dale: “Fact check: Trump makes false claims about the economy, elections and crime in State of the Union” (February 24, 2026).
-- PolitiFact: Donald Trump fact-check archives, 2025–2026.
-- PBS NewsHour / PolitiFact: “Why PolitiFact has labeled 2025 the ‘Year of the Lies’” (January 1, 2026).
-- AP, Reuters, and PBS NewsHour fact-checking coverage of the 2024 campaign and second term.
+*Sources: Glenn Kessler, Salvador Rizzo, and Meg Kelly, The Washington Post Fact Checker; CNN / Daniel Dale fact-check series (2025–2026); PolitiFact Donald Trump archives (2025–2026); PBS NewsHour / PolitiFact; AP and Reuters fact-checking coverage.*
 
-**Report compiled:** August 9, 2026
+*Report compiled: August 9, 2026.*

@@ -17,7 +17,7 @@ category: politics
 featured: false
 ---
 
-Popular Specialized ChatGPT "Stand-Up Comedian" 
+## Popular Specialized ChatGPT "Stand-Up Comedian"
 
 I had noticed this model while perusing the Sider AI catalogue before and made a mental note to give it a shot someday. Well, that was about a week ago now, and I must say, the results were much more hilarious than I had anticipated. Maybe I was sleep-deprived and giddy or something, but I'll let you be the judge of that. I gave the Stand-Up Comedian a simple and potentially offensive prompt request. Based on this piece, please leave your comments below to guess what my prompt request for it was. As always, stay authentic friends. -MiStyk
 

@@ -25,7 +25,7 @@ Trump's net worth has ballooned to around $5.5 billion as of 2025, and get this 
 
  
 
-From White House to Wallet
+## From White House to Wallet
 
  
 
@@ -41,7 +41,7 @@ Then there's the infamous $TRUMP meme coin, dropped right before his second inau
 
  
 
-Insider Trading Shenanigans: Tariffs, Tweets, and Timely Trades Now
+## Insider Trading Shenanigans: Tariffs, Tweets, and Timely Trades Now
 
  
 
@@ -53,7 +53,7 @@ Democrats aren't letting this slide. Senator Adam Schiff and Rep. Ruben Gallego 
 
  
 
-Beyond Crypto
+## Beyond Crypto
 
  
 
@@ -65,7 +65,7 @@ Fast-forward to term two: No ethics pledge for the administration (breaking 50 y
 
  
 
-The Ethical Tightrope
+## The Ethical Tightrope
 
  
 
@@ -73,7 +73,7 @@ Is This Fraud or Just “Business”? Legal eagles are split. Proving insider tr
 
  
 
-Innovation vs. Opportunism
+## Innovation vs. Opportunism
 
  
 
@@ -81,22 +81,6 @@ In the end, this saga blurs the line between public service and private empire-b
 
  
 
-References 
+---
 
- 
-
-1. Financial Disclosures: Official filings documenting Trump’s crypto assets, World Liberty Financial revenue ($57.4M in 2024), and $TRUMP meme coin allocations. 
-
-2. Congressional Investigations: Reports from the House Committee on Financial Services on market manipulation and ethics violations. 
-
-3. Market Data: Trading metrics for $TRUMP meme coin losses ($2B across 813K wallets) and tariff-related stock surges (9.5% gain, April 2025). 
-
-4. Legal Analysis: Statements from Prof. Sarah Williams (insider trading criteria) and Richard Painter (ethics violations); Oxford Law Blog fraud assessment. 
-
-5. Political Statements: Quotes from Sen. Adam Schiff, Rep. Ruben Gallego, Elizabeth Warren, and House Committee findings. 
-
-6. Foreign Emoluments Documentation: Records of $7.8M in payments from China, Saudi Arabia, Qatar, and others during Trump’s first term. 
-
-7. Ethics Watchdog Reports: Details on omitted ethics pledges and donor-funded events ($1.8M average per dinner). 
-
-*Sources aggregated from public databases, regulatory filings, and official investigations as cited in the text.*
+*Sources: Official financial disclosures; House Committee on Financial Services reports; market data on $TRUMP meme coin; legal analysis from Prof. Sarah Williams and Richard Painter; Oxford Law Blog; political statements from Sen. Adam Schiff, Rep. Ruben Gallego, and Elizabeth Warren; foreign emoluments documentation; ethics watchdog reports.*

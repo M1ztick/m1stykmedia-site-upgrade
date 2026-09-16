@@ -15,14 +15,6 @@ category: politics
 featured: false
 ---
 
-# **DISPATCH**
-
-## **The Phantom Menace: Why the Trump Administration Is Inventing a Far-Left Terror Crisis**
-
-*When the data points one way and the counterterrorism machinery points the other, the threat isn't terrorism. It's the people in power.*
-
----
-
 ### **I. The Three-Letter Acronym You Need to Know**
 
 "FLT" is the administration's newest rhetorical weapon. It stands for **far-left terrorism**, and it is being deployed with the same emotional register that "WMD" carried into Iraq: a vague, expandable label designed to stampede public opinion and loosen legal constraints on state power.
@@ -155,6 +147,8 @@ If history is any guide, the first targets will be the most radical and least sy
 
 ---
 
-**Sources:** Center for Strategic and International Studies, NBC News, Axios, FactCheck.org, PBS NewsHour, The Atlantic, The Washington Post, Reuters, Al Jazeera, Time, CNN, ABC News, ACLU, Brennan Center, Just Security, Lawfare, House Judiciary Committee Democrats, Stanford Law School, International Center for Not-for-Profit Law, U.S. Department of State, The White House.
+---
 
-**Report compiled:** July 2026
+*Sources: Center for Strategic and International Studies, NBC News, Axios, FactCheck.org, PBS NewsHour, The Atlantic, The Washington Post, Reuters, Al Jazeera, Time, CNN, ABC News, ACLU, Brennan Center, Just Security, Lawfare, House Judiciary Committee Democrats, Stanford Law School, International Center for Not-for-Profit Law, U.S. Department of State, The White House.*
+
+*Report compiled: July 2026.*

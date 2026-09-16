@@ -1,11 +1,7 @@
 ---
-
 title: "The BIS and the Finternet: A Deep Dive into the Central Bank of Central Banks"
-
 description: "An extensive investigation into the Bank for International Settlements—who they are, what power they wield, and the finternet they are building for future generations."
-
 pubDate: 2026-07-08
-
 tags:
   - global-economics
   - us-economics
@@ -15,19 +11,8 @@ tags:
   - surveillance
   - financial-control
   - blog
-
-category: essay
-
+category: investigation
 featured: false
-
----
-
-# **DISPATCH**
-
-## **The BIS and the Finternet: Who Controls the Central Bank of Central Banks**
-
-*A comprehensive investigation into the Bank for International Settlements, its 63-member central bank cartel, and the programmable financial panopticon they are constructing for the next generation.*
-
 ---
 
 ### **I. What Is the BIS? The World's Most Powerful Bank You've Never Heard Of**
@@ -363,16 +348,8 @@ The 63 central banks are already inside. The rest of humanity will be asked—or
 
 ---
 
-**Sources and References:**
-- BIS Working Paper No. 1178: "Finternet: the financial system for the future" (Carstens & Nilekani, April 2024)
-- BIS Annual Economic Report 2023 — Special Chapter: "Blueprint for the future monetary system"
-- BIS Annual Economic Report 2025 — Chapter III: "The next-generation monetary and financial system"
-- BIS Innovation Hub: Project mBridge, Project Helvetia, Project Aurum documentation
-- Agustín Carstens speeches at Peterson Institute for International Economics (March 2021) and Goethe University (January 2022)
-- Basel Committee on Banking Supervision governance documentation
-- Chainlink analysis: "Understanding the BIS Unified Ledger"
-- Moody's Analytics: "BIS paper outlines vision for future financial system"
-- CFA Institute survey on CBDC privacy concerns (2023)
-- Scholarship on CBDC governance, programmability, and privacy (University of Florida Law, CIGI)
+---
 
-**Research compiled:** July 2026
+*Sources: BIS Working Paper No. 1178: "Finternet: the financial system for the future" (Carstens & Nilekani, April 2024); BIS Annual Economic Report 2023 — Special Chapter: "Blueprint for the future monetary system"; BIS Annual Economic Report 2025 — Chapter III: "The next-generation monetary and financial system"; BIS Innovation Hub: Project mBridge, Project Helvetia, Project Aurum documentation; Agustín Carstens speeches at Peterson Institute for International Economics (March 2021) and Goethe University (January 2022); Basel Committee on Banking Supervision governance documentation; Chainlink analysis: "Understanding the BIS Unified Ledger"; Moody's Analytics: "BIS paper outlines vision for future financial system"; CFA Institute survey on CBDC privacy concerns (2023); Scholarship on CBDC governance, programmability, and privacy (University of Florida Law, CIGI).*
+
+*Research compiled: July 2026.*
