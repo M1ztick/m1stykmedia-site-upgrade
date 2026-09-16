@@ -1,118 +1,100 @@
-# Dispatch Article Format Spec
+# Dispatch Article Format Rules
 
-All articles in `src/content/dispatch/` must conform to this spec before being committed.
+These rules govern every article in `src/content/dispatch/` for the MistykMedia site.
 
----
+## File naming convention
 
-## Frontmatter
+- Use lowercase kebab-case: `article-title-keywords.md`
+- No dates in filenames
+- No special characters except hyphens
+
+## Required frontmatter fields
 
 ```yaml
 ---
-title: "Article Title Here"
-description: "One or two sentence deck. No trailing ellipsis."
-pubDate: YYYY-MM-DD
+title: "Article Title in Title Case"
+description: "A compelling 1-2 sentence summary of the article."
+pubDate: 2026-06-18
+category: investigation
+subject: tech-surveillance
 tags:
-  - kebab-case-tag
-  - another-tag
-category: essay | politics | investigation
-featured: true | false
+  - palantir
+  - surveillance
+  - civil-liberties
+featured: false
 ---
 ```
 
-Rules:
-- No blank lines between frontmatter keys
-- `title` and `description` always quoted
-- `tags` always YAML block list (one tag per line, `- kebab-case`), never inline array
-- `pubDate` is `YYYY-MM-DD` with no quotes
-- `category` is one of: `essay`, `politics`, `investigation`
-- `featured` is unquoted boolean
+### Field definitions
 
----
+- **title**: Title case or sentence case; keep under 80 characters; no trailing period.
+- **description**: 1–2 sentences; plain text; no Markdown; shown in listings and SEO.
+- **pubDate**: ISO date only: `YYYY-MM-DD`. No time, no timezone, no quotes.
+- **category**: The genre/format of the piece. Must be one of:
+  - `essay` — argument-driven first-person or analytical prose
+  - `analysis` — evidence-based interpretation of events or ideas
+  - `investigation` — reported or sourced deep-dive exposing systems, patterns, or hidden structures
+  - `briefing` — concise factual update or explainer
+- **subject**: The beat or topic area of the piece. Must be one of:
+  - `world-affairs`
+  - `domestic-politics`
+  - `global-finance`
+  - `economics`
+  - `tech-surveillance`
+  - `history`
+  - `culture`
+  - `media`
+  - `labor`
+  - `climate`
+  - `health`
+- **tags**: Block-list format only (kebab-case, lowercase, no spaces). Convert spaces to hyphens, remove quotes, remove special characters.
+- **featured**: Boolean. Use `false` unless explicitly promoting the piece.
 
-## Filename
+### Deprecated
 
-- All lowercase, hyphen-separated: `the-article-title.md`
-- No underscores, no uppercase
+- `category: dispatch` — this was a placeholder. Replace with both `category` and `subject`.
+- Inline tag arrays such as `tags: ["tag one", "tag two"]` — always use block-list syntax.
+- Timezone-aware pubDates such as `2025-06-14T14:00:00Z` — use date only.
 
----
+## Body structure
 
-## Body Structure
+1. Do **not** repeat the title/heading at the top of the body. The layout renders the frontmatter title as `<h1>`.
+2. Begin with `## I. First Section` or `## First Section`. Be consistent within a single article.
+3. Use `##` for major sections and `###` for subsections.
+4. Use bold for the first mention of key proper nouns, institutions, or technical terms within a section.
+5. Keep paragraphs relatively short (3–5 sentences) for readability.
+6. Use blockquotes only for direct quotations.
+7. End every article with a standardized sources block.
 
-### What NOT to include at the top of the body
+## Sources block
 
-The layout renders the title, description, category, date, and byline from frontmatter. Do **not** repeat any of these in the body:
-
-```md
-<!-- BAD — remove these -->
-# DISPATCH
-## Article Title
-*A subtitle or deck line*
----
-```
-
-Start the body directly with the first section header or opening prose.
-
-### Header hierarchy
-
-- `##` for major sections (Roman numerals or descriptive titles)
-- `###` for subsections
-- No `#` (h1) in the body — the layout owns h1
-
-### Section labels (plain text → headers)
-
-Old WordPress-era articles used plain text as section labels (no `#`). These must be converted to `##` headers:
-
-```md
-<!-- BAD -->
-The Origins
-Some paragraph text here.
-
-<!-- GOOD -->
-## The Origins
-
-Some paragraph text here.
-```
-
----
-
-## Sources Block
-
-Always at the bottom, after a `---` rule, as an italic paragraph. No `###` header.
+Use exactly this format at the end of the article:
 
 ```md
 ---
 
-*Sources: Publication Name, Publication Name, Author Name (Year).*
-
-*Report compiled: Month YYYY.*
+*Sources: The Guardian, BBC News, Amnesty International (2025), United Nations Human Rights Council, company filings, witness testimony, declassified documents.*
 ```
 
-If sources are a numbered/linked list (academic style), keep the list but still place it after `---` with no header above it.
+- Begin with a horizontal rule `---`.
+- Follow with an italic paragraph beginning `*Sources:` and ending with `*`.
+- Do not use a `## Sources` or `## Sources & Reading` header.
+- List publications and institutions, optionally including year or document type.
+- If sources are numerous or sensitive, summarize rather than enumerating every citation.
 
----
+## Style and tone
 
-## Inline Formatting
+- Clear, direct, and evidence-based.
+- Avoid sensationalism; let the facts carry weight.
+- Distinguish between allegations, findings, and proven claims.
+- Attribute contested claims to specific reports, institutions, or reporters.
+- Avoid speculative claims presented as fact.
 
-- Bold (`**text**`) for proper nouns, key terms, and data points on first use in a section — use sparingly
-- Italics (`*text*`) for publication names, foreign phrases, and emphasis
-- No `#hashtag` style tags in the body (these belong in frontmatter `tags`)
-- No promotional CTAs or Insertabot plugs in the body
+## Internal consistency
 
----
-
-## Tables
-
-Use standard GFM tables. Column headers should be short. Align with pipes.
-
----
-
-## Checklist for Incoming Articles
-
-- [ ] Frontmatter: no blank lines between keys
-- [ ] Frontmatter: tags as block list
-- [ ] Filename: lowercase, hyphens only
-- [ ] Body: no duplicate title/section header at top
-- [ ] Body: all section labels are `##` or `###` headers
-- [ ] Sources: after `---`, italic, no header
-- [ ] No `#hashtag` lines in body
-- [ ] No promotional CTAs
+Dispatch articles should feel like a coherent series. Maintain consistent:
+- heading style,
+- date format,
+- tag conventions,
+- sources block format,
+- framing of uncertain or contested claims.
